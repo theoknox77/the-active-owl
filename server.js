@@ -76,7 +76,7 @@ function parseBody(req) {
 
 function isCity(segment) { return fs.existsSync(path.join(DATA_DIR, 'cities', segment)); }
 
-const server = http.createServer(async (req, res) => {
+const handler = async (req, res) => {
   const parsed = url.parse(req.url, true);
   const pathname = parsed.pathname;
   const query = parsed.query;
@@ -206,7 +206,7 @@ const server = http.createServer(async (req, res) => {
         const entry = { ts: Date.now(), event: body.event || 'unknown', page: body.page || '', venue: body.venue || '', city: body.city || '', meta: body.meta || {}, ip: hashedIp, ua: req.headers['user-agent'] || '', ref: req.headers['referer'] || '' };
         const analyticsFile = path.join(DATA_DIR, 'analytics.json');
         try { if (fs.existsSync(analyticsFile) && fs.statSync(analyticsFile).size > 5 * 1024 * 1024) { const d = new Date(); fs.renameSync(analyticsFile, path.join(DATA_DIR, `analytics-${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}.json`)); } } catch(e) {}
-        fs.appendFileSync(analyticsFile, JSON.stringify(entry) + '\n');
+        try { fs.appendFileSync(analyticsFile, JSON.stringify(entry) + '\n'); } catch(e) {}
       } catch(e) {}
       return;
     }
@@ -298,9 +298,11 @@ const server = http.createServer(async (req, res) => {
   });
 });
 
+const server = http.createServer(handler);
+
 // Vercel serverless export
 if (process.env.VERCEL) {
-  module.exports = server;
+  module.exports = handler;
 } else {
   server.listen(PORT, () => { console.log(`The Active Owl is live at http://localhost:${PORT}`); });
 }
