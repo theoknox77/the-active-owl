@@ -80,7 +80,7 @@ function detectMode() {
 function applyMode(mode) {
   currentMode = mode;
   document.documentElement.setAttribute('data-mode', mode);
-  document.querySelectorAll('.mode-btn').forEach(b => {
+  document.querySelectorAll('.mode-btn, .mode-pill').forEach(b => {
     b.classList.toggle('active', b.dataset.mode === mode);
   });
   // Update theme-color meta
@@ -174,9 +174,47 @@ function shareItem(title, text, url, e) {
   if (e) { e.stopPropagation(); e.preventDefault(); }
   track('share', { venue: title });
   if (navigator.share) { navigator.share({ title, text, url }).catch(() => {}); }
-  else { navigator.clipboard.writeText(url).then(() => showToast('Link copied!')).catch(() => showToast('Could not copy link')); }
+  else { showShareMenu(title, text, url, e); }
 }
 window.shareItem = shareItem;
+
+function showShareMenu(title, text, url, e) {
+  // Remove existing menu
+  document.querySelectorAll('.share-popup').forEach(el => el.remove());
+  const popup = document.createElement('div');
+  popup.className = 'share-popup';
+  const encodedUrl = encodeURIComponent(url);
+  const encodedText = encodeURIComponent(text + ' ' + url);
+  popup.innerHTML = `
+    <div class="share-popup-title">Share</div>
+    <a class="share-popup-item" href="https://twitter.com/intent/tweet?text=${encodedText}" target="_blank" onclick="event.stopPropagation()">
+      <span class="share-popup-icon">&#120143;</span> Twitter / X
+    </a>
+    <a class="share-popup-item" href="https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}" target="_blank" onclick="event.stopPropagation()">
+      <span class="share-popup-icon">f</span> Facebook
+    </a>
+    <a class="share-popup-item" href="sms:?body=${encodedText}" onclick="event.stopPropagation()">
+      <span class="share-popup-icon">&#128172;</span> Text Message
+    </a>
+    <div class="share-popup-item" onclick="event.stopPropagation();navigator.clipboard.writeText('${url.replace(/'/g,"\\'")}').then(()=>{showToast('Link copied!');document.querySelectorAll('.share-popup').forEach(el=>el.remove())})">
+      <span class="share-popup-icon">&#128279;</span> Copy Link
+    </div>
+  `;
+  document.body.appendChild(popup);
+  // Position near click
+  if (e && e.target) {
+    const rect = e.target.closest('button')?.getBoundingClientRect() || e.target.getBoundingClientRect();
+    popup.style.position = 'fixed';
+    popup.style.top = Math.min(rect.bottom + 8, window.innerHeight - 220) + 'px';
+    popup.style.right = Math.max(8, window.innerWidth - rect.right) + 'px';
+  }
+  // Close on outside click
+  setTimeout(() => {
+    document.addEventListener('click', function closeShare(ev) {
+      if (!popup.contains(ev.target)) { popup.remove(); document.removeEventListener('click', closeShare); }
+    });
+  }, 10);
+}
 
 function shareIconSVG() {
   return '<svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>';
@@ -187,7 +225,7 @@ function shareIconSVG() {
 // ============================
 async function surpriseMe() {
   track('surprise_me');
-  const btn = document.querySelector('.surprise-me-btn');
+  const btn = document.querySelector('.surprise-me-btn-sm') || document.querySelector('.surprise-me-btn');
   if (btn) { btn.innerHTML = '<span class="dice" style="animation:diceRoll 0.15s linear infinite">&#127922;</span> Finding a spot...'; btn.disabled = true; }
   try {
     const venues = await fetchJSON(`${cityApiBase()}/venues`);
@@ -308,6 +346,17 @@ function getCatColor(cat) {
 // ============================
 // CITY SELECTOR
 // ============================
+function renderControlBar() {
+  return `<div class="control-bar">
+    ${renderCitySelector()}
+    <div class="inline-mode-switcher">
+      <button class="mode-pill ${currentMode==='day'?'active':''}" data-mode="day" onclick="setMode('day')">&#9728;&#65039; Day</button>
+      <button class="mode-pill ${currentMode==='night'?'active':''}" data-mode="night" onclick="setMode('night')">&#127769; Night</button>
+    </div>
+    <button class="surprise-me-btn-sm" onclick="surpriseMe()"><span class="dice">&#127922;</span> Surprise Me</button>
+  </div>`;
+}
+
 function renderCitySelector() {
   const cityData = getCurrentCityData();
   const activeCities = cities.filter(c => c.active);
@@ -488,7 +537,7 @@ window.applyAdvanced = async function() {
     } else {
       content = `<div class="results-count">${data.total} result${data.total!==1?'s':''} found</div>` + data.events.map(renderEventCard).join('');
     }
-    main.innerHTML = renderCitySelector() + `<div class="hero"><h1>${currentMode === 'day' ? "What's happening" : "What's going on"} in <span class="city-name">${cityData.name}</span>?</h1><div class="tagline">${cityData.tagline}</div></div>` + renderSearchBar() + content;
+    main.innerHTML = renderControlBar() + `<div class="hero"><h1>${currentMode === 'day' ? "What's happening" : "What's going on"} in <span class="city-name">${cityData.name}</span>?</h1><div class="tagline">${cityData.tagline}</div></div>` + renderSearchBar() + content;
   } catch(err) { showToast('Something went wrong'); }
 };
 
@@ -522,13 +571,19 @@ async function renderToday() {
 
   const heroText = currentMode === 'day' ? `What's happening in <span class="city-name">${cityData.name}</span> today?` : `What's going on in <span class="city-name">${cityData.name}</span> tonight?`;
 
-  return `${renderCitySelector()}
+  const showGuide = !localStorage.getItem('tao-guide-seen');
+
+  return `
     <div class="hero">
       <h1>${heroText}</h1>
       <div class="tagline">${cityData.tagline}</div>
       <div class="date-line">${getTodayStr()}</div>
-      <button class="surprise-me-btn" onclick="surpriseMe()"><span class="dice">&#127922;</span> Surprise Me</button>
     </div>
+    ${showGuide ? `<div class="onboard-tips" id="welcome-guide">
+      <p class="onboard-text">Pick your city, choose day or night, and we'll show you what's happening right now. Day mode is for beach days, yoga, brunch, and outdoor stuff. Night mode is for bars, live music, trivia, and going out. Can't decide? Hit Surprise Me and let us pick for you.</p>
+      <button class="onboard-dismiss" onclick="document.getElementById('welcome-guide').remove();localStorage.setItem('tao-guide-seen','1')">Got it &#128076;</button>
+    </div>` : ''}
+    ${renderControlBar()}
     ${renderSearchBar()}
     ${renderPills(currentCategory)}
     <div id="events-list">${content}</div>`;
@@ -540,7 +595,7 @@ async function renderWeek() {
   const data = Array.isArray(rawWeek) ? rawWeek : [];
   const venues = await fetchJSON(`${cityApiBase()}/venues`);
 
-  let html = `${renderCitySelector()}<div class="hero"><h1>This Week in <span class="city-name">${cityData.name}</span></h1><div class="tagline">${cityData.tagline}</div></div>`;
+  let html = `${renderControlBar()}<div class="hero"><h1>This Week in <span class="city-name">${cityData.name}</span></h1><div class="tagline">${cityData.tagline}</div></div>`;
 
   for (const day of data) {
     if (day.events.length === 0) continue;
@@ -559,7 +614,7 @@ async function renderVenues() {
   const cityData = getCurrentCityData();
   const venues = await fetchJSON(`${cityApiBase()}/venues`);
   const modeVenues = venues.filter(v => !v.timeOfDay || v.timeOfDay.includes(currentMode));
-  return `${renderCitySelector()}
+  return `${renderControlBar()}
     <div class="hero"><h1>${currentMode === 'day' ? 'Spots' : 'Venues'} in <span class="city-name">${cityData.name}</span></h1><div class="tagline">${cityData.tagline}</div></div>
     <div class="search-bar-wrap"><span class="search-icon">&#128269;</span><input type="text" class="search-bar" placeholder="Search ${currentMode === 'night' ? 'venues' : 'spots'}..." oninput="filterVenues(this.value)" id="venue-search"></div>
     <div id="venues-list" class="venues-grid">${modeVenues.map(renderVenueCard).join('')}</div>`;
@@ -644,19 +699,19 @@ async function renderVenueDetail(id) {
 async function renderFavorites() {
   const favIds = getFavorites();
   if (favIds.length === 0) {
-    return `${renderCitySelector()}<div class="hero"><h1>Your <span class="city-name">Favorites</span></h1></div>
+    return `${renderControlBar()}<div class="hero"><h1>Your <span class="city-name">Favorites</span></h1></div>
     <div class="favorites-empty"><div class="fav-empty-icon">&#9825;</div><h3>No favorites yet</h3><p>Tap the heart on any spot to save it here.</p></div>`;
   }
   const venues = await fetchJSON(`${cityApiBase()}/venues`);
   const favVenues = venues.filter(v => favIds.includes(v.id));
-  return `${renderCitySelector()}<div class="hero"><h1>Your <span class="city-name">Favorites</span></h1><div class="tagline">${favVenues.length} saved spot${favVenues.length!==1?'s':''}</div></div>
+  return `${renderControlBar()}<div class="hero"><h1>Your <span class="city-name">Favorites</span></h1><div class="tagline">${favVenues.length} saved spot${favVenues.length!==1?'s':''}</div></div>
   <div class="venues-grid">${favVenues.map(renderVenueCard).join('')}</div>`;
 }
 
 async function renderSubmit() {
   const cityData = getCurrentCityData();
   const cats = [...DAY_CATEGORIES, ...NIGHT_CATEGORIES].filter((c, i, a) => c.id !== 'all' && a.findIndex(x => x.id === c.id) === i);
-  return `${renderCitySelector()}<div class="hero"><h1>Submit a <span class="city-name">Spot</span></h1><div class="tagline">Know about something happening in ${cityData.name}? Let us know.</div></div>
+  return `${renderControlBar()}<div class="hero"><h1>Submit a <span class="city-name">Spot</span></h1><div class="tagline">Know about something happening in ${cityData.name}? Let us know.</div></div>
   <form id="submit-form" onsubmit="handleSubmit(event)">
     <div class="form-group"><label>City</label><input type="text" name="city" value="${cityData.name}" readonly></div>
     <div class="form-group"><label>Venue Name</label><input type="text" name="venueName" required placeholder="e.g. Boston's on the Beach"></div>
@@ -673,7 +728,7 @@ async function renderSubmit() {
 
 function renderComingSoon() {
   const cityData = getCurrentCityData();
-  return `${renderCitySelector()}<div class="coming-soon-page"><div class="coming-soon-icon">&#128640;</div><h1>${cityData.name}</h1><h2>Coming Soon</h2><p>We're scouting the best spots in ${cityData.name}. Stay tuned.</p><a href="#/delray-beach" class="btn" style="display:inline-block;margin-top:20px;">Explore Delray Beach</a></div>`;
+  return `${renderControlBar()}<div class="coming-soon-page"><div class="coming-soon-icon">&#128640;</div><h1>${cityData.name}</h1><h2>Coming Soon</h2><p>We're scouting the best spots in ${cityData.name}. Stay tuned.</p><a href="#/delray-beach" class="btn" style="display:inline-block;margin-top:20px;">Explore Delray Beach</a></div>`;
 }
 
 // ============================

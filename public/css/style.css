@@ -293,6 +293,7 @@ a:hover { opacity: 0.85; }
   margin: 0 -16px;
   padding-left: 16px;
   padding-right: 16px;
+  text-align: center;
 }
 
 .hero h1 {
@@ -306,12 +307,11 @@ a:hover { opacity: 0.85; }
 .hero h1 .city-name { color: var(--accent); }
 .hero .tagline { color: var(--text-dim); font-size: 15px; margin-top: 8px; }
 .hero .date-line {
-  color: var(--text-tertiary);
-  font-size: 13px;
-  margin-top: 6px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 [data-mode="night"] .hero h1 { text-shadow: 0 0 20px rgba(255,16,240,0.15); }
@@ -784,20 +784,24 @@ a:hover { opacity: 0.85; }
    ============================ */
 .share-btn {
   background: none; border: none; cursor: pointer; font-size: 16px; padding: 6px;
-  border-radius: 50%; color: var(--text-dim); display: inline-flex; align-items: center;
-  justify-content: center; width: 32px; height: 32px; flex-shrink: 0;
+  border-radius: 50%; color: var(--text-muted, #999); display: inline-flex; align-items: center;
+  justify-content: center; width: 32px; height: 32px; flex-shrink: 0; opacity: 0.9;
+  transition: opacity 0.15s, background 0.15s, color 0.15s;
 }
-.share-btn:hover { background: var(--accent-dim); color: var(--accent); }
+.share-btn:hover { background: var(--accent-dim); color: var(--accent); opacity: 1; }
 .share-btn svg { width: 16px; height: 16px; fill: currentColor; }
 
 .fav-btn {
   background: none; border: none; cursor: pointer; font-size: 20px; padding: 4px;
   display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; line-height: 1;
+  color: var(--text-muted, #999); opacity: 0.7; transition: transform 0.15s, color 0.15s, opacity 0.15s;
 }
-.fav-btn:hover { transform: scale(1.2); }
+.fav-btn:hover { transform: scale(1.2); opacity: 1; }
 .fav-btn:active { transform: scale(0.9); }
-.fav-btn.favorited { color: #FF385C; }
-[data-mode="night"] .fav-btn.favorited { color: #FF10F0; filter: drop-shadow(0 0 6px rgba(255,16,240,0.5)); }
+.fav-btn.favorited { color: #FF385C; opacity: 1; }
+[data-mode="night"] .fav-btn { color: rgba(255,255,255,0.5); }
+[data-mode="night"] .fav-btn:hover { color: rgba(255,255,255,0.8); }
+[data-mode="night"] .fav-btn.favorited { color: #FF10F0; opacity: 1; filter: drop-shadow(0 0 6px rgba(255,16,240,0.5)); }
 
 @keyframes heartPop { 0% { transform: scale(1); } 50% { transform: scale(1.4); } 100% { transform: scale(1); } }
 .fav-btn.pop { animation: heartPop 0.3s ease; }
@@ -855,4 +859,109 @@ a:hover { opacity: 0.85; }
   .venue-card .v-image-placeholder { height: 100px; }
   .filter-pills { gap: 6px; }
   .fpill { padding: 6px 12px; font-size: 12px; }
+}
+
+/* ============================
+   SHARE POPUP
+   ============================ */
+.share-popup {
+  position: fixed; z-index: 9999; min-width: 200px;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  padding: 8px 0; animation: fadeInUp 0.15s ease;
+}
+.share-popup-title {
+  padding: 8px 16px 4px; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 1px; color: var(--text-muted); font-weight: 600;
+}
+.share-popup-item {
+  display: flex; align-items: center; gap: 10px; padding: 10px 16px;
+  color: var(--text-primary); text-decoration: none; cursor: pointer;
+  font-size: 14px; transition: background 0.15s;
+}
+.share-popup-item:hover { background: var(--bg-hover, rgba(128,128,128,0.1)); }
+.share-popup-icon { width: 20px; text-align: center; font-weight: 700; font-size: 16px; }
+
+/* ============================
+   CONTROL BAR (city + mode + surprise)
+   ============================ */
+.control-bar {
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; padding: 12px 20px; max-width: 800px; margin: 0 auto;
+  flex-wrap: wrap;
+}
+.control-bar > * { flex: 1 1 0; min-width: 0; max-width: 33%; }
+.control-bar .city-selector { display: flex; }
+.control-bar .city-selector .city-selector-current {
+  width: 100%; justify-content: center; height: 42px; padding: 0 16px;
+  font-size: 13px; border-radius: 24px; border-width: 1px;
+}
+.control-bar .inline-mode-switcher {
+  justify-content: center; height: 42px; border-radius: 24px;
+  padding: 4px; box-sizing: border-box;
+}
+.control-bar .inline-mode-switcher .mode-pill { flex: 1; text-align: center; }
+.control-bar .surprise-me-btn-sm {
+  justify-content: center; height: 42px; box-sizing: border-box;
+}
+.inline-mode-switcher {
+  display: flex; gap: 4px; background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 24px; padding: 3px;
+}
+.mode-pill {
+  border: none; background: none; padding: 6px 14px; border-radius: 20px;
+  font-size: 13px; font-weight: 600; cursor: pointer; color: var(--text-muted);
+  transition: all 0.2s;
+}
+.mode-pill.active {
+  background: var(--accent); color: #fff;
+}
+[data-mode="night"] .mode-pill.active {
+  background: linear-gradient(135deg, #FF10F0, #00DFFF);
+  color: #fff; text-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+button.surprise-me-btn-sm,
+.surprise-me-btn-sm {
+  display: inline-flex; align-items: center; gap: 6px;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: #94a3b8;
+  border-radius: 24px; padding: 0 16px; font-size: 13px; font-weight: 600;
+  cursor: pointer; color: var(--text-primary); transition: all 0.2s;
+  font-family: inherit;
+}
+[data-mode="night"] .surprise-me-btn-sm { border-color: rgba(255,255,255,0.3); }
+button.surprise-me-btn-sm:hover,
+.surprise-me-btn-sm:hover { border-color: var(--accent); color: var(--accent); }
+.surprise-me-btn-sm .dice { font-size: 16px; }
+
+/* ============================
+   ONBOARDING TIPS
+   ============================ */
+.onboard-tips {
+  max-width: 640px; margin: 0 auto 16px; padding: 16px 24px;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 12px; text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+[data-mode="night"] .onboard-tips {
+  background: rgba(20, 0, 40, 0.8);
+  border-color: rgba(0, 223, 255, 0.2);
+}
+.onboard-text {
+  font-size: 14px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 12px;
+}
+.onboard-dismiss {
+  background: var(--accent); color: #fff; border: none; border-radius: 20px;
+  padding: 8px 24px; font-size: 14px; font-weight: 600; cursor: pointer;
+  transition: transform 0.15s;
+}
+.onboard-dismiss:hover { transform: scale(1.05); }
+[data-mode="night"] .onboard-dismiss {
+  background: linear-gradient(135deg, #FF10F0, #00DFFF);
+}
+
+@media (max-width: 600px) {
+  .control-bar { gap: 8px; padding: 10px 16px; }
 }
