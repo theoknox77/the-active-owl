@@ -1,0 +1,260 @@
+[
+  {
+    "id": "two-georges-waterfront",
+    "name": "Two Georges Waterfront Grille",
+    "address": "728 Casa Loma Blvd, Boynton Beach, FL 33435",
+    "phone": "(561) 736-2717",
+    "website": "https://twogeorgesrestaurant.com",
+    "instagram": "@twogeorgesboynton",
+    "hours": {
+      "mon": "11am-10pm",
+      "tue": "11am-10pm",
+      "wed": "11am-10pm",
+      "thu": "11am-10pm",
+      "fri": "11am-11pm",
+      "sat": "11am-11pm",
+      "sun": "11am-10pm"
+    },
+    "vibes": ["waterfront", "group-friendly", "scenic", "casual"],
+    "amenities": ["outdoor-seating", "full-bar", "waterfront", "live-stage", "parking"],
+    "categories": ["live-music", "happy-hour", "food-specials"],
+    "timeOfDay": ["day", "night"],
+    "description": "Right on the Intracoastal with dockside seating and killer sunset views. Two Georges has been a Boynton staple forever. The fish is fresh, the tiki bar stays busy, and there's live music most weekends."
+  },
+  {
+    "id": "banana-boat",
+    "name": "Banana Boat",
+    "address": "739 E Ocean Ave, Boynton Beach, FL 33435",
+    "phone": "(561) 732-9400",
+    "website": "https://bananaboatboynton.com",
+    "instagram": "@bananaboatboynton",
+    "hours": {
+      "mon": "11am-10pm",
+      "tue": "11am-10pm",
+      "wed": "11am-10pm",
+      "thu": "11am-10pm",
+      "fri": "11am-11pm",
+      "sat": "11am-11pm",
+      "sun": "10am-10pm"
+    },
+    "vibes": ["waterfront", "group-friendly", "casual", "fun"],
+    "amenities": ["outdoor-seating", "full-bar", "waterfront", "live-stage", "parking"],
+    "categories": ["live-music", "happy-hour", "brunch"],
+    "timeOfDay": ["day", "night"],
+    "description": "The Banana Boat is basically Boynton Beach's living room. Waterfront patio, live music, Sunday brunch with bottomless mimosas, and a crowd that ranges from families to bar regulars. If you only go to one place in Boynton, this is it."
+  },
+  {
+    "id": "prime-catch",
+    "name": "Prime Catch",
+    "address": "700 E Woolbright Rd, Boynton Beach, FL 33435",
+    "phone": "(561) 737-8822",
+    "website": "https://primecatchboynton.com",
+    "instagram": "@primecatchboynton",
+    "hours": {
+      "mon": "4pm-10pm",
+      "tue": "4pm-10pm",
+      "wed": "4pm-10pm",
+      "thu": "4pm-10pm",
+      "fri": "4pm-11pm",
+      "sat": "4pm-11pm",
+      "sun": "4pm-10pm"
+    },
+    "vibes": ["upscale-casual", "waterfront", "date-night", "scenic"],
+    "amenities": ["outdoor-seating", "full-bar", "waterfront", "parking"],
+    "categories": ["happy-hour", "food-specials"],
+    "timeOfDay": ["night"],
+    "description": "Upscale waterfront dining on the Intracoastal with fresh seafood and a raw bar that doesn't mess around. The happy hour at the bar is one of the best deals in town. Great for date night or impressing out-of-towners."
+  },
+  {
+    "id": "hurricane-alley",
+    "name": "Hurricane Alley",
+    "address": "529 E Ocean Ave, Boynton Beach, FL 33435",
+    "phone": "(561) 364-4008",
+    "website": "https://hurricanealleyrawbar.com",
+    "instagram": "@hurricanealleyboynton",
+    "hours": {
+      "mon": "11am-12am",
+      "tue": "11am-12am",
+      "wed": "11am-12am",
+      "thu": "11am-12am",
+      "fri": "11am-2am",
+      "sat": "11am-2am",
+      "sun": "11am-12am"
+    },
+    "vibes": ["rowdy", "group-friendly", "casual", "sports"],
+    "amenities": ["outdoor-seating", "full-bar", "live-stage", "parking"],
+    "categories": ["live-music", "happy-hour", "watch-party", "karaoke"],
+    "timeOfDay": ["day", "night"],
+    "description": "Raw bar, cold beer, and the kind of place where you can watch the game or catch live music any night of the week. Hurricane Alley is the no-frills fun spot in Boynton. The peel-and-eat shrimp are legit."
+  },
+  {
+    "id": "butcher-and-the-bar",
+    "name": "The Butcher and The Bar",
+    "address": "424 E Ocean Ave, Boynton Beach, FL 33435",
+    "phone": "(561) 806-8282",
+    "website": "https://thebutcherandthebar.com",
+    "instagram": "@thebutcherandthebar",
+    "hours": {
+      "mon": "Closed",
+      "tue": "4pm-10pm",
+      "wed": "4pm-10pm",
+      "thu": "4pm-10pm",
+      "fri": "4pm-11pm",
+      "sat": "4pm-11pm",
+      "sun": "4pm-9pm"
+    },
+    "vibes": ["upscale-casual", "date-night", "trendy", "foodie"],
+    "amenities": ["full-bar", "craft-cocktails", "outdoor-seating"],
+    "categories": ["happy-hour", "food-specials"],
+    "timeOfDay": ["night"],
+    "description": "A craft cocktail bar and butcher shop rolled into one. The charcuterie boards are outstanding and the cocktails are made with real care. It's the kind of spot that makes you realize Ocean Ave is actually becoming a scene."
+  },
+  {
+    "id": "josies-ristorante",
+    "name": "Josie's Ristorante",
+    "address": "1602 S Federal Hwy, Boynton Beach, FL 33435",
+    "phone": "(561) 364-9601",
+    "website": "https://josiesristorante.com",
+    "instagram": "@josiesristorante",
+    "hours": {
+      "mon": "Closed",
+      "tue": "5pm-9pm",
+      "wed": "5pm-9pm",
+      "thu": "5pm-9pm",
+      "fri": "5pm-10pm",
+      "sat": "5pm-10pm",
+      "sun": "5pm-9pm"
+    },
+    "vibes": ["intimate", "romantic", "date-night", "foodie"],
+    "amenities": ["full-bar", "outdoor-seating"],
+    "categories": ["food-specials"],
+    "timeOfDay": ["night"],
+    "description": "Old-school Italian done right in a cozy space. Josie's makes their pasta fresh and the portions are generous. It's the kind of neighborhood spot where the owner might come say hi to your table."
+  },
+  {
+    "id": "benvenuto",
+    "name": "Benvenuto Restaurant",
+    "address": "1730 N Federal Hwy, Boynton Beach, FL 33435",
+    "phone": "(561) 364-0600",
+    "website": "https://benvenutorestaurant.com",
+    "instagram": "@benvenutorestaurant",
+    "hours": {
+      "mon": "Closed",
+      "tue": "11:30am-9pm",
+      "wed": "11:30am-9pm",
+      "thu": "11:30am-9pm",
+      "fri": "11:30am-10pm",
+      "sat": "11:30am-10pm",
+      "sun": "10:30am-9pm"
+    },
+    "vibes": ["upscale", "romantic", "scenic", "classic"],
+    "amenities": ["outdoor-seating", "full-bar", "garden-patio", "parking"],
+    "categories": ["brunch", "food-specials"],
+    "timeOfDay": ["day", "night"],
+    "description": "A gorgeous estate-style restaurant tucked behind lush gardens. Sunday brunch here is a whole experience with live piano and a menu that goes way beyond typical brunch fare. Also great for a special dinner."
+  },
+  {
+    "id": "boynton-inlet-park",
+    "name": "Boynton Beach Inlet Park",
+    "address": "6990 N Ocean Blvd, Ocean Ridge, FL 33435",
+    "phone": "(561) 966-6600",
+    "website": "https://discover.pbcgov.org/parks/Pages/BoyntonInlet.aspx",
+    "instagram": null,
+    "hours": {
+      "mon": "sunrise-sunset",
+      "tue": "sunrise-sunset",
+      "wed": "sunrise-sunset",
+      "thu": "sunrise-sunset",
+      "fri": "sunrise-sunset",
+      "sat": "sunrise-sunset",
+      "sun": "sunrise-sunset"
+    },
+    "vibes": ["scenic", "chill", "active", "family-friendly"],
+    "amenities": ["parking", "restrooms", "fishing", "beach-access"],
+    "categories": ["beach-sports", "water-sports", "parks"],
+    "timeOfDay": ["day"],
+    "description": "One of the best spots in South Florida to watch the boats come in and out. Great for fishing, snorkeling, or just sitting on the jetty. The current can be strong so be careful swimming, but the water clarity is unreal."
+  },
+  {
+    "id": "oceanfront-park",
+    "name": "Oceanfront Park",
+    "address": "6415 N Ocean Blvd, Ocean Ridge, FL 33435",
+    "phone": "(561) 742-6650",
+    "website": "https://www.boynton-beach.org/oceanfront-park",
+    "instagram": null,
+    "hours": {
+      "mon": "sunrise-sunset",
+      "tue": "sunrise-sunset",
+      "wed": "sunrise-sunset",
+      "thu": "sunrise-sunset",
+      "fri": "sunrise-sunset",
+      "sat": "sunrise-sunset",
+      "sun": "sunrise-sunset"
+    },
+    "vibes": ["family-friendly", "scenic", "chill", "active"],
+    "amenities": ["parking", "restrooms", "playground", "picnic-tables", "lifeguards", "volleyball-courts"],
+    "categories": ["beach-sports", "parks"],
+    "timeOfDay": ["day"],
+    "description": "Boynton's main beach park with volleyball courts, a playground, and plenty of space to spread out. Less crowded than Delray's beach and the parking is way easier. Locals know this is the move on weekends."
+  },
+  {
+    "id": "loxahatchee-wildlife-refuge",
+    "name": "Arthur R. Marshall Loxahatchee National Wildlife Refuge",
+    "address": "10216 Lee Rd, Boynton Beach, FL 33473",
+    "phone": "(561) 734-8303",
+    "website": "https://www.fws.gov/refuge/arm-loxahatchee",
+    "instagram": null,
+    "hours": {
+      "mon": "sunrise-sunset",
+      "tue": "sunrise-sunset",
+      "wed": "sunrise-sunset",
+      "thu": "sunrise-sunset",
+      "fri": "sunrise-sunset",
+      "sat": "sunrise-sunset",
+      "sun": "sunrise-sunset"
+    },
+    "vibes": ["scenic", "chill", "solo-friendly", "adventurous"],
+    "amenities": ["parking", "restrooms", "boardwalk", "kayak-launch", "trails"],
+    "categories": ["hiking", "water-sports", "parks"],
+    "timeOfDay": ["day"],
+    "description": "Over 140,000 acres of Everglades habitat right in Boynton's backyard. The boardwalk trail is easy and full of gators, birds, and turtles. You can also kayak the canals if you want to get deeper in. $5 entry per car and worth every penny."
+  },
+  {
+    "id": "boynton-green-market",
+    "name": "Boynton Beach Green Market",
+    "address": "129 E Ocean Ave, Boynton Beach, FL 33435",
+    "phone": "(561) 742-6010",
+    "website": "https://www.boynton-beach.org/greenmarket",
+    "instagram": null,
+    "hours": {
+      "sat": "9am-2pm"
+    },
+    "vibes": ["social", "family-friendly", "dog-friendly"],
+    "amenities": ["food-vendors", "live-music", "pet-friendly", "parking"],
+    "categories": ["markets"],
+    "timeOfDay": ["day"],
+    "description": "Every Saturday morning on Ocean Ave from October to May. Local produce, fresh bread, homemade sauces, and live music. Smaller than Delray's market but that's part of the charm. Feels like a real neighborhood thing."
+  },
+  {
+    "id": "intracoastal-paddle-boynton",
+    "name": "Boynton Beach Paddle Sports",
+    "address": "735 Casa Loma Blvd, Boynton Beach, FL 33435",
+    "phone": "(561) 301-8944",
+    "website": "https://boyntonbeachpaddlesports.com",
+    "instagram": null,
+    "hours": {
+      "mon": "8am-5pm",
+      "tue": "8am-5pm",
+      "wed": "8am-5pm",
+      "thu": "8am-5pm",
+      "fri": "8am-5pm",
+      "sat": "8am-5pm",
+      "sun": "8am-5pm"
+    },
+    "vibes": ["active", "adventurous", "scenic", "chill"],
+    "amenities": ["rentals", "lessons", "parking"],
+    "categories": ["water-sports"],
+    "timeOfDay": ["day"],
+    "description": "Kayak and paddleboard rentals right on the Intracoastal near the marina. Morning paddles are best when the water is glass. They also do guided mangrove tours which are surprisingly cool."
+  }
+]

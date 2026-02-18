@@ -1,0 +1,260 @@
+[
+  {
+    "id": "bennys-on-the-beach",
+    "name": "Benny's on the Beach",
+    "address": "10 S Ocean Blvd, Lake Worth Beach, FL 33460",
+    "phone": "(561) 582-9001",
+    "website": "https://bennysonthebeach.com",
+    "instagram": "@bennysonthebeach",
+    "hours": {
+      "mon": "7am-10pm",
+      "tue": "7am-10pm",
+      "wed": "7am-10pm",
+      "thu": "7am-10pm",
+      "fri": "7am-11pm",
+      "sat": "7am-11pm",
+      "sun": "7am-10pm"
+    },
+    "vibes": ["beachfront", "casual", "group-friendly", "scenic"],
+    "amenities": ["outdoor-seating", "full-bar", "ocean-view", "parking"],
+    "categories": ["happy-hour", "brunch", "live-music"],
+    "timeOfDay": ["day", "night"],
+    "description": "Right on the Lake Worth pier with your feet practically in the sand. Benny's does breakfast, lunch, dinner, and everything in between. The fish tacos are the real deal and watching the surfers from the patio never gets old."
+  },
+  {
+    "id": "the-cottage-lw",
+    "name": "The Cottage",
+    "address": "614 Lucerne Ave, Lake Worth Beach, FL 33460",
+    "phone": "(561) 533-4225",
+    "website": "https://thecottagelakeworth.com",
+    "instagram": "@thecottagelakeworth",
+    "hours": {
+      "mon": "Closed",
+      "tue": "5pm-10pm",
+      "wed": "5pm-10pm",
+      "thu": "5pm-10pm",
+      "fri": "5pm-11pm",
+      "sat": "5pm-11pm",
+      "sun": "10:30am-3pm"
+    },
+    "vibes": ["upscale-casual", "date-night", "trendy", "foodie"],
+    "amenities": ["outdoor-seating", "full-bar", "craft-cocktails"],
+    "categories": ["happy-hour", "food-specials", "brunch"],
+    "timeOfDay": ["night"],
+    "description": "Farm-to-table dining in a restored cottage on Lucerne Ave. The menu changes seasonally and the cocktails are made with intention. Sunday brunch is worth the wait. This place put Lake Worth on the foodie map."
+  },
+  {
+    "id": "propaganda",
+    "name": "Propaganda",
+    "address": "6 S J St, Lake Worth Beach, FL 33460",
+    "phone": "(561) 557-3297",
+    "website": null,
+    "instagram": "@propagandalw",
+    "hours": {
+      "mon": "Closed",
+      "tue": "Closed",
+      "wed": "8pm-2am",
+      "thu": "8pm-2am",
+      "fri": "8pm-2am",
+      "sat": "8pm-2am",
+      "sun": "Closed"
+    },
+    "vibes": ["artsy", "eclectic", "dance", "late-night"],
+    "amenities": ["full-bar", "dj-booth", "patio"],
+    "categories": ["dj", "live-music"],
+    "timeOfDay": ["night"],
+    "description": "Lake Worth's underground art bar and dance spot. Propaganda has rotating DJs, themed nights, and the kind of crowd that came to dance, not pose. The vibe is creative, weird in the best way, and completely unpretentious."
+  },
+  {
+    "id": "bamboo-room",
+    "name": "Bamboo Room",
+    "address": "25 S J St, Lake Worth Beach, FL 33460",
+    "phone": "(561) 585-2583",
+    "website": "https://bambooroomlive.com",
+    "instagram": "@bambooroomlive",
+    "hours": {
+      "mon": "Closed",
+      "tue": "Closed",
+      "wed": "7pm-12am",
+      "thu": "7pm-12am",
+      "fri": "7pm-2am",
+      "sat": "7pm-2am",
+      "sun": "Closed"
+    },
+    "vibes": ["intimate", "eclectic", "artsy", "local"],
+    "amenities": ["full-bar", "live-stage"],
+    "categories": ["live-music"],
+    "timeOfDay": ["night"],
+    "description": "One of the best small live music venues in South Florida. The Bamboo Room books blues, rock, jazz, and everything in between. The sound is great, the room is intimate, and you're never more than 20 feet from the stage."
+  },
+  {
+    "id": "boatyard",
+    "name": "Boatyard",
+    "address": "700 Casa Loma Blvd, Boynton Beach, FL 33435",
+    "phone": "(561) 508-7108",
+    "website": "https://boatyardwpb.com",
+    "instagram": "@boatyardwpb",
+    "hours": {
+      "mon": "11am-10pm",
+      "tue": "11am-10pm",
+      "wed": "11am-10pm",
+      "thu": "11am-10pm",
+      "fri": "11am-11pm",
+      "sat": "11am-11pm",
+      "sun": "10am-10pm"
+    },
+    "vibes": ["waterfront", "group-friendly", "casual", "scenic"],
+    "amenities": ["outdoor-seating", "full-bar", "waterfront", "parking"],
+    "categories": ["happy-hour", "food-specials"],
+    "timeOfDay": ["day", "night"],
+    "description": "Waterfront spot with a great raw bar and the kind of sunset views that make you pull out your phone. The whole fried snapper is their signature and it's as good as everyone says. Solid happy hour too."
+  },
+  {
+    "id": "the-butcher-shop-lw",
+    "name": "The Butcher Shop Beer Garden & Grill",
+    "address": "209 6th Ave S, Lake Worth Beach, FL 33460",
+    "phone": "(561) 632-4644",
+    "website": "https://thebutchershopbeergarden.com",
+    "instagram": "@butchershopbeergarden",
+    "hours": {
+      "mon": "12pm-10pm",
+      "tue": "12pm-10pm",
+      "wed": "12pm-10pm",
+      "thu": "12pm-10pm",
+      "fri": "12pm-12am",
+      "sat": "12pm-12am",
+      "sun": "12pm-10pm"
+    },
+    "vibes": ["casual", "group-friendly", "dog-friendly", "outdoor"],
+    "amenities": ["outdoor-seating", "full-bar", "pet-friendly", "live-stage"],
+    "categories": ["live-music", "happy-hour", "trivia"],
+    "timeOfDay": ["day", "night"],
+    "description": "A beer garden with a huge outdoor space, solid burgers, and a vibe that's half backyard BBQ, half neighborhood bar. Dogs are welcome, there's live music on weekends, and trivia nights pack the place midweek."
+  },
+  {
+    "id": "lake-worth-beach-municipal",
+    "name": "Lake Worth Beach",
+    "address": "10 S Ocean Blvd, Lake Worth Beach, FL 33460",
+    "phone": "(561) 533-7395",
+    "website": "https://lakeworthbeachfl.gov/beach",
+    "instagram": null,
+    "hours": {
+      "mon": "sunrise-sunset",
+      "tue": "sunrise-sunset",
+      "wed": "sunrise-sunset",
+      "thu": "sunrise-sunset",
+      "fri": "sunrise-sunset",
+      "sat": "sunrise-sunset",
+      "sun": "sunrise-sunset"
+    },
+    "vibes": ["scenic", "chill", "active", "family-friendly"],
+    "amenities": ["parking", "restrooms", "showers", "lifeguards", "fishing-pier"],
+    "categories": ["beach-sports", "water-sports"],
+    "timeOfDay": ["day"],
+    "description": "The municipal beach has a great pier for fishing and people-watching, and the surf here is some of the most consistent in Palm Beach County. The parking lot fills up on weekends so come early. Simple, beautiful, and not overrun with tourists."
+  },
+  {
+    "id": "snook-islands",
+    "name": "Snook Islands Natural Area",
+    "address": "1400 Lake Worth Rd, Lake Worth Beach, FL 33460",
+    "phone": "(561) 966-6600",
+    "website": "https://discover.pbcgov.org/parks/Pages/SnookIslands.aspx",
+    "instagram": null,
+    "hours": {
+      "mon": "sunrise-sunset",
+      "tue": "sunrise-sunset",
+      "wed": "sunrise-sunset",
+      "thu": "sunrise-sunset",
+      "fri": "sunrise-sunset",
+      "sat": "sunrise-sunset",
+      "sun": "sunrise-sunset"
+    },
+    "vibes": ["scenic", "chill", "solo-friendly"],
+    "amenities": ["parking", "boardwalk", "kayak-launch", "free-admission"],
+    "categories": ["hiking", "water-sports", "parks"],
+    "timeOfDay": ["day"],
+    "description": "A beautiful natural area on the Intracoastal with a boardwalk through mangroves and a kayak launch. Great birding, super peaceful, and you might see manatees in the winter. One of the most underrated spots in Lake Worth."
+  },
+  {
+    "id": "bryant-park-lw",
+    "name": "Bryant Park",
+    "address": "30 S Golfview Rd, Lake Worth Beach, FL 33460",
+    "phone": "(561) 586-1600",
+    "website": "https://lakeworthbeachfl.gov/parks-recreation",
+    "instagram": null,
+    "hours": {
+      "mon": "7am-9pm",
+      "tue": "7am-9pm",
+      "wed": "7am-9pm",
+      "thu": "7am-9pm",
+      "fri": "7am-9pm",
+      "sat": "7am-9pm",
+      "sun": "7am-9pm"
+    },
+    "vibes": ["family-friendly", "active", "social", "scenic"],
+    "amenities": ["playground", "basketball-courts", "picnic-tables", "restrooms", "parking", "amphitheater"],
+    "categories": ["parks", "fitness"],
+    "timeOfDay": ["day"],
+    "description": "Lake Worth's central park right on the Intracoastal with a playground, amphitheater, and open green space. They host outdoor concerts and events here regularly. Great for a morning run or an afternoon with the family."
+  },
+  {
+    "id": "lake-worth-farmers-market",
+    "name": "Lake Worth Farmers Market",
+    "address": "1 S J St, Lake Worth Beach, FL 33460",
+    "phone": "(561) 547-3100",
+    "website": "https://lakeworthfarmersmarket.com",
+    "instagram": "@lakeworthfarmersmarket",
+    "hours": {
+      "sat": "9am-1pm"
+    },
+    "vibes": ["social", "family-friendly", "dog-friendly", "artsy"],
+    "amenities": ["food-vendors", "live-music", "pet-friendly"],
+    "categories": ["markets"],
+    "timeOfDay": ["day"],
+    "description": "Every Saturday morning in Old Bridge Park on the Intracoastal. It's got the usual produce and baked goods but also a solid lineup of artisan vendors, handmade stuff, and usually a musician or two. Very Lake Worth."
+  },
+  {
+    "id": "cultural-council-pbcounty",
+    "name": "Cultural Council for Palm Beach County",
+    "address": "601 Lake Ave, Lake Worth Beach, FL 33460",
+    "phone": "(561) 471-2901",
+    "website": "https://palmbeachculture.com",
+    "instagram": "@palmbeachculture",
+    "hours": {
+      "mon": "Closed",
+      "tue": "10am-5pm",
+      "wed": "10am-5pm",
+      "thu": "10am-5pm",
+      "fri": "10am-5pm",
+      "sat": "10am-5pm",
+      "sun": "Closed"
+    },
+    "vibes": ["artsy", "chill", "solo-friendly"],
+    "amenities": ["free-admission", "galleries", "gift-shop"],
+    "categories": ["art-culture"],
+    "timeOfDay": ["day"],
+    "description": "Free art gallery right on Lake Ave that rotates exhibits from local Palm Beach County artists. Small but always has something interesting. A nice stop before or after lunch downtown."
+  },
+  {
+    "id": "benzaiten-center",
+    "name": "Benzaiten Center for Creative Arts",
+    "address": "1105 2nd Ave N, Lake Worth Beach, FL 33460",
+    "phone": "(561) 508-7315",
+    "website": "https://benzaitencenter.org",
+    "instagram": "@benzaitencenter",
+    "hours": {
+      "mon": "Closed",
+      "tue": "10am-5pm",
+      "wed": "10am-5pm",
+      "thu": "10am-5pm",
+      "fri": "10am-5pm",
+      "sat": "10am-4pm",
+      "sun": "Closed"
+    },
+    "vibes": ["artsy", "creative", "solo-friendly"],
+    "amenities": ["galleries", "workshops", "parking"],
+    "categories": ["art-culture"],
+    "timeOfDay": ["day"],
+    "description": "A glass art studio and gallery where you can take glassblowing classes or just watch the artists work. The gallery has stunning pieces and the workshops are legit hands-on. Totally unique experience for Lake Worth."
+  }
+]

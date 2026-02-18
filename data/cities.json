@@ -1,0 +1,42 @@
+[
+  {
+    "id": "delray-beach",
+    "name": "Delray Beach",
+    "shortName": "Delray",
+    "tagline": "Your guide to what's happening in Delray Beach",
+    "coordinates": { "lat": 26.4615, "lng": -80.0728 },
+    "active": true
+  },
+  {
+    "id": "boca-raton",
+    "name": "Boca Raton",
+    "shortName": "Boca",
+    "tagline": "Your guide to what's happening in Boca Raton",
+    "coordinates": { "lat": 26.3683, "lng": -80.1289 },
+    "active": true
+  },
+  {
+    "id": "boynton-beach",
+    "name": "Boynton Beach",
+    "shortName": "Boynton",
+    "tagline": "Your guide to what's happening in Boynton Beach",
+    "coordinates": { "lat": 26.5254, "lng": -80.0664 },
+    "active": true
+  },
+  {
+    "id": "lake-worth-beach",
+    "name": "Lake Worth Beach",
+    "shortName": "Lake Worth",
+    "tagline": "Your guide to what's happening in Lake Worth Beach",
+    "coordinates": { "lat": 26.6168, "lng": -80.0557 },
+    "active": true
+  },
+  {
+    "id": "west-palm-beach",
+    "name": "West Palm Beach",
+    "shortName": "West Palm",
+    "tagline": "Your guide to what's happening in West Palm Beach",
+    "coordinates": { "lat": 26.7153, "lng": -80.0534 },
+    "active": true
+  }
+]

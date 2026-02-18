@@ -1,0 +1,13 @@
+{
+  "name": "the-active-owl",
+  "version": "1.0.0",
+  "description": "Day and night activity finder for South Florida",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
