@@ -157,10 +157,20 @@ a:hover { opacity: 0.85; }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4px, -4px); }
 
+.nav-links {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
 @media (max-width: 599px) {
   .hamburger { display: flex; }
   .nav-links {
-    display: none;
+    display: none !important;
     position: absolute;
     top: 100%;
     left: 0;
@@ -171,18 +181,8 @@ a:hover { opacity: 0.85; }
     padding: 8px 16px 16px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   }
-  .nav-links.open { display: flex; }
+  .nav-links.open { display: flex !important; }
   .nav-links a { padding: 12px 0; }
-}
-
-.nav-links {
-  display: flex;
-  gap: 4px;
-  flex: 1;
-  min-width: 0;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
 }
 .nav-links::-webkit-scrollbar { display: none; }
 
