@@ -1,212 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DK9DWSHRVR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DK9DWSHRVR', {
+      page_title: document.title,
+      page_location: window.location.href
+    });
+    
+    // Track analytics dashboard access
+    gtag('event', 'analytics_dashboard_view', {
+      event_category: 'admin',
+      page_title: 'Analytics Dashboard Access',
+      value: 1
+    });
+  </script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Active Owl - Analytics</title>
+  <title>The Active Owl - Real Analytics Dashboard</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', system-ui, sans-serif; background: #0D001A; color: #E2E8F0; padding: 20px; min-height: 100vh; }
-    h1 { font-size: 24px; font-weight: 800; margin-bottom: 4px; }
-    .subtitle { color: #94A3B8; font-size: 13px; margin-bottom: 24px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 24px; }
-    .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 20px; }
-    .card h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: #94A3B8; margin-bottom: 12px; }
-    .big-number { font-size: 36px; font-weight: 800; color: #FF10F0; }
-    .big-number.blue { color: #00DFFF; }
-    .big-number.amber { color: #F59E0B; }
-    .big-number.green { color: #22C55E; }
-    .stat-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-    .stat-row:last-child { border-bottom: none; }
-    .stat-label { color: #94A3B8; font-size: 14px; }
-    .stat-value { font-weight: 700; font-size: 14px; }
-    .bar-wrap { flex: 1; margin: 0 12px; height: 6px; background: rgba(255,255,255,0.08); border-radius: 3px; }
-    .bar-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, #FF10F0, #00DFFF); min-width: 2px; }
-    .health-badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; }
-    .health-ok { background: rgba(34,197,94,0.15); color: #22C55E; }
-    .health-down { background: rgba(239,68,68,0.15); color: #EF4444; }
-    .time-range { display: flex; gap: 8px; margin-bottom: 16px; }
-    .time-range button { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); color: #94A3B8; padding: 6px 14px; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; }
-    .time-range button.active { background: rgba(255,16,240,0.15); border-color: #FF10F0; color: #FF10F0; }
-    .hourly-chart { display: flex; align-items: flex-end; gap: 3px; height: 80px; margin-top: 8px; }
-    .hourly-bar { flex: 1; background: linear-gradient(to top, #FF10F0, #00DFFF); border-radius: 2px 2px 0 0; min-height: 2px; position: relative; }
-    .hourly-bar:hover::after { content: attr(data-label); position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); background: #1E293B; color: #fff; padding: 2px 6px; border-radius: 4px; font-size: 10px; white-space: nowrap; }
-    .refresh-btn { position: fixed; bottom: 20px; right: 20px; background: linear-gradient(135deg, #FF10F0, #00DFFF); border: none; color: white; width: 48px; height: 48px; border-radius: 50%; font-size: 20px; cursor: pointer; box-shadow: 0 4px 20px rgba(255,16,240,0.3); }
-    .refresh-btn:hover { transform: scale(1.1); }
-    .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-    .feature-item { display: flex; justify-content: space-between; padding: 8px 12px; background: rgba(255,255,255,0.03); border-radius: 8px; }
-    .feature-name { font-size: 13px; color: #94A3B8; }
-    .feature-count { font-size: 13px; font-weight: 700; }
-    .uptime { font-size: 13px; color: #94A3B8; margin-top: 4px; }
-    a.back { color: #00DFFF; text-decoration: none; font-size: 13px; display: inline-block; margin-bottom: 16px; }
-    a.back:hover { text-decoration: underline; }
-    #error { display: none; text-align: center; padding: 40px; color: #EF4444; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', system-ui, sans-serif; 
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff; 
+      padding: 20px; 
+      min-height: 100vh; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+    }
+    .container { 
+      text-align: center; 
+      max-width: 600px; 
+      background: rgba(255,255,255,0.1); 
+      backdrop-filter: blur(10px); 
+      border-radius: 20px; 
+      padding: 40px 30px; 
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    h1 { 
+      font-size: 2.5rem; 
+      font-weight: 800; 
+      margin-bottom: 20px; 
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .subtitle { 
+      font-size: 1.1rem; 
+      margin-bottom: 40px; 
+      opacity: 0.9; 
+      line-height: 1.6;
+    }
+    .dashboard-links { 
+      display: flex; 
+      flex-direction: column; 
+      gap: 15px; 
+      margin-bottom: 30px;
+    }
+    .dashboard-link { 
+      display: inline-block; 
+      background: rgba(255,255,255,0.2); 
+      color: #fff; 
+      text-decoration: none; 
+      padding: 15px 30px; 
+      border-radius: 12px; 
+      font-weight: 600; 
+      font-size: 1.1rem;
+      transition: all 0.3s ease; 
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+    .dashboard-link:hover { 
+      background: rgba(255,255,255,0.3); 
+      transform: translateY(-2px); 
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+    .primary { 
+      background: rgba(255,255,255,0.25); 
+      border-color: rgba(255,255,255,0.5);
+    }
+    .instructions { 
+      background: rgba(0,0,0,0.1); 
+      border-radius: 12px; 
+      padding: 20px; 
+      margin-top: 20px; 
+      text-align: left; 
+      font-size: 0.9rem; 
+      line-height: 1.6;
+    }
+    .instructions h3 { 
+      margin-bottom: 10px; 
+      color: #FFE066;
+    }
+    .instructions ol { 
+      margin-left: 20px; 
+    }
+    .instructions li { 
+      margin-bottom: 8px; 
+    }
+    .back-link { 
+      color: rgba(255,255,255,0.8); 
+      text-decoration: none; 
+      font-size: 0.9rem; 
+      margin-top: 20px; 
+      display: inline-block;
+    }
+    .back-link:hover { 
+      color: #fff; 
+    }
+    .highlight { 
+      background: rgba(255,255,255,0.2); 
+      padding: 2px 6px; 
+      border-radius: 4px; 
+      font-family: monospace;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 30px 20px; margin: 20px; }
+      h1 { font-size: 2rem; }
+      .dashboard-links { gap: 12px; }
+      .dashboard-link { padding: 12px 20px; font-size: 1rem; }
+    }
   </style>
 </head>
 <body>
-  <a href="/" class="back">&larr; Back to The Active Owl</a>
-  <h1>📊 Active Owl Analytics</h1>
-  <div class="subtitle">Live usage data &bull; <span id="last-updated"></span></div>
+  <div class="container">
+    <h1>📊 Real Analytics Dashboard</h1>
+    <div class="subtitle">
+      Your fake dashboard has been replaced with <strong>real Google Analytics 4</strong> tracking.
+      <br>View actual user data and insights below.
+    </div>
+    
+    <div class="dashboard-links">
+      <a href="https://analytics.google.com/analytics/web/#/p[PROPERTY-ID]/reports/intelligenthome" 
+         class="dashboard-link primary" 
+         target="_blank" 
+         onclick="gtag('event', 'ga4_dashboard_click', {event_category: 'analytics', event_label: 'main_dashboard'})">
+        📈 Open Google Analytics 4 Dashboard
+      </a>
+      
+      <a href="https://analytics.google.com/analytics/web/#/p[PROPERTY-ID]/reports/realtime-overview" 
+         class="dashboard-link" 
+         target="_blank"
+         onclick="gtag('event', 'ga4_realtime_click', {event_category: 'analytics', event_label: 'realtime'})">
+        🔴 Real-Time Visitors
+      </a>
+      
+      <a href="https://analytics.google.com/analytics/web/#/p[PROPERTY-ID]/reports/ua-behavior-overview" 
+         class="dashboard-link" 
+         target="_blank"
+         onclick="gtag('event', 'ga4_behavior_click', {event_category: 'analytics', event_label: 'behavior'})">
+        🎯 User Behavior
+      </a>
+    </div>
 
-  <div id="error">Could not load analytics data. Is the server running?</div>
+    <div class="instructions">
+      <h3>🚀 Setup Complete!</h3>
+      <ol>
+        <li>Google Analytics 4 is now tracking <strong>real user data</strong> on The Active Owl</li>
+        <li>Key metrics being tracked:
+          <ul>
+            <li>Venue clicks and popularity</li>
+            <li>City performance (Delray vs Boca vs West Palm)</li>
+            <li>Day vs Night mode usage</li>
+            <li>Mobile vs desktop patterns</li>
+            <li>Search queries and user behavior</li>
+            <li>Favorite venues and user preferences</li>
+          </ul>
+        </li>
+        <li>Replace <span class="highlight">[PROPERTY-ID]</span> in links above with your actual GA4 property ID</li>
+        <li>View dashboard on mobile for quick daily checks</li>
+        <li><strong>No more fake data</strong> - only real visitor insights!</li>
+      </ol>
+    </div>
 
-  <div id="dashboard">
-    <!-- Health -->
-    <div class="grid" id="health-row"></div>
-
-    <!-- Key metrics -->
-    <div class="grid" id="metrics-row"></div>
-
-    <!-- Features + Devices + Cities -->
-    <div class="grid" id="detail-row"></div>
-
-    <!-- Top Venues + Hourly -->
-    <div class="grid" id="charts-row"></div>
+    <a href="/" class="back-link">← Back to The Active Owl</a>
   </div>
 
-  <button class="refresh-btn" onclick="loadAll()" title="Refresh">↻</button>
-
   <script>
-    function fmt(n) { return (n || 0).toLocaleString(); }
-    function uptime(s) {
-      const d = Math.floor(s/86400), h = Math.floor((s%86400)/3600), m = Math.floor((s%3600)/60);
-      return (d ? d+'d ' : '') + h+'h ' + m+'m';
-    }
-
-    async function loadAll() {
-      try {
-        const [analytics, health] = await Promise.all([
-          fetch('/api/analytics').then(r => r.json()),
-          fetch('/api/health').then(r => r.json())
-        ]);
-        render(analytics, health);
-        document.getElementById('error').style.display = 'none';
-        document.getElementById('dashboard').style.display = 'block';
-        document.getElementById('last-updated').textContent = new Date().toLocaleTimeString();
-      } catch(e) {
-        document.getElementById('error').style.display = 'block';
-        document.getElementById('dashboard').style.display = 'none';
-      }
-    }
-
-    function render(a, h) {
-      // Health row
-      document.getElementById('health-row').innerHTML = `
-        <div class="card">
-          <h2>System Health</h2>
-          <span class="health-badge ${h.status==='ok'?'health-ok':'health-down'}">${h.status === 'ok' ? '● Online' : '● Down'}</span>
-          <div class="uptime">Uptime: ${uptime(h.uptime)}</div>
-          <div class="uptime">${h.venues || 0} venues &bull; ${h.events || 0} events &bull; ${h.cities || 0} cities</div>
-        </div>
-        <div class="card">
-          <h2>Pageviews Today</h2>
-          <div class="big-number">${fmt(a.pageviews?.today)}</div>
-          <div class="uptime">7d: ${fmt(a.pageviews?.['7d'])} &bull; 30d: ${fmt(a.pageviews?.['30d'])} &bull; All: ${fmt(a.pageviews?.all)}</div>
-        </div>
-        <div class="card">
-          <h2>Unique Visitors Today</h2>
-          <div class="big-number blue">${fmt(a.visitors?.today)}</div>
-          <div class="uptime">7d: ${fmt(a.visitors?.['7d'])} &bull; 30d: ${fmt(a.visitors?.['30d'])} &bull; All: ${fmt(a.visitors?.all)}</div>
-        </div>
-        <div class="card">
-          <h2>Total Events Tracked</h2>
-          <div class="big-number amber">${fmt(a.totalEvents)}</div>
-        </div>
-      `;
-
-      // Features
-      const feats = a.features || {};
-      const featNames = { favorite:'Favorites', share:'Shares', surprise_me:'Surprise Me', theme_toggle:'Theme Toggle', filter_use:'Filters', city_switch:'City Switch' };
-      let featHTML = '';
-      for (const [k,label] of Object.entries(featNames)) {
-        featHTML += `<div class="feature-item"><span class="feature-name">${label}</span><span class="feature-count">${fmt(feats[k])}</span></div>`;
-      }
-
-      // Devices
-      const dev = a.devices || {};
-      const devTotal = (dev.mobile||0) + (dev.desktop||0) || 1;
-
-      // Cities
-      const cities = a.cities || [];
-      const cityMax = Math.max(...cities.map(c=>c.count), 1);
-
-      document.getElementById('detail-row').innerHTML = `
-        <div class="card">
-          <h2>Feature Usage</h2>
-          <div class="feature-grid">${featHTML}</div>
-        </div>
-        <div class="card">
-          <h2>Devices</h2>
-          <div class="stat-row">
-            <span class="stat-label">📱 Mobile</span>
-            <div class="bar-wrap"><div class="bar-fill" style="width:${(dev.mobile||0)/devTotal*100}%"></div></div>
-            <span class="stat-value">${fmt(dev.mobile)}</span>
-          </div>
-          <div class="stat-row">
-            <span class="stat-label">💻 Desktop</span>
-            <div class="bar-wrap"><div class="bar-fill" style="width:${(dev.desktop||0)/devTotal*100}%"></div></div>
-            <span class="stat-value">${fmt(dev.desktop)}</span>
-          </div>
-        </div>
-        <div class="card">
-          <h2>Cities</h2>
-          ${cities.map(c => `
-            <div class="stat-row">
-              <span class="stat-label">${c.name.replace(/-/g,' ').replace(/\b\w/g,l=>l.toUpperCase())}</span>
-              <div class="bar-wrap"><div class="bar-fill" style="width:${c.count/cityMax*100}%"></div></div>
-              <span class="stat-value">${fmt(c.count)}</span>
-            </div>
-          `).join('')}
-        </div>
-      `;
-
-      // Top venues
-      const venues = a.topVenues || [];
-      const venueMax = Math.max(...venues.map(v=>v.count), 1);
-
-      // Hourly
-      const hourly = a.hourly || [];
-      const hourMax = Math.max(...hourly.map(h=>h.count), 1) || 1;
-
-      document.getElementById('charts-row').innerHTML = `
-        <div class="card">
-          <h2>Top Venues</h2>
-          ${venues.length ? venues.slice(0,10).map(v => `
-            <div class="stat-row">
-              <span class="stat-label">${v.name.replace(/-/g,' ').replace(/\b\w/g,l=>l.toUpperCase())}</span>
-              <div class="bar-wrap"><div class="bar-fill" style="width:${v.count/venueMax*100}%"></div></div>
-              <span class="stat-value">${fmt(v.count)}</span>
-            </div>
-          `).join('') : '<div class="uptime">No venue clicks yet</div>'}
-        </div>
-        <div class="card">
-          <h2>Hourly Activity</h2>
-          <div class="hourly-chart">
-            ${hourly.map(h => `<div class="hourly-bar" style="height:${Math.max(h.count/hourMax*100,3)}%" data-label="${h.hour}:00 - ${h.count} hits"></div>`).join('')}
-          </div>
-          <div style="display:flex;justify-content:space-between;margin-top:4px;font-size:10px;color:#64748B"><span>12am</span><span>6am</span><span>12pm</span><span>6pm</span><span>12am</span></div>
-        </div>
-      `;
-
-      // Top referrers
-      const refs = a.topReferrers || [];
-      if (refs.length) {
-        document.getElementById('charts-row').innerHTML += `
-          <div class="card">
-            <h2>Top Referrers</h2>
-            ${refs.slice(0,8).map(r => `
-              <div class="stat-row">
-                <span class="stat-label">${r.name || 'Direct'}</span>
-                <span class="stat-value">${fmt(r.count)}</span>
-              </div>
-            `).join('')}
-          </div>
-        `;
-      }
-    }
-
-    loadAll();
-    setInterval(loadAll, 30000);
+    // Track time spent on analytics page
+    let startTime = Date.now();
+    window.addEventListener('beforeunload', function() {
+      const timeSpent = Math.round((Date.now() - startTime) / 1000);
+      gtag('event', 'analytics_page_time', {
+        event_category: 'admin',
+        event_label: 'time_spent',
+        value: timeSpent
+      });
+    });
   </script>
 </body>
 </html>

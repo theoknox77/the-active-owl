@@ -108,6 +108,7 @@ applyMode(detectMode());
 // ANALYTICS
 // ============================
 function track(event, data) {
+  // Existing internal tracking
   const payload = JSON.stringify({
     event, page: window.location.hash || '#/',
     venue: (data && data.venue) || '', city: currentCity || 'delray-beach', meta: data || {}
@@ -116,6 +117,66 @@ function track(event, data) {
     navigator.sendBeacon('/api/track', new Blob([payload], { type: 'application/json' }));
   } else {
     fetch('/api/track', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: payload }).catch(() => {});
+  }
+  
+  // Google Analytics 4 tracking
+  if (typeof gtag !== 'undefined') {
+    const eventData = data || {};
+    
+    switch(event) {
+      case 'venue_click':
+        trackVenueClick(eventData.venue || '', currentCity, eventData.category || '');
+        break;
+      case 'city_switch':
+        trackCityFilter(eventData.city || currentCity);
+        break;
+      case 'mode_switch':
+        trackModeToggle(eventData.mode || currentMode);
+        break;
+      case 'favorite':
+        const action = getFavorites().includes(eventData.venue) ? 'remove' : 'add';
+        trackFavoriteAction(action, eventData.venue || '');
+        break;
+      case 'filter_use':
+        if (eventData.search) {
+          trackSearchQuery(eventData.search);
+        }
+        break;
+      case 'surprise_me':
+        gtag('event', 'surprise_me_click', {
+          event_category: 'ui_interaction',
+          event_label: 'surprise_button',
+          custom_parameter_1: currentCity,
+          custom_parameter_2: currentMode,
+          value: 1
+        });
+        break;
+      case 'share':
+        gtag('event', 'share', {
+          event_category: 'social_engagement',
+          event_label: eventData.venue || 'unknown',
+          method: 'native_share',
+          content_type: 'venue',
+          value: 1
+        });
+        break;
+      case 'pageview':
+        gtag('event', 'page_view', {
+          page_title: document.title,
+          page_location: window.location.href,
+          custom_parameter_1: currentCity,
+          custom_parameter_2: currentMode,
+          page_type: eventData.page || 'unknown'
+        });
+        break;
+      default:
+        gtag('event', event, {
+          event_category: 'general',
+          custom_parameter_1: currentCity,
+          custom_parameter_2: currentMode,
+          ...eventData
+        });
+    }
   }
 }
 

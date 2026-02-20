@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DK9DWSHRVR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DK9DWSHRVR', {
+      page_title: document.title,
+      page_location: window.location.href
+    });
+    
+    // Track page view
+    gtag('event', 'page_view', {
+      page_title: 'Trivia Nights Delray Beach',
+      page_location: window.location.href,
+      content_group: 'city_guide',
+      city: 'delray-beach'
+    });
+  </script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Trivia Nights in Delray Beach (2026) | The Active Owl</title>

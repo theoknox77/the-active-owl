@@ -1,6 +1,77 @@
 <!DOCTYPE html>
 <html lang="en" data-mode="day">
 <head>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DK9DWSHRVR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DK9DWSHRVR', {
+      page_title: document.title,
+      page_location: window.location.href,
+      custom_map: {
+        'custom_parameter_1': 'city_filter',
+        'custom_parameter_2': 'time_mode'
+      }
+    });
+    
+    // Custom event tracking for Active Owl
+    function trackVenueClick(venueName, city, venueType) {
+      gtag('event', 'venue_click', {
+        event_category: 'venue_engagement',
+        event_label: venueName,
+        custom_parameter_1: city,
+        venue_type: venueType,
+        value: 1
+      });
+    }
+    
+    function trackCityFilter(city) {
+      gtag('event', 'city_filter', {
+        event_category: 'navigation',
+        event_label: city,
+        custom_parameter_1: city,
+        value: 1
+      });
+    }
+    
+    function trackModeToggle(mode) {
+      gtag('event', 'mode_toggle', {
+        event_category: 'ui_interaction',
+        event_label: mode,
+        custom_parameter_2: mode,
+        value: 1
+      });
+    }
+    
+    function trackFavoriteAction(action, venueName) {
+      gtag('event', 'favorite_' + action, {
+        event_category: 'user_preference',
+        event_label: venueName,
+        action: action,
+        value: action === 'add' ? 1 : -1
+      });
+    }
+    
+    function trackSearchQuery(query) {
+      gtag('event', 'search', {
+        event_category: 'site_search',
+        search_term: query,
+        value: 1
+      });
+    }
+    
+    function trackEventView(eventName, venueCity) {
+      gtag('event', 'event_view', {
+        event_category: 'content_engagement',
+        event_label: eventName,
+        custom_parameter_1: venueCity,
+        value: 1
+      });
+    }
+  </script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
