@@ -86,9 +86,11 @@ function applyMode(mode) {
   // Update theme-color meta
   const meta = document.querySelector('meta[name="theme-color"]');
   if (meta) meta.content = mode === 'night' ? '#0D001A' : '#FFF8F0';
-  // Update nav/footer labels
+  // Update nav/footer/main labels
   const navLabel = document.getElementById('nav-venues-label');
   if (navLabel) navLabel.textContent = mode === 'night' ? 'Venues' : 'Spots';
+  const mainLabel = document.getElementById('main-venues-label');
+  if (mainLabel) mainLabel.textContent = mode === 'night' ? 'Venues' : 'Spots';
   const footerLabel = document.getElementById('footer-venues-label');
   if (footerLabel) footerLabel.textContent = mode === 'night' ? 'All Venues' : 'All Spots';
 }
@@ -210,8 +212,12 @@ window.toggleFavorite = toggleFavorite;
 
 function updateFavBadge() {
   const count = getFavorites().length;
-  const badge = document.getElementById('nav-fav-badge');
-  if (badge) { badge.textContent = count; badge.style.display = count > 0 ? 'inline-flex' : 'none'; }
+  const navBadge = document.getElementById('nav-fav-badge');
+  const mainBadge = document.getElementById('main-fav-badge');
+  
+  // Update both badges (nav for desktop header, main for below search)
+  if (navBadge) { navBadge.textContent = count; navBadge.style.display = count > 0 ? 'inline-flex' : 'none'; }
+  if (mainBadge) { mainBadge.textContent = count; mainBadge.style.display = count > 0 ? 'inline-flex' : 'none'; }
 }
 
 // ============================
@@ -515,15 +521,28 @@ function renderSearchBar() {
       </button>
     </div>
     <div id="quick-results" class="quick-results hidden"></div>
+    
+    <!-- Navigation Links - moved from hamburger menu -->
+    <div class="main-nav-links">
+      <a href="#/" data-nav="today">Today</a>
+      <a href="#/week" data-nav="week">This Week</a>
+      <a href="#/venues" data-nav="venues" id="main-venues-label">${currentMode === 'night' ? 'Venues' : 'Spots'}</a>
+      <a href="#/submit" data-nav="submit">Submit</a>
+      <a href="#/favorites" data-nav="favorites" class="main-fav-link">&#9829; <span class="main-fav-badge" id="main-fav-badge" style="display:none">0</span></a>
+    </div>
+    
     <div id="advanced-panel" class="advanced-panel ${advancedOpen?'open':''}">
+      <!-- Activities/Events moved to main filter area -->
+      <div class="filter-group filter-activities">
+        <div class="filter-label">${currentMode === 'day' ? 'Activities' : 'Events'}</div>
+        <div class="filter-pills">${cats.map(c => `<button class="fpill ${advancedFilters.categories.includes(c.id)?'active':''}" onclick="toggleFilter('categories','${c.id}')">${c.label}</button>`).join('')}</div>
+      </div>
+      
       <div class="filter-group">
         <div class="filter-label">When?</div>
         <div class="filter-pills">${WHEN_OPTIONS.map(w => `<button class="fpill ${advancedFilters.when===w.id?'active':''}" onclick="setWhen('${w.id}')">${w.label}</button>`).join('')}</div>
       </div>
-      <div class="filter-group">
-        <div class="filter-label">What are you into?</div>
-        <div class="filter-pills">${cats.map(c => `<button class="fpill ${advancedFilters.categories.includes(c.id)?'active':''}" onclick="toggleFilter('categories','${c.id}')">${c.label}</button>`).join('')}</div>
-      </div>
+      
       <div class="filter-group">
         <div class="filter-label">Vibe?</div>
         <div class="filter-pills">${VIBES.map(v => `<button class="fpill ${advancedFilters.vibes.includes(v.id)?'active':''}" onclick="toggleFilter('vibes','${v.id}')">${v.label}</button>`).join('')}</div>
