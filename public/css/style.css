@@ -348,53 +348,6 @@ a:hover { opacity: 0.85; }
 }
 
 /* ============================
-   PILLS / FILTERS
-   ============================ */
-.pills {
-  display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  padding: 0 0 16px;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
-.pills::-webkit-scrollbar { display: none; }
-
-.pill {
-  flex-shrink: 0;
-  padding: 8px 18px;
-  border-radius: var(--radius-pill);
-  border: 1.5px solid var(--border);
-  background: var(--bg);
-  color: var(--text-dim);
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  font-family: inherit;
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-}
-.pill:hover { border-color: var(--accent); color: var(--accent); }
-.pill:active { transform: scale(0.95); }
-.pill.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #FFFFFF;
-}
-
-[data-mode="night"] .pill {
-  border-color: rgba(255,16,240,0.15);
-  background: rgba(26,0,51,0.6);
-}
-[data-mode="night"] .pill:hover { border-color: #00DFFF; color: #00DFFF; }
-[data-mode="night"] .pill.active {
-  background: linear-gradient(135deg, #FF10F0, #B000FF);
-  border-color: #FF10F0;
-  box-shadow: 0 0 15px rgba(255,16,240,0.4);
-}
-
-/* ============================
    EVENT CARDS
    ============================ */
 .event-card {

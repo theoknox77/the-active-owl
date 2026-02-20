@@ -499,11 +499,6 @@ function renderEventCard(evt) {
   </div>`;
 }
 
-function renderPills(selected) {
-  const cats = getCategories();
-  return `<div class="pills">${cats.map(c => `<button class="pill ${c.id===selected?'active':''}" onclick="filterCategory('${c.id}')">${c.label}</button>`).join('')}</div>`;
-}
-
 function getActiveFilterCount() { return advancedFilters.categories.length + advancedFilters.vibes.length + advancedFilters.amenities.length; }
 
 function renderSearchBar() {
@@ -665,7 +660,6 @@ async function renderToday() {
     </div>` : ''}
     ${renderControlBar()}
     ${renderSearchBar()}
-    ${renderPills(currentCategory)}
     <div id="events-list">${content}</div>`;
 }
 
