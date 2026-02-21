@@ -4,7 +4,7 @@ const path = require('path');
 const url = require('url');
 const crypto = require('crypto');
 
-const PORT = 3001;
+const PORT = 3007;
 const DATA_DIR = path.join(__dirname, 'data');
 const PUBLIC_DIR = path.join(__dirname, 'public');
 
@@ -294,7 +294,7 @@ const handler = async (req, res) => {
       });
       return;
     }
-    res.writeHead(200, { 'Content-Type': contentType }); res.end(data);
+    res.writeHead(200, { 'Content-Type': contentType, 'Cache-Control': 'no-cache, no-store, must-revalidate', 'Pragma': 'no-cache', 'Expires': '0' }); res.end(data);
   });
 };
 

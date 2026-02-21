@@ -96,6 +96,9 @@ function applyMode(mode) {
 }
 
 window.setMode = function(mode) {
+  // Get current mode for transition effect
+  const currentModeValue = currentMode;
+  
   track('mode_switch', { mode });
   sessionStorage.setItem('themove-mode', mode);
   applyMode(mode);
@@ -215,9 +218,11 @@ function updateFavBadge() {
   const navBadge = document.getElementById('nav-fav-badge');
   const mainBadge = document.getElementById('main-fav-badge');
   
-  // Update both badges (nav for desktop header, main for below search)
+  const headerBadge = document.getElementById('header-fav-badge');
+  // Update all badges
   if (navBadge) { navBadge.textContent = count; navBadge.style.display = count > 0 ? 'inline-flex' : 'none'; }
   if (mainBadge) { mainBadge.textContent = count; mainBadge.style.display = count > 0 ? 'inline-flex' : 'none'; }
+  if (headerBadge) { headerBadge.textContent = count; headerBadge.style.display = count > 0 ? 'inline' : 'none'; }
 }
 
 // ============================
@@ -237,6 +242,28 @@ function showToast(msg) {
 // ============================
 // SHARE
 // ============================
+function closeWelcome() {
+  const overlay = document.getElementById('welcome-overlay');
+  if (overlay) { overlay.style.opacity = '0'; setTimeout(() => overlay.remove(), 200); }
+  localStorage.setItem('tao-guide-seen', '1');
+}
+
+function showSmartSection(id, btn) {
+  document.querySelectorAll('.smart-section').forEach(s => s.style.display = 'none');
+  const target = document.getElementById('smart-' + id);
+  if (target) target.style.display = 'block';
+  document.querySelectorAll('.smart-pill').forEach(b => {
+    b.style.background = 'transparent';
+    b.style.color = 'var(--accent)';
+    b.classList.remove('active');
+  });
+  if (btn) {
+    btn.style.background = 'var(--accent)';
+    btn.style.color = '#fff';
+    btn.classList.add('active');
+  }
+}
+
 function shareItem(title, text, url, e) {
   if (e) { e.stopPropagation(); e.preventDefault(); }
   track('share', { venue: title });
@@ -284,7 +311,7 @@ function showShareMenu(title, text, url, e) {
 }
 
 function shareIconSVG() {
-  return '<svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>';
+  return '<svg viewBox="0 0 24 24"><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>';
 }
 
 // ============================
@@ -417,10 +444,10 @@ function renderControlBar() {
   return `<div class="control-bar">
     ${renderCitySelector()}
     <div class="inline-mode-switcher">
-      <button class="mode-pill ${currentMode==='day'?'active':''}" data-mode="day" onclick="setMode('day')">&#9728;&#65039; Day</button>
-      <button class="mode-pill ${currentMode==='night'?'active':''}" data-mode="night" onclick="setMode('night')">&#127769; Night</button>
+      <button class="mode-pill ${currentMode==='day'?'active':''}" data-mode="day" onclick="setMode('day')">&#9728;&#65039; <strong>Day</strong></button>
+      <button class="mode-pill ${currentMode==='night'?'active':''}" data-mode="night" onclick="setMode('night')">&#127769; <strong>Night</strong></button>
     </div>
-    <button class="surprise-me-btn-sm" onclick="surpriseMe()"><span class="dice">&#127922;</span> Surprise Me</button>
+    <button class="surprise-me-btn-sm" onclick="surpriseMe()"><span class="dice">&#127922;</span> <strong>Surprise Me</strong></button>
   </div>`;
 }
 
@@ -470,7 +497,7 @@ function renderEventCard(evt) {
   const isFree = evt.cover === 'Free';
   const barColor = getCatColor(evt.category);
   const shareUrl = `${window.location.origin}/#/${currentCity}/venue/${venueId}`;
-  const shareText = `Check out ${evt.name} at ${venueName}!`;
+  const shareText = `Come check out ${evt.name} at ${venueName}!`;
   const favd = isFavorited(venueId);
 
   return `<div class="event-card" data-category="${evt.category}" onclick="navigateTo('#/${currentCity}/venue/${venueId}')">
@@ -481,9 +508,9 @@ function renderEventCard(evt) {
           <div class="venue-name">${venueName}</div>
           <div class="event-name">${evt.name}</div>
         </div>
-        <div class="card-actions">
-          <button class="fav-btn ${favd?'favorited':''}" data-venue="${venueId}" onclick="toggleFavorite('${venueId}',event)" title="Favorite">${favd?'&#9829;':'&#9825;'}</button>
-          <button class="share-btn" onclick="shareItem('${evt.name.replace(/'/g,"\\'")}','${shareText.replace(/'/g,"\\'")}','${shareUrl}',event)" title="Share">${shareIconSVG()}</button>
+        <div class="card-actions-stack">
+          <button class="action-btn fav-btn ${favd?'favorited':''}" data-venue="${venueId}" onclick="toggleFavorite('${venueId}',event)"><span class="action-icon">${favd?'&#9829;':'&#9825;'}</span><span class="action-label">Save</span></button>
+          <button class="action-btn invite-btn" onclick="shareItem('${evt.name.replace(/'/g,"\\'")}','${shareText.replace(/'/g,"\\'")}','${shareUrl}',event)"><span class="action-icon">${shareIconSVG()}</span><span class="action-label">Invite</span></button>
         </div>
       </div>
       <div class="event-meta">
@@ -511,7 +538,7 @@ function renderSearchBar() {
         <input type="text" class="search-input" placeholder="Search ${currentMode === 'day' ? 'activities, spots' : 'events, venues'}..." id="quick-search" oninput="handleQuickSearch(this.value)" onfocus="showSearchResults()">
       </div>
       <button class="filter-toggle ${advancedOpen?'active':''}" onclick="toggleAdvanced()" title="Filters">
-        <span class="filter-icon">&#9776;</span> Filters
+        <span class="filter-icon">&#9776;</span> <strong>Filters</strong>
         <span class="filter-badge ${filterCount===0?'hidden':''}" id="filter-badge">${filterCount}</span>
       </button>
     </div>
@@ -519,32 +546,32 @@ function renderSearchBar() {
     
     <!-- Navigation Links - moved from hamburger menu -->
     <div class="main-nav-links">
-      <a href="#/" data-nav="today">Today</a>
-      <a href="#/week" data-nav="week">This Week</a>
-      <a href="#/venues" data-nav="venues" id="main-venues-label">${currentMode === 'night' ? 'Venues' : 'Spots'}</a>
-      <a href="#/submit" data-nav="submit">Submit</a>
-      <a href="#/favorites" data-nav="favorites" class="main-fav-link">&#9829; <span class="main-fav-badge" id="main-fav-badge" style="display:none">0</span></a>
+      <a href="#/" data-nav="today"><strong>Today</strong></a>
+      <a href="#/categories" data-nav="categories"><strong>Categories</strong></a>
+      <a href="#/map" data-nav="map"><strong>Map</strong></a>
+      <a href="#/submit" data-nav="submit"><strong>Submit Event</strong></a>
+      <a href="#/favorites" data-nav="favorites" class="nav-fav-pill"><strong>&#9829; Saved</strong></a>
     </div>
     
     <div id="advanced-panel" class="advanced-panel ${advancedOpen?'open':''}">
       <!-- Activities/Events moved to main filter area -->
       <div class="filter-group filter-activities">
-        <div class="filter-label">${currentMode === 'day' ? 'Activities' : 'Events'}</div>
+        <div class="filter-label"><strong>${currentMode === 'day' ? 'Activities' : 'Events'}</strong></div>
         <div class="filter-pills">${cats.map(c => `<button class="fpill ${advancedFilters.categories.includes(c.id)?'active':''}" onclick="toggleFilter('categories','${c.id}')">${c.label}</button>`).join('')}</div>
       </div>
       
       <div class="filter-group">
-        <div class="filter-label">When?</div>
+        <div class="filter-label"><strong>When?</strong></div>
         <div class="filter-pills">${WHEN_OPTIONS.map(w => `<button class="fpill ${advancedFilters.when===w.id?'active':''}" onclick="setWhen('${w.id}')">${w.label}</button>`).join('')}</div>
       </div>
       
       <div class="filter-group">
-        <div class="filter-label">Vibe?</div>
+        <div class="filter-label"><strong>Vibe?</strong></div>
         <div class="filter-pills">${VIBES.map(v => `<button class="fpill ${advancedFilters.vibes.includes(v.id)?'active':''}" onclick="toggleFilter('vibes','${v.id}')">${v.label}</button>`).join('')}</div>
       </div>
       <div class="filter-actions">
-        <button class="btn btn-sm" onclick="applyAdvanced()">Show Results</button>
-        <button class="btn btn-sm btn-ghost" onclick="clearAdvanced()">Clear All</button>
+        <button class="btn btn-sm" onclick="applyAdvanced()"><strong>Show Results</strong></button>
+        <button class="btn btn-sm btn-ghost" onclick="clearAdvanced()"><strong>Clear All</strong></button>
         <span id="filter-count" class="filter-count"></span>
       </div>
     </div>
@@ -639,27 +666,87 @@ async function renderToday() {
   const emptyEmoji = currentMode === 'day' ? '&#9728;&#65039;' : '&#127769;';
   let content = '';
   if (events.length === 0) {
-    content = `<div class="empty"><span class="empty-emoji">${emptyEmoji}</span><h3>Nothing ${currentCategory === 'all' ? 'happening' : 'in ' + formatCategory(currentCategory)} ${dayLabel}</h3><p>Check out <a href="#/${currentCity}/week">this week's lineup</a></p></div>`;
+    content = `<div class="empty"><span class="empty-emoji">${emptyEmoji}</span><h3>Nothing ${currentCategory === 'all' ? 'happening' : 'in ' + formatCategory(currentCategory)} ${dayLabel}</h3><p>Come check out <a href="#/${currentCity}/week">this week's lineup</a></p></div>`;
   } else {
-    content = events.map(renderEventCard).join('');
+    // Smart sections
+    const now = new Date();
+    const nowMins = now.getHours() * 60 + now.getMinutes();
+
+    function evtStartMins(e) {
+      const t = getEventTime(e);
+      if (!t) return -1;
+      const [h, m] = t.split(':').map(Number);
+      return h * 60 + m;
+    }
+    function evtEndMins(e) {
+      const start = evtStartMins(e);
+      if (start < 0) return -1;
+      const dur = (e.recurring && e.recurring.duration) || (e.oneTime && e.oneTime.duration) || 120;
+      return start + dur;
+    }
+    function parseCover(e) {
+      if (!e.cover || e.cover === 'Free' || e.cover === 'Varies') return null;
+      const n = parseFloat(e.cover.replace(/[^0-9.]/g, ''));
+      return isNaN(n) ? null : n;
+    }
+
+    const happeningNow = events.filter(e => { const s = evtStartMins(e); const end = evtEndMins(e); return s >= 0 && nowMins >= s && nowMins < end; });
+    const startingSoon = events.filter(e => { const s = evtStartMins(e); return s >= 0 && s > nowMins && s <= nowMins + 120; });
+    const after9 = currentMode === 'night' ? events.filter(e => { const s = evtStartMins(e); return s >= 21 * 60; }) : [];
+    const freeEvents = events.filter(e => e.cover === 'Free');
+    const under20 = events.filter(e => { const p = parseCover(e); return p !== null && p <= 20; });
+
+    const sections = [];
+    if (happeningNow.length > 0) sections.push({ title: '🔴 Happening Now', events: happeningNow, id: 'now' });
+    if (startingSoon.length > 0) sections.push({ title: '⏰ Starting Soon', events: startingSoon, id: 'soon' });
+    if (after9.length > 0) sections.push({ title: '🌙 Tonight After 9PM', events: after9, id: 'late' });
+    if (freeEvents.length > 0) sections.push({ title: '🆓 Free', events: freeEvents, id: 'free' });
+    if (under20.length > 0) sections.push({ title: '💸 Under $20', events: under20, id: 'under20' });
+
+    if (sections.length > 0) {
+      // Smart filter pills
+      content += `<div class="smart-filters" style="display:flex;gap:8px;overflow-x:auto;padding:0 0 12px 0;-webkit-overflow-scrolling:touch;">`;
+      content += `<button class="smart-pill active" onclick="showSmartSection('all',this)" style="white-space:nowrap;padding:8px 16px;border-radius:20px;border:1px solid var(--accent);background:var(--accent);color:#fff;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s;">All (${events.length})</button>`;
+      sections.forEach(s => {
+        content += `<button class="smart-pill" onclick="showSmartSection('${s.id}',this)" style="white-space:nowrap;padding:8px 16px;border-radius:20px;border:1px solid var(--accent);background:transparent;color:var(--accent);font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s;">${s.title} (${s.events.length})</button>`;
+      });
+      content += `</div>`;
+
+      // All events section (default visible)
+      content += `<div class="smart-section" id="smart-all">${events.map(renderEventCard).join('')}</div>`;
+
+      // Individual smart sections (hidden by default)
+      sections.forEach(s => {
+        content += `<div class="smart-section" id="smart-${s.id}" style="display:none;">${s.events.map(renderEventCard).join('')}</div>`;
+      });
+    } else {
+      content = events.map(renderEventCard).join('');
+    }
   }
 
   const heroText = currentMode === 'day' ? `What's happening in <span class="city-name">${cityData.name}</span> today?` : `What's going on in <span class="city-name">${cityData.name}</span> tonight?`;
 
-  const showGuide = !localStorage.getItem('tao-guide-seen');
+  const showPopup = !localStorage.getItem('tao-guide-seen');
 
   return `
+    ${showPopup ? `<div class="welcome-overlay" id="welcome-overlay" onclick="if(event.target===this){closeWelcome()}">
+      <div class="welcome-popup">
+        <div class="welcome-emoji">🦉</div>
+        <h2>Welcome to The Active Owl</h2>
+        <div class="welcome-steps">
+          <div class="welcome-step"><span class="step-num">1</span> Pick your city</div>
+          <div class="welcome-step"><span class="step-num">2</span> Pick daytime or nightlife activities</div>
+          <div class="welcome-step"><span class="step-num">3</span> Browse what's happening now</div>
+          <div class="welcome-step"><span class="step-num">4</span> Invite your friends</div>
+        </div>
+        <button class="welcome-go" onclick="closeWelcome()">Let's Go 🎉</button>
+      </div>
+    </div>` : ''}
     <div class="hero">
       <h1>${heroText}</h1>
-      <div class="tagline">${cityData.tagline}</div>
       <div class="date-line">${getTodayStr()}</div>
     </div>
-    ${showGuide ? `<div class="onboard-tips" id="welcome-guide">
-      <p class="onboard-text">Pick your city, choose day or night, and we'll show you what's happening right now. Day mode is for beach days, yoga, brunch, and outdoor stuff. Night mode is for bars, live music, trivia, and going out. Can't decide? Hit Surprise Me and let us pick for you.</p>
-      <button class="onboard-dismiss" onclick="document.getElementById('welcome-guide').remove();localStorage.setItem('tao-guide-seen','1')">Got it &#128076;</button>
-    </div>` : ''}
     ${renderControlBar()}
-    ${renderSearchBar()}
     <div id="events-list">${content}</div>`;
 }
 
@@ -708,7 +795,7 @@ function renderVenueCard(v) {
         <div class="card-top-text"><div class="v-name">${v.name}</div><div class="v-address">${v.address}</div></div>
         <div class="card-actions">
           <button class="fav-btn ${favd?'favorited':''}" data-venue="${v.id}" onclick="toggleFavorite('${v.id}',event)" title="Favorite">${favd?'&#9829;':'&#9825;'}</button>
-          <button class="share-btn" onclick="shareItem('${v.name.replace(/'/g,"\\'")}','Check out ${v.name.replace(/'/g,"\\'")} on The Active Owl!','${shareUrl}',event)" title="Share">${shareIconSVG()}</button>
+          <button class="share-btn" onclick="shareItem('${v.name.replace(/'/g,"\\'")}','Come check out ${v.name.replace(/'/g,"\\'")} on The Active Owl!','${shareUrl}',event)" title="Invite">${shareIconSVG()}</button>
         </div>
       </div>
       <div class="v-tags">
@@ -747,6 +834,56 @@ async function renderVenueDetail(id) {
   const todayEvents = Array.isArray(rawToday) ? rawToday : [];
   const venueToday = todayEvents.filter(e => e.venueId === data.id);
 
+  // Format hours inline
+  let hoursHTML = '';
+  if (data.hours) {
+    const now = new Date();
+    const todayDay = ['sun','mon','tue','wed','thu','fri','sat'][now.getDay()];
+    const todayHours = data.hours[todayDay];
+    const isOpen = todayHours && todayHours.toLowerCase() !== 'closed';
+    
+    hoursHTML = `<div class="vd-hours-block">
+      <div class="vd-hours-status ${isOpen ? 'open' : 'closed'}">${isOpen ? '● Open' : '● Closed'}</div>
+      ${isOpen ? `<span class="vd-hours-today">Today's hours: ${todayHours}</span>` : `<span class="vd-hours-today">Closed today</span>`}
+      <button class="vd-hours-toggle" onclick="document.getElementById('vd-hours-full').classList.toggle('show')">See all hours ▾</button>
+      <div class="vd-hours-full" id="vd-hours-full">
+        ${daysOrder.map(d => {
+          const isCurrent = d === todayDay;
+          return `<div class="vd-hours-row ${isCurrent ? 'current' : ''}"><span class="vd-hours-day">${daysFull[d]}</span><span class="vd-hours-time">${data.hours[d] || 'Closed'}</span></div>`;
+        }).join('')}
+      </div>
+    </div>`;
+  }
+
+  // Build 10-day schedule
+  const allEvents = data.events || [];
+  let tenDayHTML = '';
+  if (allEvents.length > 0) {
+    const days10 = [];
+    for (let i = 0; i < 10; i++) {
+      const d = new Date();
+      d.setDate(d.getDate() + i);
+      const dayName = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'][d.getDay()];
+      const label = i === 0 ? 'Today' : i === 1 ? 'Tomorrow' : d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+      const evts = allEvents.filter(e => e.recurring && e.recurring.day === dayName);
+      days10.push({ label, dayName, date: d, events: evts });
+    }
+
+    tenDayHTML = `<div class="section-title">Upcoming 10 Days</div><div class="ten-day-schedule">`;
+    for (const day of days10) {
+      if (day.events.length === 0) {
+        tenDayHTML += `<div class="ten-day-row empty"><div class="ten-day-label">${day.label}</div><div class="ten-day-none">No events</div></div>`;
+      } else {
+        tenDayHTML += `<div class="ten-day-row"><div class="ten-day-label">${day.label}</div><div class="ten-day-events">`;
+        day.events.forEach(e => {
+          tenDayHTML += `<div class="ten-day-event"><span class="ten-day-dot" style="background:${getCatColor(e.category)}"></span><span class="ten-day-name">${e.name}</span><span class="ten-day-time">${formatTime(e.recurring.time)}</span>${e.cover === 'Free' ? '<span class="tag tag-free" style="font-size:10px;padding:2px 6px;">Free</span>' : ''}</div>`;
+        });
+        tenDayHTML += `</div></div>`;
+      }
+    }
+    tenDayHTML += `</div>`;
+  }
+
   return `<div class="venue-detail">
     <a href="#/${currentCity}/venues" class="back-link">&#8592; ${currentMode === 'night' ? 'All Venues' : 'All Spots'}</a>
     ${data.image ? `<div class="vd-hero-image" style="background-image:url('${data.image}')"></div>` : ''}
@@ -754,6 +891,7 @@ async function renderVenueDetail(id) {
       <div class="vd-name">${data.name}</div>
       <div class="vd-address">${data.address}</div>
       ${data.description ? `<div class="vd-description">${data.description}</div>` : ''}
+      ${hoursHTML}
       <div class="vd-info">${infoItems.join('')}</div>
       <div class="vd-tags">
         ${(data.vibes||[]).map(v => `<span class="tag tag-vibe">${formatVibe(v)}</span>`).join('')}
@@ -761,12 +899,11 @@ async function renderVenueDetail(id) {
       </div>
       <div class="vd-actions">
         <button class="vd-action-btn ${isFavorited(data.id)?'favorited':''}" data-fav-venue="${data.id}" onclick="toggleFavorite('${data.id}',event)">${isFavorited(data.id)?'&#9829; Favorited':'&#9825; Favorite'}</button>
-        <button class="vd-action-btn" onclick="shareItem('${data.name.replace(/'/g,"\\'")}','Check out ${data.name.replace(/'/g,"\\'")} on The Active Owl!','${window.location.origin}/#/${currentCity}/venue/${data.id}',event)">&#8599; Share</button>
+        <button class="vd-action-btn" onclick="shareItem('${data.name.replace(/'/g,"\\'")}','Come check out ${data.name.replace(/'/g,"\\'")} on The Active Owl!','${window.location.origin}/#/${currentCity}/venue/${data.id}',event)">&#8599; Invite</button>
       </div>
     </div>
-    ${data.hours ? `<div class="section-title">Hours</div><div class="schedule-grid">${daysOrder.map(d => `<div class="schedule-row"><div class="day-name">${daysFull[d]}</div><div class="hours">${data.hours[d]||'Closed'}</div></div>`).join('')}</div>` : ''}
-    ${weeklyEventsHTML ? `<div class="section-title">Weekly Schedule</div>${weeklyEventsHTML}` : ''}
     ${venueToday.length > 0 ? `<div class="section-title">Happening Today</div>${venueToday.map(e => renderEventCard({...e, venue: data})).join('')}` : ''}
+    ${tenDayHTML}
   </div>`;
 }
 
@@ -787,15 +924,15 @@ async function renderSubmit() {
   const cats = [...DAY_CATEGORIES, ...NIGHT_CATEGORIES].filter((c, i, a) => c.id !== 'all' && a.findIndex(x => x.id === c.id) === i);
   return `${renderControlBar()}<div class="hero"><h1>Submit a <span class="city-name">Spot</span></h1><div class="tagline">Know about something happening in ${cityData.name}? Let us know.</div></div>
   <form id="submit-form" onsubmit="handleSubmit(event)">
-    <div class="form-group"><label>City</label><input type="text" name="city" value="${cityData.name}" readonly></div>
-    <div class="form-group"><label>Venue Name</label><input type="text" name="venueName" required placeholder="e.g. Boston's on the Beach"></div>
-    <div class="form-group"><label>Event Name</label><input type="text" name="eventName" required placeholder="e.g. Trivia Night"></div>
-    <div class="form-group"><label>Date</label><input type="date" name="date" required></div>
-    <div class="form-group"><label>Time</label><input type="time" name="time" required></div>
-    <div class="form-group"><label>Category</label><select name="category" required>${cats.map(c => `<option value="${c.id}">${c.label}</option>`).join('')}</select></div>
-    <div class="form-group"><label>Description</label><textarea name="description" placeholder="Tell us about it..."></textarea></div>
-    <div class="form-group"><label>Your Contact (optional)</label><input type="text" name="contact" placeholder="Email or phone"></div>
-    <button type="submit" class="btn">Submit</button>
+    <div class="form-group"><label><strong>City</strong></label><input type="text" name="city" value="${cityData.name}" readonly></div>
+    <div class="form-group"><label><strong>Venue Name</strong></label><input type="text" name="venueName" required placeholder="e.g. Boston's on the Beach"></div>
+    <div class="form-group"><label><strong>Event Name</strong></label><input type="text" name="eventName" required placeholder="e.g. Trivia Night"></div>
+    <div class="form-group"><label><strong>Date</strong></label><input type="date" name="date" required></div>
+    <div class="form-group"><label><strong>Time</strong></label><input type="time" name="time" required></div>
+    <div class="form-group"><label><strong>Category</strong></label><select name="category" required>${cats.map(c => `<option value="${c.id}">${c.label}</option>`).join('')}</select></div>
+    <div class="form-group"><label><strong>Description</strong></label><textarea name="description" placeholder="Tell us about it..."></textarea></div>
+    <div class="form-group"><label><strong>Your Contact</strong> (optional)</label><input type="text" name="contact" placeholder="Email or phone"></div>
+    <button type="submit" class="btn"><strong>Submit</strong></button>
     <div id="submit-result"></div>
   </form>`;
 }
@@ -824,9 +961,153 @@ window.handleSubmit = async function(e) {
   try {
     const res = await fetch(`${API}/api/submit`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
     const result = await res.json();
-    if (result.success) { document.getElementById('submit-result').innerHTML = '<div class="success-msg">&#10003; Submitted! We\'ll review and add it soon.</div>'; form.reset(); }
+    if (result.success) { document.getElementById('submit-result').innerHTML = '<div class="success-msg">&#10003; <strong>Submitted!</strong> We\'ll review and add it soon.</div>'; form.reset(); }
   } catch(err) { document.getElementById('submit-result').innerHTML = '<div class="success-msg" style="color:#FF6B6B;border-color:rgba(255,107,107,0.3)">Something went wrong. Try again.</div>'; }
 };
+
+// ============================
+// MAP VIEW
+// ============================
+async function renderMap() {
+  const cityData = getCurrentCityData();
+  const res = await fetch(`/api/${currentCity}/venues`);
+  const venues = await res.json();
+  const modeVenues = venues.filter(v => !v.timeOfDay || v.timeOfDay.includes(currentMode));
+
+  // Build Google Maps embed with all venue addresses as markers
+  const cityCoords = {
+    'delray-beach': { lat: 26.4615, lng: -80.0728 },
+    'boca-raton': { lat: 26.3683, lng: -80.1289 },
+    'boynton-beach': { lat: 26.5254, lng: -80.0662 },
+    'lake-worth-beach': { lat: 26.6168, lng: -80.0557 },
+    'west-palm-beach': { lat: 26.7153, lng: -80.0534 }
+  };
+  const center = cityCoords[currentCity] || cityCoords['delray-beach'];
+
+  let html = `<div class="hero"><h1>Map of <span class="city-name">${cityData.name}</span></h1><div class="tagline">All ${currentMode === 'day' ? 'spots' : 'venues'} at a glance</div></div>`;
+
+  html += `<div class="map-container">
+    <div id="map-embed" style="width:100%;height:500px;border-radius:12px;overflow:hidden;background:#2a2a2a;display:flex;align-items:center;justify-content:center;">
+      <div style="color:#888;font-size:14px;">Loading map...</div>
+    </div>
+  </div>`;
+
+  html += `<div class="map-venues-list" style="margin-top:20px;">`;
+  html += `<h3 style="color:var(--text-secondary);margin-bottom:12px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;">${modeVenues.length} ${currentMode === 'day' ? 'Spots' : 'Venues'}</h3>`;
+  modeVenues.forEach(v => {
+    html += `<div class="map-venue-item" onclick="navigateTo('#/${currentCity}/venue/${v.id}')" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--card-bg);border-radius:8px;margin-bottom:8px;cursor:pointer;transition:transform 0.2s;">
+      <div>
+        <div style="font-weight:600;color:var(--text-primary);font-size:14px;">${v.name}</div>
+        <div style="color:var(--text-secondary);font-size:12px;margin-top:2px;">${v.address || ''}</div>
+      </div>
+      <div style="color:var(--text-secondary);font-size:12px;">${v.categories ? v.categories.slice(0,2).map(formatCategory).join(', ') : ''}</div>
+    </div>`;
+  });
+  html += `</div>`;
+
+  // After render, initialize the map
+  setTimeout(() => {
+    const mapDiv = document.getElementById('map-embed');
+    if (!mapDiv) return;
+    // Use OpenStreetMap tiles via Leaflet CDN (free, no API key)
+    if (!document.getElementById('leaflet-css')) {
+      const link = document.createElement('link');
+      link.id = 'leaflet-css';
+      link.rel = 'stylesheet';
+      link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+      document.head.appendChild(link);
+    }
+    if (!window.L) {
+      const script = document.createElement('script');
+      script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+      script.onload = () => initMap(mapDiv, center, modeVenues);
+      document.head.appendChild(script);
+    } else {
+      initMap(mapDiv, center, modeVenues);
+    }
+  }, 100);
+
+  return html;
+}
+
+function initMap(container, center, venues) {
+  container.innerHTML = '';
+  const map = L.map(container).setView([center.lat, center.lng], 14);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap'
+  }).addTo(map);
+
+  // Geocode venues by address using Nominatim (free)
+  venues.forEach(v => {
+    if (!v.address) return;
+    fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(v.address)}&limit=1`)
+      .then(r => r.json())
+      .then(results => {
+        if (results && results[0]) {
+          const marker = L.marker([parseFloat(results[0].lat), parseFloat(results[0].lon)]).addTo(map);
+          marker.bindPopup(`<strong>${v.name}</strong><br>${v.address}<br><a href="#/${currentCity}/venue/${v.id}">View Details</a>`);
+        }
+      }).catch(() => {});
+  });
+}
+
+// ============================
+// CATEGORIES VIEW
+// ============================
+async function renderCategories() {
+  const cityData = getCurrentCityData();
+  const res = await fetch(`/api/${currentCity}/events?mode=${currentMode}`);
+  const data = await res.json();
+  const events = data.events || [];
+
+  // Group by category
+  const catMap = {};
+  events.forEach(e => {
+    const cat = e.category || 'other';
+    if (!catMap[cat]) catMap[cat] = [];
+    catMap[cat].push(e);
+  });
+
+  const catColors = {
+    'live-music': '#FF6B6B', 'happy-hour': '#FFB347', 'trivia': '#4ECDC4', 'karaoke': '#A78BFA',
+    'dj': '#F472B6', 'comedy': '#FBBF24', 'sports': '#34D399', 'food-special': '#FB923C',
+    'brunch': '#F9A825', 'yoga': '#81C784', 'fitness': '#4FC3F7', 'outdoor': '#AED581',
+    'market': '#CE93D8', 'art': '#F48FB1', 'community': '#90CAF9', 'water-sports': '#4DD0E1',
+    'nightclub': '#E040FB', 'other': '#78909C'
+  };
+
+  let html = `<div class="hero"><h1>${currentMode === 'day' ? 'Activities' : 'Events'} in <span class="city-name">${cityData.name}</span></h1><div class="tagline">Browse by category</div></div>`;
+
+  html += `<div class="categories-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;padding:0 16px;">`;
+  
+  const sortedCats = Object.entries(catMap).sort((a, b) => b[1].length - a[1].length);
+  sortedCats.forEach(([cat, evts]) => {
+    const color = catColors[cat] || '#78909C';
+    html += `<div class="category-card" onclick="navigateTo('#/${currentCity}?cat=${cat}')" style="background:${color}18;border:1px solid ${color}33;border-radius:12px;padding:20px 16px;cursor:pointer;text-align:center;transition:transform 0.2s;">
+      <div style="font-size:28px;margin-bottom:8px;">${getCatEmoji(cat)}</div>
+      <div style="font-weight:600;color:var(--text-primary);font-size:14px;">${formatCategory(cat)}</div>
+      <div style="color:${color};font-size:13px;margin-top:4px;">${evts.length} event${evts.length !== 1 ? 's' : ''}</div>
+    </div>`;
+  });
+
+  if (sortedCats.length === 0) {
+    html += `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-secondary);">No events found for ${currentMode} mode</div>`;
+  }
+
+  html += `</div>`;
+  return html;
+}
+
+function getCatEmoji(cat) {
+  const emojis = {
+    'live-music': '🎵', 'happy-hour': '🍻', 'trivia': '🧠', 'karaoke': '🎤',
+    'dj': '🎧', 'comedy': '😂', 'sports': '⚽', 'food-special': '🍔',
+    'brunch': '🥞', 'yoga': '🧘', 'fitness': '💪', 'outdoor': '🌴',
+    'market': '🛍️', 'art': '🎨', 'community': '🤝', 'water-sports': '🏄',
+    'nightclub': '💃', 'other': '✨'
+  };
+  return emojis[cat] || '✨';
+}
 
 // ============================
 // ROUTER
@@ -844,6 +1125,8 @@ function parseHash(hash) {
     if (rest[0] === 'venue' && rest[1]) return { city, page: 'venue', id: rest[1] };
     if (rest[0] === 'submit') return { city, page: 'submit' };
     if (rest[0] === 'favorites') return { city, page: 'favorites' };
+    if (rest[0] === 'map') return { city, page: 'map' };
+    if (rest[0] === 'categories') return { city, page: 'categories' };
     return { city, page: 'today' };
   }
   if (parts[0] === 'week') return { city: currentCity, page: 'week' };
@@ -851,6 +1134,8 @@ function parseHash(hash) {
   if (parts[0] === 'venue' && parts[1]) return { city: currentCity, page: 'venue', id: parts[1] };
   if (parts[0] === 'submit') return { city: currentCity, page: 'submit' };
   if (parts[0] === 'favorites') return { city: currentCity, page: 'favorites' };
+  if (parts[0] === 'map') return { city: currentCity, page: 'map' };
+  if (parts[0] === 'categories') return { city: currentCity, page: 'categories' };
   return { city: currentCity, page: 'today' };
 }
 
@@ -869,6 +1154,8 @@ async function route() {
     else if ((parsed.page === 'venue' || parsed.page === 'venues') && a.dataset.nav === 'venues') a.classList.add('active');
     else if (parsed.page === 'submit' && a.dataset.nav === 'submit') a.classList.add('active');
     else if (parsed.page === 'favorites' && a.dataset.nav === 'favorites') a.classList.add('active');
+    else if (parsed.page === 'map' && a.dataset.nav === 'map') a.classList.add('active');
+    else if (parsed.page === 'categories' && a.dataset.nav === 'categories') a.classList.add('active');
   });
 
   // Update nav link text based on mode
@@ -883,6 +1170,8 @@ async function route() {
     else if (nav === 'venues') a.href = `#/${currentCity}/venues`;
     else if (nav === 'submit') a.href = `#/${currentCity}/submit`;
     else if (nav === 'favorites') a.href = `#/${currentCity}/favorites`;
+    else if (nav === 'map') a.href = `#/${currentCity}/map`;
+    else if (nav === 'categories') a.href = `#/${currentCity}/categories`;
   });
 
   const footerLoc = document.querySelector('.footer-location');
@@ -904,6 +1193,8 @@ async function route() {
     else if (parsed.page === 'venue') main.innerHTML = await renderVenueDetail(parsed.id);
     else if (parsed.page === 'submit') main.innerHTML = await renderSubmit();
     else if (parsed.page === 'favorites') main.innerHTML = await renderFavorites();
+    else if (parsed.page === 'map') main.innerHTML = await renderMap();
+    else if (parsed.page === 'categories') main.innerHTML = await renderCategories();
     else main.innerHTML = await renderToday();
   } catch(err) {
     main.innerHTML = '<div class="empty"><span class="empty-emoji">&#128533;</span><h3>Something went wrong</h3><p>' + err.message + '</p></div>';
