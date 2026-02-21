@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Active Owl - Marketing Playbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #F5F7FA; color: #1a2b3c; line-height: 1.6; padding: 24px; max-width: 800px; margin: 0 auto; }
+    h1 { font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+    h2 { font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 700; margin-top: 40px; margin-bottom: 12px; color: #0891B2; border-bottom: 2px solid #0891B2; padding-bottom: 4px; }
+    h3 { font-size: 17px; font-weight: 700; margin-top: 24px; margin-bottom: 8px; }
+    p { margin-bottom: 12px; }
+    .subtitle { color: #64748b; font-size: 15px; margin-bottom: 32px; }
+    .post-block { background: white; border-radius: 12px; padding: 20px; margin: 16px 0; border: 1px solid #e2e8f0; }
+    .post-block .label { font-size: 12px; font-weight: 700; text-transform: uppercase; color: #0891B2; margin-bottom: 4px; }
+    .post-block .target { font-size: 13px; color: #64748b; margin-bottom: 10px; }
+    .post-block .title-line { font-weight: 700; font-size: 16px; margin-bottom: 8px; }
+    .post-block .body-text { font-size: 14px; color: #334155; white-space: pre-wrap; }
+    .tip { background: #FFF7ED; border-left: 4px solid #F97316; padding: 12px 16px; margin: 16px 0; border-radius: 0 8px 8px 0; font-size: 14px; }
+    .group-table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    .group-table th { text-align: left; font-size: 13px; font-weight: 700; padding: 8px 12px; background: #f1f5f9; }
+    .group-table td { font-size: 14px; padding: 8px 12px; border-bottom: 1px solid #e2e8f0; }
+    .seo-block { background: white; border-radius: 12px; padding: 16px 20px; margin: 12px 0; border: 1px solid #e2e8f0; }
+    .seo-block .page-title { font-weight: 700; font-size: 15px; color: #0891B2; }
+    .seo-block .slug { font-size: 12px; color: #94a3b8; font-family: monospace; }
+    .seo-block .desc { font-size: 14px; color: #475569; margin-top: 4px; }
+    .copy-btn { background: #0891B2; color: white; border: none; padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; float: right; margin-top: -4px; }
+    .copy-btn:active { background: #0e7490; }
+    @media print { body { padding: 0; } .copy-btn { display: none; } }
+  </style>
+  <script>
+    function copyText(el) {
+      const block = el.closest('.post-block');
+      const title = block.querySelector('.title-line')?.textContent || '';
+      const body = block.querySelector('.body-text')?.textContent || '';
+      const text = title + '\n\n' + body;
+      navigator.clipboard.writeText(text);
+      el.textContent = 'Copied!';
+      setTimeout(() => el.textContent = 'Copy', 1500);
+    }
+  </script>
+</head>
+<body>
+
+<h1>🦉 The Active Owl - Marketing Playbook</h1>
+<p class="subtitle">Launch weekend strategy: Reddit, Facebook, and SEO. Created Feb 21, 2026.</p>
+
+<!-- ==================== REDDIT ==================== -->
+<h2>📱 Reddit Posts</h2>
+<p>Post from u/BackfireBand or a new dedicated account. Space posts 30-60 min apart to avoid spam flags. Best times: Thursday-Saturday afternoon/evening.</p>
+
+<div class="tip">Pro tip: Don't just drop links. Be genuinely helpful. Answer questions in the comments. Reddit will destroy you if you look like you're just promoting.</div>
+
+<div class="post-block">
+  <div class="label">Reddit Post #1</div>
+  <div class="target">r/delraybeach</div>
+  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+  <div class="title-line">What's actually happening in Delray this weekend?</div>
+  <div class="body-text">I got tired of scrolling through Instagram stories and random event pages trying to figure out what's going on in Delray on any given night. So I started putting together a free site that pulls all the events, happy hours, live music, trivia nights, etc. into one place.
+
+It covers day stuff too - yoga, beach activities, farmers markets, brunch spots.
+
+Check it out: theactiveowl.com
+
+It's still early but I've got Delray Beach, Boca, Boynton, Lake Worth, and West Palm loaded up. If I'm missing your favorite spot, let me know and I'll add it.
+
+Not trying to sell anything. Just wanted something like this to exist.</div>
+</div>
+
+<div class="post-block">
+  <div class="label">Reddit Post #2</div>
+  <div class="target">r/BocaRaton</div>
+  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+  <div class="title-line">Free site showing all the events happening in Boca this week</div>
+  <div class="body-text">Built a site that shows what's happening in Boca Raton every day. Live music, trivia, happy hours, comedy, DJs - plus daytime stuff like yoga, markets, and beach activities.
+
+You can switch between day mode and night mode depending on what you're looking for. It also shows you what's happening right now, what's starting soon, and what's free.
+
+theactiveowl.com - just switch the city to Boca Raton.
+
+It's free, no ads, no sign-up. I'm adding new venues every week. If you know a spot that should be on there, drop it in the comments.</div>
+</div>
+
+<div class="post-block">
+  <div class="label">Reddit Post #3</div>
+  <div class="target">r/SouthFlorida</div>
+  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+  <div class="title-line">Made a free "what's happening tonight" site for South Florida</div>
+  <div class="body-text">Yo SoFlo. I built a free site that shows you everything happening in your area - day and night.
+
+Daytime: yoga, beach sports, farmers markets, hiking, brunch, parks
+Nighttime: bars, live music, DJs, trivia, karaoke, happy hours, comedy
+
+Right now it covers Delray Beach, Boca Raton, Boynton Beach, Lake Worth Beach, and West Palm Beach. Expanding to more cities soon.
+
+It's called The Active Owl: theactiveowl.com
+
+Has a map view, categories, filters for free events, and you can save your favorites. No app to download, works in your browser.
+
+What cities should I add next?</div>
+</div>
+
+<div class="post-block">
+  <div class="label">Reddit Post #4</div>
+  <div class="target">r/WestPalmBeach</div>
+  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+  <div class="title-line">Comprehensive guide to events in West Palm - updated daily</div>
+  <div class="body-text">Put together a site that tracks all the weekly events in West Palm Beach. Covers everything from live music and trivia nights to yoga classes and farmer's markets.
+
+You can filter by what's happening right now, what's free, what's under $20, and browse by category. There's a map view too.
+
+theactiveowl.com - switch to West Palm Beach in the city picker.
+
+It's free and I update the venues regularly. If your favorite WPB spot isn't listed, tell me about it and I'll get it added.</div>
+</div>
+
+<div class="post-block">
+  <div class="label">Reddit Post #5 (Optional - Tech Angle)</div>
+  <div class="target">r/SideProject</div>
+  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+  <div class="title-line">Built a local events finder for South Florida - vanilla JS, no frameworks</div>
+  <div class="body-text">I built The Active Owl (theactiveowl.com) as a day/night activity finder for South Florida cities.
+
+Tech stack: Pure Node.js backend, vanilla JavaScript frontend, no npm dependencies, JSON flat-file storage. Hosted on Vercel.
+
+Features:
+- Day/night mode with completely different themes and event categories
+- Interactive map with Leaflet + OpenStreetMap
+- Smart filters: happening now, starting soon, free events
+- 10-day venue schedules
+- Mobile-first, works offline after first load
+
+Covering 5 cities so far with about 50 venues. The data is all manually curated which is a grind but keeps quality high.
+
+Would love feedback on the UX. What would make you come back to a site like this?</div>
+</div>
+
+<!-- ==================== FACEBOOK ==================== -->
+<h2>📘 Facebook Groups & Posts</h2>
+<p>Join these groups and post organically. Don't blast all groups the same day. Do 2-3 per day over the week.</p>
+
+<h3>Groups to Join & Post In</h3>
+<table class="group-table">
+  <tr><th>Group Name (Search For)</th><th>Post Angle</th></tr>
+  <tr><td>Delray Beach Community</td><td>Weekend events roundup</td></tr>
+  <tr><td>What's Happening in Delray Beach</td><td>Direct match - share the site</td></tr>
+  <tr><td>Boca Raton Community Forum</td><td>Happy hours + events guide</td></tr>
+  <tr><td>Boynton Beach Community</td><td>What's going on this week</td></tr>
+  <tr><td>Lake Worth Beach Community</td><td>Local events + day activities</td></tr>
+  <tr><td>West Palm Beach Events & Nightlife</td><td>Nightlife + live music</td></tr>
+  <tr><td>South Florida Events</td><td>Regional - free events site</td></tr>
+  <tr><td>Palm Beach County Things to Do</td><td>County-wide resource</td></tr>
+  <tr><td>South Florida Foodies</td><td>Happy hours + food specials</td></tr>
+  <tr><td>South Florida Happy Hour</td><td>Bar crowd - night mode</td></tr>
+  <tr><td>Delray Beach Moms / Boca Raton Moms</td><td>Day activities: yoga, parks, markets</td></tr>
+  <tr><td>New to Delray Beach / New to Boca</td><td>Newcomer resource</td></tr>
+  <tr><td>South Florida Nightlife</td><td>Night mode focus</td></tr>
+  <tr><td>Florida Events and Activities</td><td>Statewide reach</td></tr>
+</table>
+
+<h3>Facebook Post Templates</h3>
+
+<div class="post-block">
+  <div class="label">Template A - General Community Groups</div>
+  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+  <div class="title-line">🦉 Know what's happening in [CITY] today?</div>
+  <div class="body-text">Hey [CITY] fam! I've been putting together a free guide to everything happening around town - every day, updated weekly.
+
+🌞 Day stuff: yoga, beach activities, farmers markets, brunch, parks, fitness
+🌙 Night stuff: live music, happy hours, trivia, karaoke, DJs, comedy
+
+You can browse by category, see what's happening right now, and save your favorites. There's even a map view.
+
+Check it out: theactiveowl.com
+
+No ads, no sign-up, no app to download. Just open it in your browser.
+
+If I'm missing your go-to spot, drop it in the comments and I'll add it! 🤙</div>
+</div>
+
+<div class="post-block">
+  <div class="label">Template B - Nightlife / Happy Hour Groups</div>
+  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+  <div class="title-line">🍻 Every happy hour and live music night in South Florida - one page</div>
+  <div class="body-text">Got tired of texting around asking "what are we doing tonight?" so I made a free site that shows every bar event, happy hour, trivia night, and live music show across Delray, Boca, Boynton, Lake Worth, and West Palm.
+
+Switch to night mode and it shows you:
+- What's happening RIGHT NOW
+- What's starting soon tonight
+- Free events
+- Everything under $20
+
+theactiveowl.com
+
+Tell me your favorite spots and I'll make sure they're on there.</div>
+</div>
+
+<div class="post-block">
+  <div class="label">Template C - Mom Groups / Day Activities</div>
+  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+  <div class="title-line">🌴 Free things to do in [CITY] this weekend</div>
+  <div class="body-text">If you're looking for stuff to do during the day, I put together a free site that tracks all the daytime activities in the area.
+
+Yoga classes, beach sports, farmers markets, parks, water sports, hiking, brunch spots, art/culture events, and more.
+
+You can filter to see only free activities and browse by category. Covers Delray, Boca, Boynton, Lake Worth, and West Palm.
+
+theactiveowl.com (make sure you're in day mode ☀️)
+
+Adding new spots every week. Let me know what I should include!</div>
+</div>
+
+<div class="post-block">
+  <div class="label">Template D - "New to Area" Groups</div>
+  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+  <div class="title-line">Just moved here? Here's how to find stuff to do 👋</div>
+  <div class="body-text">Welcome to South Florida! One thing I wish I had when I first moved here was a simple way to see what's happening in my area on any given day.
+
+So I built one. It's called The Active Owl and it shows you events, happy hours, live music, yoga, markets, and basically everything going on in your city - day and night.
+
+theactiveowl.com
+
+Covers Delray Beach, Boca Raton, Boynton Beach, Lake Worth Beach, and West Palm Beach. Free to use, works right in your browser.
+
+Great way to find new spots and figure out what the locals are into. 🦉</div>
+</div>
+
+<div class="tip">Timing matters: Post in local groups Thursday afternoon or Friday morning for max weekend traffic. Post in mom groups Tuesday/Wednesday for weekend planning. Engage with every comment - Facebook rewards engagement with visibility.</div>
+
+<!-- ==================== SEO ==================== -->
+<h2>🔍 SEO Content Pages to Build</h2>
+<p>These pages target searches people actually make. Each one should be a standalone page on theactiveowl.com that ranks in Google over time.</p>
+
+<div class="seo-block">
+  <div class="page-title">1. Things to Do in Delray Beach This Weekend</div>
+  <div class="slug">/guides/delray-beach-this-weekend</div>
+  <div class="desc">Auto-updating weekend guide. Pulls from live event data. Targets "things to do in Delray Beach this weekend" - high volume local search.</div>
+</div>
+
+<div class="seo-block">
+  <div class="page-title">2. Best Happy Hours in Delray Beach (2026)</div>
+  <div class="slug">/guides/delray-beach-happy-hours</div>
+  <div class="desc">Curated list of every happy hour with times, deals, and vibes. Targets "happy hour Delray Beach" and "best bars Delray Beach."</div>
+</div>
+
+<div class="seo-block">
+  <div class="page-title">3. Live Music in Boca Raton This Week</div>
+  <div class="slug">/guides/boca-raton-live-music</div>
+  <div class="desc">Weekly live music schedule across all Boca venues. Targets "live music Boca Raton" and "Boca Raton bands tonight."</div>
+</div>
+
+<div class="seo-block">
+  <div class="page-title">4. Free Things to Do in South Florida</div>
+  <div class="slug">/guides/free-things-south-florida</div>
+  <div class="desc">All free events across all 5 cities. Beaches, parks, free trivia, open mic. Targets "free things to do near me" + city names.</div>
+</div>
+
+<div class="seo-block">
+  <div class="page-title">5. Best Trivia Nights in Palm Beach County</div>
+  <div class="slug">/guides/palm-beach-county-trivia</div>
+  <div class="desc">Every trivia night by day of week. Targets "trivia night near me" for the whole county.</div>
+</div>
+
+<div class="seo-block">
+  <div class="page-title">6. Outdoor Activities in Delray Beach</div>
+  <div class="slug">/guides/delray-beach-outdoor-activities</div>
+  <div class="desc">Yoga, beach sports, kayaking, paddleboarding, hiking trails, parks. Targets "outdoor activities Delray Beach."</div>
+</div>
+
+<div class="seo-block">
+  <div class="page-title">7. Date Night Ideas in Boca Raton</div>
+  <div class="slug">/guides/boca-raton-date-night</div>
+  <div class="desc">Curated couples guide: cocktail bars, live jazz, comedy shows, waterfront dining. Targets "date night Boca Raton."</div>
+</div>
+
+<div class="seo-block">
+  <div class="page-title">8. West Palm Beach Nightlife Guide</div>
+  <div class="slug">/guides/west-palm-beach-nightlife</div>
+  <div class="desc">Complete nightlife breakdown: Clematis St, CityPlace, rooftop bars, DJ nights. Targets "West Palm Beach nightlife."</div>
+</div>
+
+<div class="seo-block">
+  <div class="page-title">9. Farmers Markets in Palm Beach County</div>
+  <div class="slug">/guides/palm-beach-county-farmers-markets</div>
+  <div class="desc">Every market by day: Green Market Delray (Sat), Royal Palm (Sat), Lake Worth (Sat). Targets "farmers market near me" locally.</div>
+</div>
+
+<div class="seo-block">
+  <div class="page-title">10. Karaoke Nights in South Florida</div>
+  <div class="slug">/guides/south-florida-karaoke</div>
+  <div class="desc">Every karaoke night across all cities. Targets "karaoke near me" for SoFlo.</div>
+</div>
+
+<div class="tip">Priority order: Build pages 1, 2, 4, and 5 first. Those target the highest-volume searches. Each page should link back to the main app with deep links to the relevant city/category.</div>
+
+<h2>📅 Posting Schedule</h2>
+<table class="group-table">
+  <tr><th>Day</th><th>Action</th></tr>
+  <tr><td>Saturday (Today)</td><td>Post Reddit #1 (r/delraybeach) + #3 (r/SouthFlorida). Join 5 Facebook groups.</td></tr>
+  <tr><td>Sunday</td><td>Post Reddit #2 (r/BocaRaton). Post Template A in 2 Facebook groups.</td></tr>
+  <tr><td>Monday</td><td>Post Reddit #4 (r/WestPalmBeach). Post Template D in "New to" groups.</td></tr>
+  <tr><td>Tuesday</td><td>Post Template C in mom groups. Engage with all comments from prior posts.</td></tr>
+  <tr><td>Wednesday</td><td>Post Template B in nightlife groups. Post Reddit #5 (r/SideProject).</td></tr>
+  <tr><td>Thursday</td><td>Post Template A in remaining community groups (Boynton, Lake Worth).</td></tr>
+  <tr><td>Friday</td><td>Re-engage top-performing posts. Drop weekend update comments in threads.</td></tr>
+</table>
+
+<p style="margin-top: 40px; color: #94a3b8; font-size: 12px; text-align: center;">The Active Owl Marketing Playbook v1 - Feb 21, 2026 - Built by Theo ⚡</p>
+</body>
+</html>
