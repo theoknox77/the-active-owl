@@ -1,6 +1,14 @@
 const API = '';
 const DAYS_FULL = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
+function mapLink(address) {
+  if (!address) return '';
+  const encoded = encodeURIComponent(address);
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const url = isIOS ? `maps://maps.apple.com/?q=${encoded}` : `https://www.google.com/maps/search/?api=1&query=${encoded}`;
+  return `<a href="${url}" target="_blank" rel="noopener" class="address-link" onclick="event.stopPropagation()">${address}</a>`;
+}
+
 const DAY_CATEGORIES = [
   { id: 'all', label: 'All' },
   { id: 'yoga', label: 'Yoga' },
@@ -792,7 +800,7 @@ function renderVenueCard(v) {
     ${imageArea}
     <div class="v-body">
       <div class="card-top-row">
-        <div class="card-top-text"><div class="v-name">${v.name}</div><div class="v-address">${v.address}</div></div>
+        <div class="card-top-text"><div class="v-name">${v.name}</div><div class="v-address">${mapLink(v.address)}</div></div>
         <div class="card-actions">
           <button class="fav-btn ${favd?'favorited':''}" data-venue="${v.id}" onclick="toggleFavorite('${v.id}',event)" title="Favorite">${favd?'&#9829;':'&#9825;'}</button>
           <button class="share-btn" onclick="shareItem('${v.name.replace(/'/g,"\\'")}','Come check out ${v.name.replace(/'/g,"\\'")} on The Active Owl!','${shareUrl}',event)" title="Invite">${shareIconSVG()}</button>
@@ -889,7 +897,7 @@ async function renderVenueDetail(id) {
     ${data.image ? `<div class="vd-hero-image" style="background-image:url('${data.image}')"></div>` : ''}
     <div class="vd-header">
       <div class="vd-name">${data.name}</div>
-      <div class="vd-address">${data.address}</div>
+      <div class="vd-address">${mapLink(data.address)}</div>
       ${data.description ? `<div class="vd-description">${data.description}</div>` : ''}
       ${hoursHTML}
       <div class="vd-info">${infoItems.join('')}</div>
@@ -1045,7 +1053,7 @@ function initMap(container, center, venues) {
       .then(results => {
         if (results && results[0]) {
           const marker = L.marker([parseFloat(results[0].lat), parseFloat(results[0].lon)]).addTo(map);
-          marker.bindPopup(`<strong>${v.name}</strong><br>${v.address}<br><a href="#/${currentCity}/venue/${v.id}">View Details</a>`);
+          marker.bindPopup(`<strong>${v.name}</strong><br>${mapLink(v.address)}<br><a href="#/${currentCity}/venue/${v.id}">View Details</a>`);
         }
       }).catch(() => {});
   });

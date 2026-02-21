@@ -146,10 +146,9 @@ h1, h2, h3, .venue-name, .logo, .welcome-popup h2 {
 
 body { min-height: 100dvh; padding-bottom: env(safe-area-inset-bottom, 0); background: var(--bg); }
 
-/* VERSION INDICATOR - disabled for production */
-/*
+/* DEV VERSION INDICATOR */
 body::before {
-  content: "";
+  content: "🛠️ DEV";
   position: fixed;
   top: 0;
   right: 0;
@@ -161,7 +160,6 @@ body::before {
   z-index: 9999;
   border-radius: 0 0 0 6px;
 }
-*/
 
 a { color: var(--accent); text-decoration: none; }
 a:hover { opacity: 0.85; }
@@ -1373,3 +1371,8 @@ html, body {
   body { padding-bottom: env(safe-area-inset-bottom); }
   .main-nav-links { padding-bottom: calc(10px + env(safe-area-inset-bottom)); }
 }
+
+/* Clickable address links */
+.address-link { color: var(--text-dim); text-decoration: none; }
+.address-link:hover { color: var(--accent); text-decoration: underline; }
+.vd-address .address-link { font-size: inherit; }
