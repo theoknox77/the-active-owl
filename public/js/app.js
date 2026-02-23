@@ -531,6 +531,7 @@ function renderEventCard(evt) {
   const shareUrl = `${window.location.origin}/#/${currentCity}/venue/${venueId}`;
   const shareText = `Come check out ${evt.name} at ${venueName}!`;
   const favd = isFavorited(venueId);
+  const ticketUrl = evt.ticketUrl || null;
 
   return `<div class="event-card" data-category="${evt.category}" onclick="navigateTo('#/${currentCity}/venue/${venueId}')">
     <div class="card-color-bar" style="background:${barColor}"></div>
@@ -554,6 +555,7 @@ function renderEventCard(evt) {
         ${evt.cover === 'Varies' ? '<span class="tag tag-cover">Cover Varies</span>' : ''}
       </div>
       <div class="event-desc">${evt.description}</div>
+      ${ticketUrl ? `<a class="ticket-btn" href="${ticketUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">&#127903; Get Tickets &rarr;</a>` : ''}
     </div>
   </div>`;
 }

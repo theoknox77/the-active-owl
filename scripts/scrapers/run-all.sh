@@ -1,0 +1,36 @@
+#!/bin/bash
+# Run all Active Owl scrapers then merge results
+# Runs M/W/F via cron. Logs to ~/workspace/operation-barfly/app/logs/scraper.log
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+APP_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+VENV="$APP_DIR/scripts/venv/bin/python3"
+LOG_DIR="$APP_DIR/logs"
+LOG="$LOG_DIR/scraper.log"
+
+mkdir -p "$LOG_DIR"
+
+echo "" >> "$LOG"
+echo "===== Scraper run: $(date) =====" >> "$LOG"
+
+# 1. Eventbrite
+echo "[1/3] Eventbrite..." | tee -a "$LOG"
+"$VENV" "$SCRIPT_DIR/eventbrite.py" >> "$LOG" 2>&1
+echo "Done." | tee -a "$LOG"
+
+# 2. Google Places
+echo "[2/3] Google Places..." | tee -a "$LOG"
+"$VENV" "$SCRIPT_DIR/google-places.py" >> "$LOG" 2>&1
+echo "Done." | tee -a "$LOG"
+
+# 3. Venue Sites
+echo "[3/3] Venue Sites..." | tee -a "$LOG"
+"$VENV" "$SCRIPT_DIR/venue-sites.py" >> "$LOG" 2>&1
+echo "Done." | tee -a "$LOG"
+
+# 4. Merge (auto-merge high-confidence sources; skip needsReview)
+echo "[4/4] Merging..." | tee -a "$LOG"
+"$VENV" "$SCRIPT_DIR/merge.py" >> "$LOG" 2>&1
+echo "Merge done." | tee -a "$LOG"
+
+echo "===== Complete: $(date) =====" >> "$LOG"

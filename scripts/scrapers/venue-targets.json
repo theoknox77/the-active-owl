@@ -1,0 +1,114 @@
+[
+  {
+    "venueId": "barrel-of-monks",
+    "venueName": "Barrel of Monks",
+    "cityId": "boca-raton",
+    "url": "https://www.barrelofmonks.com/events",
+    "defaultCategory": "live-music",
+    "defaultVibe": ["social", "group-friendly"]
+  },
+  {
+    "venueId": "funky-buddha-brewery",
+    "venueName": "Funky Buddha Brewery",
+    "cityId": "boca-raton",
+    "url": "https://www.funkybuddhabrewery.com/events",
+    "defaultCategory": "live-music",
+    "defaultVibe": ["social", "group-friendly"]
+  },
+  {
+    "venueId": "dead-owl-brewing",
+    "venueName": "Dead Owl Brewing",
+    "cityId": "boca-raton",
+    "url": "https://deadowlbrewing.com/events",
+    "defaultCategory": "live-music",
+    "defaultVibe": ["chill", "local"]
+  },
+  {
+    "venueId": "the-dubliner-boca",
+    "venueName": "The Dubliner Boca",
+    "cityId": "boca-raton",
+    "url": "https://thedublinerboca.com/events",
+    "defaultCategory": "live-music",
+    "defaultVibe": ["cozy", "group-friendly"]
+  },
+  {
+    "venueId": "blue-martini-boca",
+    "venueName": "Blue Martini",
+    "cityId": "boca-raton",
+    "url": "https://bluemartinilounge.com/boca-raton/events",
+    "defaultCategory": "live-music",
+    "defaultVibe": ["upscale", "dance"]
+  },
+  {
+    "venueId": "bostons-on-the-beach",
+    "venueName": "Boston's on the Beach",
+    "cityId": "delray-beach",
+    "url": "https://bostonsonthebeach.com/events",
+    "defaultCategory": "live-music",
+    "defaultVibe": ["outdoor", "group-friendly", "beachside"]
+  },
+  {
+    "venueId": "dada-delray",
+    "venueName": "DaDa",
+    "cityId": "delray-beach",
+    "url": "https://www.dadaDelray.com/events",
+    "defaultCategory": "live-music",
+    "defaultVibe": ["artsy", "chill", "eclectic"]
+  },
+  {
+    "venueId": "old-school-square",
+    "venueName": "Old School Square",
+    "cityId": "delray-beach",
+    "url": "https://www.oldschoolsquare.org/events",
+    "defaultCategory": "art-culture",
+    "defaultVibe": ["social", "family-friendly", "outdoor"]
+  },
+  {
+    "venueId": "the-blind-monk",
+    "venueName": "The Blind Monk",
+    "cityId": "west-palm-beach",
+    "url": "https://theblindmonk.com/events",
+    "defaultCategory": "live-music",
+    "defaultVibe": ["cozy", "social", "wine"]
+  },
+  {
+    "venueId": "respectable-street",
+    "venueName": "Respectable Street",
+    "cityId": "west-palm-beach",
+    "url": "https://www.respectable.com/events",
+    "defaultCategory": "live-music",
+    "defaultVibe": ["rowdy", "late-night", "alternative"]
+  },
+  {
+    "venueId": "banko-cantina",
+    "venueName": "Banko Cantina",
+    "cityId": "west-palm-beach",
+    "url": "https://www.bankocantina.com/events",
+    "defaultCategory": "live-music",
+    "defaultVibe": ["social", "group-friendly"]
+  },
+  {
+    "venueId": "arts-garage-delray",
+    "venueName": "Arts Garage",
+    "cityId": "delray-beach",
+    "url": "https://www.artsgarage.org/events",
+    "defaultCategory": "art-culture",
+    "defaultVibe": ["social", "artsy", "live-music"]
+  },
+  {
+    "venueId": "morikami-museum",
+    "venueName": "Morikami Museum",
+    "cityId": "delray-beach",
+    "url": "https://www.morikami.org/events",
+    "defaultCategory": "art-culture",
+    "defaultVibe": ["family-friendly", "scenic", "chill"]
+  },
+  {
+    "venueId": "norton-museum",
+    "venueName": "Norton Museum of Art",
+    "cityId": "west-palm-beach",
+    "url": "https://www.norton.org/events",
+    "defaultCategory": "art-culture",
+    "defaultVibe": ["solo-friendly", "romantic", "chill"]
+  }
+]

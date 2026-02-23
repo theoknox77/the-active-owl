@@ -4,3 +4,4 @@ data/analytics.json
 data/analytics-summary.json
 .DS_Store
 .vercel
+scripts/scrapers/config.json

@@ -487,6 +487,9 @@ a:hover { opacity: 0.85; }
   background: var(--bg-secondary); padding: 4px 12px; border-radius: var(--radius-pill);
 }
 .event-card .event-desc { font-size: 14px; color: var(--text-dim); line-height: 1.5; }
+.ticket-btn { display: inline-block; margin-top: 12px; padding: 8px 16px; background: #16A34A; color: #fff; border-radius: var(--radius-pill); font-size: 13px; font-weight: 700; text-decoration: none; transition: background 0.2s, transform 0.1s; }
+.ticket-btn:hover { background: #15803D; transform: translateY(-1px); }
+.ticket-btn:active { transform: translateY(0); }
 
 .tag {
   display: inline-block; padding: 4px 10px; border-radius: var(--radius-pill);

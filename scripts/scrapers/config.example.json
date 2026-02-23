@@ -1,0 +1,4 @@
+{
+  "eventbrite_token": "YOUR_EVENTBRITE_PRIVATE_TOKEN_HERE",
+  "google_places_key": "YOUR_GOOGLE_PLACES_API_KEY_HERE"
+}

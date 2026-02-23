@@ -1037,7 +1037,8 @@
     "oneTime": { "date": "2026-03-07", "time": "19:45", "duration": 120 },
     "cover": "$20",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": ["night"],
+    "ticketUrl": "https://barrelofmonks.com"
   },
   {
     "id": "boca-evt-303",
@@ -1050,7 +1051,8 @@
     "oneTime": { "date": "2026-03-12", "time": "19:00", "duration": 150 },
     "cover": "$10",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": ["night"],
+    "ticketUrl": "https://barrelofmonks.com"
   },
   {
     "id": "boca-evt-304",
@@ -1063,7 +1065,8 @@
     "oneTime": { "date": "2026-03-14", "time": "16:00", "duration": 300 },
     "cover": "$45",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": ["night"],
+    "ticketUrl": "https://barrelofmonks.com"
   },
   {
     "id": "boca-evt-305",
@@ -1089,7 +1092,8 @@
     "oneTime": { "date": "2026-03-20", "time": "19:00", "duration": 120 },
     "cover": "$44",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": ["night"],
+    "ticketUrl": "https://www.classpop.com"
   },
   {
     "id": "boca-evt-307",
@@ -1102,6 +1106,7 @@
     "oneTime": { "date": "2026-03-26", "time": "17:45", "duration": 120 },
     "cover": "$10",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": ["night"],
+    "ticketUrl": "https://barrelofmonks.com"
   }
 ]
