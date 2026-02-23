@@ -279,7 +279,17 @@ const handler = async (req, res) => {
   }
 
   // Static files
-  let filePath = pathname === '/' ? '/index.html' : pathname === '/analytics' ? '/analytics.html' : pathname;
+  const cleanRoutes = {
+    '/blog': '/blog.html',
+    '/about': '/about.html',
+    '/analytics': '/analytics.html',
+    '/marketing': '/marketing-playbook.html'
+  };
+  let filePath = pathname === '/' ? '/index.html' : (cleanRoutes[pathname] || pathname);
+  // Handle /guides/* clean URLs
+  if (pathname.startsWith('/guides/') && !pathname.endsWith('.html')) {
+    filePath = pathname + '.html';
+  }
   filePath = path.join(PUBLIC_DIR, filePath);
   if (!filePath.startsWith(PUBLIC_DIR)) { res.writeHead(403); return res.end('Forbidden'); }
 
