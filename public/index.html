@@ -150,6 +150,14 @@
         <a href="/blog.html">Blog</a>
         <a href="/about.html">About</a>
       </div>
+      <div class="footer-subscribe">
+        <p class="footer-subscribe-label">Get the weekly South Florida roundup</p>
+        <form class="subscribe-form" onsubmit="handleSubscribe(event)">
+          <input type="email" class="subscribe-input" placeholder="Your email address" required>
+          <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+        <p class="subscribe-note" id="subscribe-msg" style="display:none"></p>
+      </div>
       <div class="footer-copy">&copy; 2026 The Active Owl &middot; Created by Tim Palladino</div>
     </footer>
   </div>

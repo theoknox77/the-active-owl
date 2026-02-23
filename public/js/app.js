@@ -1,6 +1,30 @@
 const API = '';
 const DAYS_FULL = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
+async function handleSubscribe(e) {
+  e.preventDefault();
+  const form = e.target;
+  const email = form.querySelector('input[type="email"]').value.trim();
+  const msg = document.getElementById('subscribe-msg');
+  const btn = form.querySelector('button');
+  if (!email) return;
+  btn.disabled = true; btn.textContent = 'Subscribing...';
+  try {
+    const res = await fetch('/api/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email }) });
+    const data = await res.json();
+    if (res.ok) {
+      form.style.display = 'none';
+      if (msg) { msg.style.display = 'block'; msg.textContent = "You're in! We'll send the weekly roundup to " + email; msg.style.color = '#00B894'; }
+    } else {
+      btn.disabled = false; btn.textContent = 'Subscribe';
+      if (msg) { msg.style.display = 'block'; msg.textContent = data.error || 'Something went wrong. Try again.'; msg.style.color = '#FF7675'; }
+    }
+  } catch(err) {
+    btn.disabled = false; btn.textContent = 'Subscribe';
+    if (msg) { msg.style.display = 'block'; msg.textContent = 'Connection error. Try again.'; msg.style.color = '#FF7675'; }
+  }
+}
+
 function mapLink(address) {
   if (!address) return '';
   const encoded = encodeURIComponent(address);

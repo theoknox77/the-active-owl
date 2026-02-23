@@ -886,7 +886,19 @@ a:hover { opacity: 0.85; }
 .footer-links a:hover { color: var(--accent); }
 .footer-copy { font-size: 12px; color: var(--text-tertiary); }
 
+.footer-subscribe { margin: 16px 0 12px; }
+.footer-subscribe-label { font-size: 13px; font-weight: 600; color: var(--text-dim); margin-bottom: 10px; }
+.subscribe-form { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.subscribe-input { padding: 9px 14px; border-radius: 20px; border: 1.5px solid var(--border); background: var(--bg-card); color: var(--text); font-size: 13px; outline: none; width: 220px; max-width: 100%; }
+.subscribe-input:focus { border-color: var(--accent); }
+.subscribe-btn { padding: 9px 20px; border-radius: 20px; border: none; background: var(--accent); color: #fff; font-size: 13px; font-weight: 700; cursor: pointer; transition: opacity 0.2s; white-space: nowrap; }
+.subscribe-btn:hover { opacity: 0.85; }
+.subscribe-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.subscribe-note { font-size: 12px; margin-top: 8px; }
+
 [data-mode="night"] .site-footer { background: #0A0012; border-top-color: rgba(255,16,240,0.1); }
+[data-mode="night"] .subscribe-input { border-color: rgba(255,16,240,0.2); }
+[data-mode="night"] .subscribe-btn { background: linear-gradient(135deg, #FF10F0, #B000FF); }
 
 /* ============================
    CITY SELECTOR
