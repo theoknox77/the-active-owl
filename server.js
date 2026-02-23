@@ -268,18 +268,27 @@ const handler = async (req, res) => {
         const body = await parseBody(req);
         const email = (body.email || '').trim().toLowerCase();
         if (!email || !email.includes('@')) return sendJSON(res, { error: 'Invalid email address' }, 400);
-        // Try to persist to /tmp (writable on Vercel serverless)
-        const subsPath = '/tmp/subscribers.json';
-        try {
-          let subs = [];
-          if (fs.existsSync(subsPath)) subs = JSON.parse(fs.readFileSync(subsPath, 'utf8'));
-          if (subs.find(s => s.email === email)) return sendJSON(res, { success: true }, 200);
-          subs.push({ email, subscribedAt: new Date().toISOString() });
-          fs.writeFileSync(subsPath, JSON.stringify(subs, null, 2));
-        } catch(writeErr) {
-          // File system not writable — still return success, log for visibility
-          console.log('Subscribe (no persist):', email, writeErr.message);
-        }
+        const https = require('https');
+        const payload = JSON.stringify({ email_address: email, tags: ['active-owl'] });
+        await new Promise((resolve, reject) => {
+          const req2 = https.request({
+            hostname: 'api.buttondown.email',
+            path: '/v1/subscribers',
+            method: 'POST',
+            headers: {
+              'Authorization': 'Token 3de2c2d1-616d-43ce-b4ae-220127751a9e',
+              'Content-Type': 'application/json',
+              'Content-Length': Buffer.byteLength(payload)
+            }
+          }, (r) => {
+            let data = '';
+            r.on('data', c => data += c);
+            r.on('end', () => resolve({ status: r.statusCode, data }));
+          });
+          req2.on('error', reject);
+          req2.write(payload);
+          req2.end();
+        });
         return sendJSON(res, { success: true }, 201);
       } catch(e) { return sendJSON(res, { error: 'Invalid request' }, 400); }
     }
