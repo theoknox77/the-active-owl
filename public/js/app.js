@@ -688,77 +688,107 @@ document.addEventListener('click', function(e) {
 // ============================
 async function renderToday() {
   const cityData = getCurrentCityData();
-  const url = currentCategory === 'all'
-    ? `${cityApiBase()}/events?date=today&mode=${currentMode}`
-    : `${cityApiBase()}/events?date=today&category=${currentCategory}&mode=${currentMode}`;
-  const raw = await fetchJSON(url);
-  const events = Array.isArray(raw) ? raw : [];
-
-  const dayLabel = currentMode === 'day' ? 'today' : 'tonight';
   const emptyEmoji = currentMode === 'day' ? '&#9728;&#65039;' : '&#127769;';
-  let content = '';
-  if (events.length === 0) {
-    content = `<div class="empty"><span class="empty-emoji">${emptyEmoji}</span><h3>Nothing ${currentCategory === 'all' ? 'happening' : 'in ' + formatCategory(currentCategory)} ${dayLabel}</h3><p>Come check out <a href="#/${currentCity}/week">this week's lineup</a></p></div>`;
-  } else {
-    // Smart sections
-    const now = new Date();
-    const nowMins = now.getHours() * 60 + now.getMinutes();
 
-    function evtStartMins(e) {
-      const t = getEventTime(e);
-      if (!t) return -1;
-      const [h, m] = t.split(':').map(Number);
-      return h * 60 + m;
-    }
-    function evtEndMins(e) {
-      const start = evtStartMins(e);
-      if (start < 0) return -1;
-      const dur = (e.recurring && e.recurring.duration) || (e.oneTime && e.oneTime.duration) || 120;
-      return start + dur;
-    }
-    function parseCover(e) {
-      if (!e.cover || e.cover === 'Free' || e.cover === 'Varies') return null;
-      const n = parseFloat(e.cover.replace(/[^0-9.]/g, ''));
-      return isNaN(n) ? null : n;
-    }
+  // Build 3 day date strings
+  const now = new Date();
+  function toDateStr(d) { return d.toISOString().split('T')[0]; }
+  const d1 = new Date(now); // today
+  const d2 = new Date(now); d2.setDate(now.getDate() + 1); // tomorrow
+  const d3 = new Date(now); d3.setDate(now.getDate() + 2); // day after
 
-    const happeningNow = events.filter(e => { const s = evtStartMins(e); const end = evtEndMins(e); return s >= 0 && nowMins >= s && nowMins < end; });
-    const startingSoon = events.filter(e => { const s = evtStartMins(e); return s >= 0 && s > nowMins && s <= nowMins + 120; });
-    const after9 = currentMode === 'night' ? events.filter(e => { const s = evtStartMins(e); return s >= 21 * 60; }) : [];
-    const freeEvents = events.filter(e => e.cover === 'Free');
-    const under20 = events.filter(e => { const p = parseCover(e); return p !== null && p <= 20; });
+  // Day labels
+  const label1 = currentMode === 'day' ? 'Today' : 'Tonight';
+  const label2 = 'Tomorrow';
+  const label3 = d3.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 
-    const sections = [];
-    if (happeningNow.length > 0) sections.push({ title: '🔴 Happening Now', events: happeningNow, id: 'now' });
-    if (startingSoon.length > 0) sections.push({ title: '⏰ Starting Soon', events: startingSoon, id: 'soon' });
-    if (after9.length > 0) sections.push({ title: '🌙 Tonight After 9PM', events: after9, id: 'late' });
-    if (freeEvents.length > 0) sections.push({ title: '🆓 Free', events: freeEvents, id: 'free' });
-    if (under20.length > 0) sections.push({ title: '💸 Under $20', events: under20, id: 'under20' });
+  // Fetch all 3 days in parallel
+  const catParam = currentCategory !== 'all' ? `&category=${currentCategory}` : '';
+  const [raw1, raw2, raw3] = await Promise.all([
+    fetchJSON(`${cityApiBase()}/events?date=today&mode=${currentMode}${catParam}`),
+    fetchJSON(`${cityApiBase()}/events?date=${toDateStr(d2)}&mode=${currentMode}${catParam}`),
+    fetchJSON(`${cityApiBase()}/events?date=${toDateStr(d3)}&mode=${currentMode}${catParam}`)
+  ]);
+  const events1 = Array.isArray(raw1) ? raw1 : [];
+  const events2 = Array.isArray(raw2) ? raw2 : [];
+  const events3 = Array.isArray(raw3) ? raw3 : [];
 
-    if (sections.length > 0) {
-      // Smart filter pills
-      content += `<div class="smart-filters" style="display:flex;gap:8px;overflow-x:auto;padding:0 0 12px 0;-webkit-overflow-scrolling:touch;">`;
-      content += `<button class="smart-pill active" onclick="showSmartSection('all',this)" style="white-space:nowrap;padding:8px 16px;border-radius:20px;border:1px solid var(--accent);background:var(--accent);color:#fff;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s;">All (${events.length})</button>`;
-      sections.forEach(s => {
-        content += `<button class="smart-pill" onclick="showSmartSection('${s.id}',this)" style="white-space:nowrap;padding:8px 16px;border-radius:20px;border:1px solid var(--accent);background:transparent;color:var(--accent);font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s;">${s.title} (${s.events.length})</button>`;
-      });
-      content += `</div>`;
+  const totalEvents = events1.length + events2.length + events3.length;
 
-      // All events section (default visible)
-      content += `<div class="smart-section" id="smart-all">${events.map(renderEventCard).join('')}</div>`;
-
-      // Individual smart sections (hidden by default)
-      sections.forEach(s => {
-        content += `<div class="smart-section" id="smart-${s.id}" style="display:none;">${s.events.map(renderEventCard).join('')}</div>`;
-      });
-    } else {
-      content = events.map(renderEventCard).join('');
-    }
+  // ---- Smart sub-sections for today only ----
+  function evtStartMins(e) {
+    const t = getEventTime(e);
+    if (!t) return -1;
+    const [h, m] = t.split(':').map(Number);
+    return h * 60 + m;
+  }
+  function evtEndMins(e) {
+    const start = evtStartMins(e);
+    if (start < 0) return -1;
+    const dur = (e.recurring && e.recurring.duration) || (e.oneTime && e.oneTime.duration) || 120;
+    return start + dur;
   }
 
-  const heroText = currentMode === 'day' ? `What's happening in <span class="city-name">${cityData.name}</span> today?` : `What's going on in <span class="city-name">${cityData.name}</span> tonight?`;
+  const nowMins = now.getHours() * 60 + now.getMinutes();
+  const happeningNow = events1.filter(e => { const s = evtStartMins(e); const end = evtEndMins(e); return s >= 0 && nowMins >= s && nowMins < end; });
+  const startingSoon = events1.filter(e => { const s = evtStartMins(e); return s >= 0 && s > nowMins && s <= nowMins + 120; });
+
+  // ---- Build today section content ----
+  function buildDayContent(events, label, isToday) {
+    if (events.length === 0) {
+      return `<div class="day-empty">
+        <span>${emptyEmoji}</span>
+        <span>Nothing ${currentCategory === 'all' ? 'scheduled' : 'in ' + formatCategory(currentCategory)} ${isToday ? (currentMode === 'day' ? 'today' : 'tonight') : 'this day'}</span>
+      </div>`;
+    }
+    let html = '';
+    if (isToday) {
+      // Smart sub-pills for today only
+      const smartSections = [];
+      if (happeningNow.length > 0) smartSections.push({ title: '🔴 Now', events: happeningNow, id: 'now' });
+      if (startingSoon.length > 0) smartSections.push({ title: '⏰ Soon', events: startingSoon, id: 'soon' });
+
+      if (smartSections.length > 0) {
+        html += `<div class="smart-filters" style="display:flex;gap:8px;overflow-x:auto;padding:0 0 12px 0;-webkit-overflow-scrolling:touch;">`;
+        html += `<button class="smart-pill active" onclick="showSmartSection('all',this)" style="white-space:nowrap;padding:6px 14px;border-radius:20px;border:1px solid var(--accent);background:var(--accent);color:#fff;font-size:12px;font-weight:600;cursor:pointer;transition:all 0.2s;">All (${events.length})</button>`;
+        smartSections.forEach(s => {
+          html += `<button class="smart-pill" onclick="showSmartSection('${s.id}',this)" style="white-space:nowrap;padding:6px 14px;border-radius:20px;border:1px solid var(--accent);background:transparent;color:var(--accent);font-size:12px;font-weight:600;cursor:pointer;transition:all 0.2s;">${s.title} (${s.events.length})</button>`;
+        });
+        html += `</div>`;
+        html += `<div class="smart-section" id="smart-all">${events.map(renderEventCard).join('')}</div>`;
+        smartSections.forEach(s => {
+          html += `<div class="smart-section" id="smart-${s.id}" style="display:none;">${s.events.map(renderEventCard).join('')}</div>`;
+        });
+      } else {
+        html += events.map(renderEventCard).join('');
+      }
+    } else {
+      html += events.map(renderEventCard).join('');
+    }
+    return html;
+  }
+
+  const heroText = currentMode === 'day'
+    ? `What's happening in <span class="city-name">${cityData.name}</span>?`
+    : `What's going on in <span class="city-name">${cityData.name}</span>?`;
 
   const showPopup = !localStorage.getItem('tao-guide-seen');
+
+  const daySection = (label, events, isToday, dateObj) => {
+    const dateLabel = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    return `<div class="day-group">
+      <div class="day-header ${isToday ? 'is-today' : ''}">
+        ${label} <span class="day-header-date">${dateLabel}</span>
+        ${isToday ? '<span class="today-badge">TODAY</span>' : ''}
+        <span class="day-header-count">${events.length} event${events.length !== 1 ? 's' : ''}</span>
+      </div>
+      ${buildDayContent(events, label, isToday)}
+    </div>`;
+  };
+
+  const content = totalEvents === 0
+    ? `<div class="empty"><span class="empty-emoji">${emptyEmoji}</span><h3>Nothing on the calendar</h3><p>Check back soon or <a href="#/${currentCity}/week">browse this week</a></p></div>`
+    : daySection(label1, events1, true, d1) + daySection(label2, events2, false, d2) + daySection(label3, events3, false, d3);
 
   return `
     ${showPopup ? `<div class="welcome-overlay" id="welcome-overlay" onclick="if(event.target===this){closeWelcome()}">
@@ -776,9 +806,9 @@ async function renderToday() {
     </div>` : ''}
     <div class="hero">
       <h1>${heroText}</h1>
-      <div class="date-line">${getTodayStr()}</div>
     </div>
     ${renderControlBar()}
+    ${renderSearchBar()}
     <div id="events-list">${content}</div>`;
 }
 

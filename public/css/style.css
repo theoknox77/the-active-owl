@@ -698,6 +698,9 @@ a:hover { opacity: 0.85; }
 }
 .day-header.is-today { color: var(--accent); }
 .today-badge { font-size: 10px; background: var(--accent); color: #FFFFFF; padding: 2px 8px; border-radius: var(--radius-pill); font-weight: 700; }
+.day-header-date { font-size: 13px; font-weight: 500; color: var(--text-mid); margin-left: 2px; }
+.day-header-count { margin-left: auto; font-size: 12px; font-weight: 500; color: var(--text-tertiary); }
+.day-empty { display: flex; align-items: center; gap: 8px; color: var(--text-tertiary); font-size: 14px; padding: 20px 0 12px; }
 
 /* ============================
    SEARCH
