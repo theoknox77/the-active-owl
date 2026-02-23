@@ -452,8 +452,8 @@ function renderControlBar() {
   return `<div class="control-bar">
     ${renderCitySelector()}
     <div class="inline-mode-switcher">
-      <button class="mode-pill ${currentMode==='day'?'active':''}" data-mode="day" onclick="setMode('day')">&#9728;&#65039; <strong>Day</strong></button>
-      <button class="mode-pill ${currentMode==='night'?'active':''}" data-mode="night" onclick="setMode('night')">&#127769; <strong>Night</strong></button>
+      <button class="mode-pill ${currentMode==='day'?'active':''}" data-mode="day" onclick="setMode('day')">&#9728;&#65039; Day</button>
+      <button class="mode-pill ${currentMode==='night'?'active':''}" data-mode="night" onclick="setMode('night')">&#127769; Night</button>
     </div>
     <button class="surprise-me-btn-sm" onclick="surpriseMe()"><span class="dice">&#127922;</span> <strong>Surprise Me</strong></button>
   </div>`;

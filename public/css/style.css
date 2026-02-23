@@ -1053,27 +1053,29 @@ a:hover { opacity: 0.85; }
 }
 .control-bar .inline-mode-switcher {
   justify-content: center; height: 42px; border-radius: 24px;
-  padding: 4px; box-sizing: border-box;
+  padding: 3px; box-sizing: border-box;
 }
-.control-bar .inline-mode-switcher .mode-pill { flex: 1; text-align: center; }
+.control-bar .inline-mode-switcher .mode-pill { flex: 1; text-align: center; min-width: 68px; }
 .control-bar .surprise-me-btn-sm {
   justify-content: center; height: 42px; box-sizing: border-box;
 }
 .inline-mode-switcher {
-  display: flex; gap: 4px; background: var(--bg-card); border: 1px solid var(--border);
+  display: flex; gap: 3px; background: var(--bg-card); border: 1.5px solid var(--border);
   border-radius: 24px; padding: 3px;
 }
 .mode-pill {
-  border: none; background: none; padding: 6px 14px; border-radius: 20px;
+  border: none; background: none; padding: 6px 0; border-radius: 20px;
   font-size: 13px; font-weight: 600; cursor: pointer; color: var(--text-muted);
-  transition: all 0.2s;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  min-width: 72px; text-align: center; white-space: nowrap;
 }
 .mode-pill.active {
   background: var(--accent); color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
 [data-mode="night"] .mode-pill.active {
-  background: linear-gradient(135deg, #FF10F0, #00DFFF);
-  color: #fff; text-shadow: 0 0 8px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #FF10F0, #B000FF);
+  color: #fff; box-shadow: 0 0 12px rgba(255,16,240,0.35);
 }
 button.surprise-me-btn-sm,
 .surprise-me-btn-sm {
