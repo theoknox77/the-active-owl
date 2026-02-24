@@ -795,16 +795,27 @@ async function renderToday() {
     ? `<div class="empty"><span class="empty-emoji">${emptyEmoji}</span><h3>Nothing on the calendar</h3><p>Check back soon or <a href="#/${currentCity}/week">browse this week</a></p></div>`
     : daySection(label1, events1, true, d1) + daySection(label2, events2, false, d2) + daySection(label3, events3, false, d3);
 
-  // Async load the event count (fire and forget, updates badge when ready)
+  // Async load the event count with tally animation
   fetchJSON('/api/event-count').then(data => {
     const badge = document.getElementById('event-count-badge');
-    if (!badge) return;
-    if (data && data.count > 0) {
-      badge.innerHTML = `<span class="count-number">${data.count.toLocaleString()}</span> <span class="count-label">events on our radar in the next 10 days across Palm Beach County</span>`;
-      badge.classList.add('loaded');
-    } else {
-      badge.style.display = 'none';
+    if (!badge || !data || !data.count) { if (badge) badge.style.display = 'none'; return; }
+    const target = data.count;
+    badge.innerHTML = `<span class="count-number" id="count-tally">0</span> <span class="count-label">events on our radar in the next 10 days across Palm Beach County</span>`;
+    badge.classList.add('loaded');
+    const el = document.getElementById('count-tally');
+    const duration = 1800;
+    const startTime = performance.now();
+    function tick(now) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      // Ease out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.round(eased * target);
+      el.textContent = current.toLocaleString();
+      if (progress < 1) requestAnimationFrame(tick);
+      else { el.textContent = target.toLocaleString(); el.classList.add('count-pop'); }
     }
+    requestAnimationFrame(tick);
   });
 
   return `

@@ -435,11 +435,13 @@ a:hover { opacity: 0.85; }
 .hero .tagline { color: var(--text-dim); font-size: 15px; margin-top: 8px; }
 .county-badge { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); background: var(--accent-dim); border: 1px solid var(--accent); padding: 4px 12px; border-radius: var(--radius-pill); margin-bottom: 12px; }
 .event-count-badge { margin-top: 14px; font-size: 15px; color: var(--text-dim); min-height: 22px; transition: opacity 0.3s; }
-.event-count-badge .count-number { font-size: 22px; font-weight: 800; color: var(--accent); }
+.event-count-badge .count-number { font-size: 26px; font-weight: 800; color: var(--accent); display: inline-block; font-variant-numeric: tabular-nums; }
 .event-count-badge .count-label { font-weight: 500; }
 .event-count-badge .count-loading { font-size: 13px; color: var(--text-tertiary); }
 .event-count-badge.loaded { animation: fadeIn 0.4s ease; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes countPop { 0% { transform: scale(1); } 50% { transform: scale(1.18); color: var(--accent-secondary); } 100% { transform: scale(1); } }
+.count-pop { animation: countPop 0.35s ease; }
 .hero .date-line {
   color: var(--text-secondary);
   font-size: 18px;
