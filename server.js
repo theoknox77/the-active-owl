@@ -91,6 +91,28 @@ const handler = async (req, res) => {
 
     if (pathname === '/api/cities' && req.method === 'GET') return sendJSON(res, loadJSON('cities.json'));
 
+    // GET /api/event-count — total events across all active cities for the next 10 days
+    if (pathname === '/api/event-count' && req.method === 'GET') {
+      const cities = loadJSON('cities.json');
+      const activeCities = cities.filter(c => c.active);
+      let total = 0;
+      const seen = new Set();
+      for (const cityObj of activeCities) {
+        const cityEvents = loadCityJSON(cityObj.id, 'events.json') || [];
+        for (let i = 0; i < 10; i++) {
+          const d = new Date(); d.setDate(d.getDate() + i);
+          const dayName = DAYS[d.getDay()];
+          const dateStr = d.toISOString().split('T')[0];
+          const dayEvts = getEventsForDay(cityEvents, dayName, dateStr);
+          dayEvts.forEach(e => {
+            const key = `${cityObj.id}-${e.id}-${dateStr}`;
+            if (!seen.has(key)) { seen.add(key); total++; }
+          });
+        }
+      }
+      return sendJSON(res, { count: total, days: 10, cities: activeCities.length });
+    }
+
     let city = 'delray-beach';
     let routeParts = parts.slice(1);
     if (routeParts.length > 0 && isCity(routeParts[0])) { city = routeParts[0]; routeParts = routeParts.slice(1); }

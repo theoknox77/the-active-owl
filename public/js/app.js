@@ -776,6 +776,9 @@ async function renderToday() {
 
   const showPopup = !localStorage.getItem('tao-guide-seen');
 
+  // Fetch and render event count badge (non-blocking)
+  let countBadgeHTML = '<div class="event-count-badge" id="event-count-badge"><span class="count-loading">Loading events...</span></div>';
+
   const daySection = (label, events, isToday, dateObj) => {
     const dateLabel = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     return `<div class="day-group">
@@ -792,6 +795,18 @@ async function renderToday() {
     ? `<div class="empty"><span class="empty-emoji">${emptyEmoji}</span><h3>Nothing on the calendar</h3><p>Check back soon or <a href="#/${currentCity}/week">browse this week</a></p></div>`
     : daySection(label1, events1, true, d1) + daySection(label2, events2, false, d2) + daySection(label3, events3, false, d3);
 
+  // Async load the event count (fire and forget, updates badge when ready)
+  fetchJSON('/api/event-count').then(data => {
+    const badge = document.getElementById('event-count-badge');
+    if (!badge) return;
+    if (data && data.count > 0) {
+      badge.innerHTML = `<span class="count-number">${data.count.toLocaleString()}</span> <span class="count-label">events on our radar in the next 10 days across Palm Beach County</span>`;
+      badge.classList.add('loaded');
+    } else {
+      badge.style.display = 'none';
+    }
+  });
+
   return `
     ${showPopup ? `<div class="welcome-overlay" id="welcome-overlay" onclick="if(event.target===this){closeWelcome()}">
       <div class="welcome-popup">
@@ -807,7 +822,9 @@ async function renderToday() {
       </div>
     </div>` : ''}
     <div class="hero">
+      <div class="county-badge">&#127968; Palm Beach County</div>
       <h1>${heroText}</h1>
+      ${countBadgeHTML}
     </div>
     ${renderControlBar()}
     ${renderSearchBar()}
