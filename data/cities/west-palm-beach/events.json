@@ -4,532 +4,3211 @@
     "venueId": "er-bradleys-saloon",
     "name": "Live Music Friday",
     "category": "live-music",
-    "vibe": ["rowdy", "group-friendly", "waterfront"],
+    "vibe": [
+      "rowdy",
+      "group-friendly",
+      "waterfront"
+    ],
     "description": "Live bands on the waterfront patio. The biggest party on Clematis every Friday night.",
-    "recurring": { "day": "friday", "time": "21:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "21:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-002",
     "venueId": "er-bradleys-saloon",
     "name": "Saturday Live Music",
     "category": "live-music",
-    "vibe": ["rowdy", "group-friendly", "waterfront"],
+    "vibe": [
+      "rowdy",
+      "group-friendly",
+      "waterfront"
+    ],
     "description": "Saturday night on the waterfront. Bands, dancing, and the Intracoastal lit up behind you.",
-    "recurring": { "day": "saturday", "time": "21:00", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "21:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-003",
     "venueId": "er-bradleys-saloon",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "waterfront"],
+    "vibe": [
+      "chill",
+      "waterfront"
+    ],
     "description": "Drink specials at the waterfront bar. Mon-Fri, the after-work crowd fills this place up.",
-    "recurring": { "day": "monday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-004",
     "venueId": "er-bradleys-saloon",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "waterfront"],
+    "vibe": [
+      "chill",
+      "waterfront"
+    ],
     "description": "Drink specials at the waterfront bar.",
-    "recurring": { "day": "tuesday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-005",
     "venueId": "er-bradleys-saloon",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "waterfront"],
+    "vibe": [
+      "chill",
+      "waterfront"
+    ],
     "description": "Drink specials at the waterfront bar.",
-    "recurring": { "day": "wednesday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-006",
     "venueId": "er-bradleys-saloon",
     "name": "NFL Sunday",
     "category": "watch-party",
-    "vibe": ["sports", "rowdy", "group-friendly"],
+    "vibe": [
+      "sports",
+      "rowdy",
+      "group-friendly"
+    ],
     "description": "All the games, waterfront views, and drink specials. One of the best spots to watch football in West Palm.",
-    "recurring": { "day": "sunday", "time": "13:00", "duration": 480 },
+    "recurring": {
+      "day": "sunday",
+      "time": "13:00",
+      "duration": 480
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day", "night"]
+    "timeOfDay": [
+      "day",
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-007",
     "venueId": "osheas-irish-pub",
     "name": "Trivia Tuesday",
     "category": "trivia",
-    "vibe": ["competitive", "group-friendly", "cozy"],
+    "vibe": [
+      "competitive",
+      "group-friendly",
+      "cozy"
+    ],
     "description": "Pub trivia with Guinness on tap. Bring your smartest friends.",
-    "recurring": { "day": "tuesday", "time": "19:30", "duration": 120 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "19:30",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-008",
     "venueId": "osheas-irish-pub",
     "name": "Live Music Friday",
     "category": "live-music",
-    "vibe": ["cozy", "group-friendly", "traditional"],
+    "vibe": [
+      "cozy",
+      "group-friendly",
+      "traditional"
+    ],
     "description": "Live Irish and rock bands. Proper pub atmosphere with proper pub music.",
-    "recurring": { "day": "friday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-009",
     "venueId": "osheas-irish-pub",
     "name": "Live Music Saturday",
     "category": "live-music",
-    "vibe": ["cozy", "group-friendly"],
+    "vibe": [
+      "cozy",
+      "group-friendly"
+    ],
     "description": "Saturday night bands at the pub. Always a good time.",
-    "recurring": { "day": "saturday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-010",
     "venueId": "osheas-irish-pub",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "cozy"],
+    "vibe": [
+      "chill",
+      "cozy"
+    ],
     "description": "Drink specials and pub grub Mon-Fri.",
-    "recurring": { "day": "monday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-011",
     "venueId": "osheas-irish-pub",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "cozy"],
+    "vibe": [
+      "chill",
+      "cozy"
+    ],
     "description": "Drink specials and pub grub Mon-Fri.",
-    "recurring": { "day": "thursday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "thursday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-012",
     "venueId": "roxys-pub",
     "name": "Karaoke Thursday",
     "category": "karaoke",
-    "vibe": ["fun", "casual", "loud"],
+    "vibe": [
+      "fun",
+      "casual",
+      "loud"
+    ],
     "description": "Karaoke night at the dive bar. Liquid courage is cheap and the crowd is supportive.",
-    "recurring": { "day": "thursday", "time": "21:00", "duration": 180 },
+    "recurring": {
+      "day": "thursday",
+      "time": "21:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-013",
     "venueId": "roxys-pub",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["casual", "local"],
+    "vibe": [
+      "casual",
+      "local"
+    ],
     "description": "Cheap drinks all afternoon, every day. Classic dive bar happy hour.",
-    "recurring": { "day": "monday", "time": "14:00", "duration": 240 },
+    "recurring": {
+      "day": "monday",
+      "time": "14:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-014",
     "venueId": "roxys-pub",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["casual", "local"],
+    "vibe": [
+      "casual",
+      "local"
+    ],
     "description": "Cheap drinks all afternoon.",
-    "recurring": { "day": "wednesday", "time": "14:00", "duration": 240 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "14:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-015",
     "venueId": "respectable-street",
     "name": "DJ Night Friday",
     "category": "dj",
-    "vibe": ["dance", "artsy", "late-night"],
+    "vibe": [
+      "dance",
+      "artsy",
+      "late-night"
+    ],
     "description": "Indie, electronic, and everything in between. The dance floor at Respectable is legendary.",
-    "recurring": { "day": "friday", "time": "22:00", "duration": 300 },
+    "recurring": {
+      "day": "friday",
+      "time": "22:00",
+      "duration": 300
+    },
     "oneTime": null,
     "cover": "$10",
     "ageRestriction": "21+",
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-016",
     "venueId": "respectable-street",
     "name": "Saturday Night",
     "category": "dj",
-    "vibe": ["dance", "artsy", "late-night"],
+    "vibe": [
+      "dance",
+      "artsy",
+      "late-night"
+    ],
     "description": "Saturday at Respectable. Themed nights, guest DJs, and a crowd that came to dance.",
-    "recurring": { "day": "saturday", "time": "22:00", "duration": 300 },
+    "recurring": {
+      "day": "saturday",
+      "time": "22:00",
+      "duration": 300
+    },
     "oneTime": null,
     "cover": "$10",
     "ageRestriction": "21+",
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-017",
     "venueId": "respectable-street",
     "name": "Throwback Wednesday",
     "category": "dj",
-    "vibe": ["dance", "fun", "eclectic"],
+    "vibe": [
+      "dance",
+      "fun",
+      "eclectic"
+    ],
     "description": "80s, 90s, 2000s throwback night. Everyone knows every word.",
-    "recurring": { "day": "wednesday", "time": "21:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "21:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": "21+",
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-018",
     "venueId": "roccos-tacos-wpb",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["energetic", "group-friendly"],
+    "vibe": [
+      "energetic",
+      "group-friendly"
+    ],
     "description": "Margarita and taco specials at the bar. Mon-Fri, the tableside guac is always worth it.",
-    "recurring": { "day": "monday", "time": "16:00", "duration": 120 },
+    "recurring": {
+      "day": "monday",
+      "time": "16:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-019",
     "venueId": "roccos-tacos-wpb",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["energetic", "group-friendly"],
+    "vibe": [
+      "energetic",
+      "group-friendly"
+    ],
     "description": "Margarita and taco specials at the bar.",
-    "recurring": { "day": "tuesday", "time": "16:00", "duration": 120 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "16:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-020",
     "venueId": "roccos-tacos-wpb",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["energetic", "group-friendly"],
+    "vibe": [
+      "energetic",
+      "group-friendly"
+    ],
     "description": "Margarita and taco specials at the bar.",
-    "recurring": { "day": "wednesday", "time": "16:00", "duration": 120 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "16:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-021",
     "venueId": "hullabaloo",
     "name": "Sunday Brunch",
     "category": "brunch",
-    "vibe": ["foodie", "social", "trendy"],
+    "vibe": [
+      "foodie",
+      "social",
+      "trendy"
+    ],
     "description": "Farm-to-table brunch on Clematis. The menu changes but it's always excellent. Get the cocktails.",
-    "recurring": { "day": "sunday", "time": "10:30", "duration": 270 },
+    "recurring": {
+      "day": "sunday",
+      "time": "10:30",
+      "duration": 270
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "wpb-evt-022",
     "venueId": "hullabaloo",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale-casual", "foodie"],
+    "vibe": [
+      "upscale-casual",
+      "foodie"
+    ],
     "description": "Craft cocktail and small plate specials. One of the best happy hours on Clematis.",
-    "recurring": { "day": "monday", "time": "16:00", "duration": 120 },
+    "recurring": {
+      "day": "monday",
+      "time": "16:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-023",
     "venueId": "hullabaloo",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale-casual", "foodie"],
+    "vibe": [
+      "upscale-casual",
+      "foodie"
+    ],
     "description": "Craft cocktail and small plate specials.",
-    "recurring": { "day": "tuesday", "time": "16:00", "duration": 120 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "16:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-024",
     "venueId": "hullabaloo",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale-casual", "foodie"],
+    "vibe": [
+      "upscale-casual",
+      "foodie"
+    ],
     "description": "Craft cocktail and small plate specials.",
-    "recurring": { "day": "wednesday", "time": "16:00", "duration": 120 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "16:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-025",
     "venueId": "sub-culture-wpb",
     "name": "Comedy Night",
     "category": "comedy",
-    "vibe": ["fun", "intimate"],
+    "vibe": [
+      "fun",
+      "intimate"
+    ],
     "description": "Stand-up comedy in an intimate lounge setting. Local and touring comics.",
-    "recurring": { "day": "thursday", "time": "20:00", "duration": 120 },
+    "recurring": {
+      "day": "thursday",
+      "time": "20:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "$10",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-026",
     "venueId": "sub-culture-wpb",
     "name": "DJ Friday",
     "category": "dj",
-    "vibe": ["artsy", "eclectic", "intimate"],
+    "vibe": [
+      "artsy",
+      "eclectic",
+      "intimate"
+    ],
     "description": "Curated DJ sets in the lounge. More chill than Respectable, more interesting than most.",
-    "recurring": { "day": "friday", "time": "21:00", "duration": 240 },
+    "recurring": {
+      "day": "friday",
+      "time": "21:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "$5",
     "ageRestriction": "21+",
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-027",
     "venueId": "sub-culture-wpb",
     "name": "Live Jazz Saturday",
     "category": "live-music",
-    "vibe": ["intimate", "chill", "artsy"],
+    "vibe": [
+      "intimate",
+      "chill",
+      "artsy"
+    ],
     "description": "Live jazz in the lounge. Great cocktails, great music, great date night.",
-    "recurring": { "day": "saturday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "$10",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-028",
     "venueId": "kapow-noodle-bar",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["trendy", "group-friendly"],
+    "vibe": [
+      "trendy",
+      "group-friendly"
+    ],
     "description": "Discounted cocktails and appetizers. The dragon punch bowl is the play for groups.",
-    "recurring": { "day": "monday", "time": "16:00", "duration": 120 },
+    "recurring": {
+      "day": "monday",
+      "time": "16:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-029",
     "venueId": "kapow-noodle-bar",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["trendy", "group-friendly"],
+    "vibe": [
+      "trendy",
+      "group-friendly"
+    ],
     "description": "Discounted cocktails and appetizers.",
-    "recurring": { "day": "thursday", "time": "16:00", "duration": 120 },
+    "recurring": {
+      "day": "thursday",
+      "time": "16:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-030",
     "venueId": "blue-martini-wpb",
     "name": "Live Music Wednesday",
     "category": "live-music",
-    "vibe": ["upscale", "dance"],
+    "vibe": [
+      "upscale",
+      "dance"
+    ],
     "description": "Midweek live music at the lounge. The crowd dresses up and the drinks match.",
-    "recurring": { "day": "wednesday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": "21+",
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-031",
     "venueId": "blue-martini-wpb",
     "name": "Friday Night Live",
     "category": "live-music",
-    "vibe": ["upscale", "dance", "trendy"],
+    "vibe": [
+      "upscale",
+      "dance",
+      "trendy"
+    ],
     "description": "Live bands and DJs on the big night. VIP tables available if you want to go all out.",
-    "recurring": { "day": "friday", "time": "21:00", "duration": 240 },
+    "recurring": {
+      "day": "friday",
+      "time": "21:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "Varies",
     "ageRestriction": "21+",
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-032",
     "venueId": "blue-martini-wpb",
     "name": "Saturday Night",
     "category": "dj",
-    "vibe": ["upscale", "dance", "late-night"],
+    "vibe": [
+      "upscale",
+      "dance",
+      "late-night"
+    ],
     "description": "The biggest night at Blue Martini. Dress code enforced, dance floor packed.",
-    "recurring": { "day": "saturday", "time": "21:00", "duration": 240 },
+    "recurring": {
+      "day": "saturday",
+      "time": "21:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "Varies",
     "ageRestriction": "21+",
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-033",
     "venueId": "blue-martini-wpb",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale", "social"],
+    "vibe": [
+      "upscale",
+      "social"
+    ],
     "description": "Cocktail specials at one of the best-looking bars in Rosemary Square. Mon-Fri.",
-    "recurring": { "day": "monday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-034",
     "venueId": "blue-martini-wpb",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale", "social"],
+    "vibe": [
+      "upscale",
+      "social"
+    ],
     "description": "Cocktail specials.",
-    "recurring": { "day": "thursday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "thursday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-035",
     "venueId": "wpb-greenmarket",
     "name": "West Palm Beach GreenMarket",
     "category": "markets",
-    "vibe": ["social", "family-friendly", "dog-friendly", "scenic"],
+    "vibe": [
+      "social",
+      "family-friendly",
+      "dog-friendly",
+      "scenic"
+    ],
     "description": "The biggest farmers market in Palm Beach County. Over 100 vendors, waterfront setting, and live music. The Saturday morning tradition.",
-    "recurring": { "day": "saturday", "time": "09:00", "duration": 240 },
+    "recurring": {
+      "day": "saturday",
+      "time": "09:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "wpb-evt-036",
     "venueId": "norton-museum",
     "name": "Art After Dark",
     "category": "art-culture",
-    "vibe": ["artsy", "social", "date-night"],
+    "vibe": [
+      "artsy",
+      "social",
+      "date-night"
+    ],
     "description": "Free Friday nights at the Norton with special exhibitions, live music, and food trucks. One of the best free events in West Palm.",
-    "recurring": { "day": "friday", "time": "17:00", "duration": 300 },
+    "recurring": {
+      "day": "friday",
+      "time": "17:00",
+      "duration": 300
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "wpb-evt-037",
     "venueId": "grandview-public-market",
     "name": "Saturday Brunch at Grandview",
     "category": "brunch",
-    "vibe": ["social", "foodie", "family-friendly"],
+    "vibe": [
+      "social",
+      "foodie",
+      "family-friendly"
+    ],
     "description": "Hit the food hall for Saturday brunch. Acai bowls, tacos, coffee, and more. Something for everyone.",
-    "recurring": { "day": "saturday", "time": "09:00", "duration": 240 },
+    "recurring": {
+      "day": "saturday",
+      "time": "09:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "wpb-evt-038",
     "venueId": "mounts-botanical-garden",
     "name": "Saturday Morning Garden Walk",
     "category": "hiking",
-    "vibe": ["scenic", "chill", "solo-friendly"],
+    "vibe": [
+      "scenic",
+      "chill",
+      "solo-friendly"
+    ],
     "description": "Self-guided walk through the tropical gardens. The butterfly garden in the morning is something else.",
-    "recurring": { "day": "saturday", "time": "10:00", "duration": 120 },
+    "recurring": {
+      "day": "saturday",
+      "time": "10:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "$10",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "wpb-evt-039",
     "venueId": "manatee-lagoon",
     "name": "Manatee Viewing",
     "category": "art-culture",
-    "vibe": ["family-friendly", "scenic", "chill"],
+    "vibe": [
+      "family-friendly",
+      "scenic",
+      "chill"
+    ],
     "description": "Peak manatee season runs November through March. The observation deck is free and the staff gives great talks about the animals.",
-    "recurring": { "day": "saturday", "time": "09:00", "duration": 420 },
+    "recurring": {
+      "day": "saturday",
+      "time": "09:00",
+      "duration": 420
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "wpb-evt-040",
     "venueId": "okeeheelee-park",
     "name": "Saturday Morning Run",
     "category": "fitness",
-    "vibe": ["active", "social"],
+    "vibe": [
+      "active",
+      "social"
+    ],
     "description": "Run the trails at Okeeheelee. 3 to 5 miles on paved and dirt paths through the park. Meet at the main parking lot.",
-    "recurring": { "day": "saturday", "time": "07:00", "duration": 60 },
+    "recurring": {
+      "day": "saturday",
+      "time": "07:00",
+      "duration": 60
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "wpb-evt-041",
     "venueId": "the-blind-monk",
     "name": "Wine Wednesday",
     "category": "happy-hour",
-    "vibe": ["intimate", "chill", "date-night"],
+    "vibe": [
+      "intimate",
+      "chill",
+      "date-night"
+    ],
     "description": "Half-off select wines by the glass. The charcuterie board pairs perfectly. A quiet midweek date night.",
-    "recurring": { "day": "wednesday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
+  },
+  {
+    "id": "west-palm-beach-evt-42",
+    "venueId": "2257-vista-pkwy-suite-26",
+    "name": "Career Reset Lab - A Strengths-Based, AI-Powered Career Overhaul (3-Days)",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Three-day, strengths-based career reset using AI to rebuild your resume, cover letter, and LinkedIn\u2014leave with finished assets, not advice.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-24",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/career-reset-lab-a-strengths-based-ai-powered-career-overhaul-3-days-tickets-1981267441251",
+    "source": "eventbrite",
+    "externalVenue": "2257 Vista Pkwy suite 26",
+    "externalAddress": "2257 Vista Parkway, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-43",
+    "venueId": "restaurant-of-the-week",
+    "name": "Big Ballers: Dinner with Entrepreneurs | West Palm Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us for a cozy dinner with local entrepreneurs to network, share experiences, and make new connections!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-24",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/big-ballers-dinner-with-entrepreneurs-west-palm-beach-tickets-1965665011965",
+    "source": "eventbrite",
+    "externalVenue": "Restaurant of the Week",
+    "externalAddress": "Okeechobee Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-44",
+    "venueId": "the-clayton-e.-hutcheson-agric",
+    "name": "Introduction to Cottage Foods in Florida",
+    "category": "food-specials",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Launch Your Cottage Food Business in Florida. Learn the Laws, Food Safety Basics & Startup Tips in One Practical Session!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-24",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/introduction-to-cottage-foods-in-florida-tickets-1983389062076",
+    "source": "eventbrite",
+    "externalVenue": "The Clayton E. Hutcheson Agricultural Services Center",
+    "externalAddress": "559 North Military Trail, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-45",
+    "venueId": "palm-beach-county-library",
+    "name": "Ai & Ambition",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Step into your next level with confidence because AI isn\u2019t coming\u2026 it\u2019s already here. This is an interactive, beginner-friendly experience.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/ai-ambition-tickets-1981227925057",
+    "source": "eventbrite",
+    "externalVenue": "Palm Beach County Library",
+    "externalAddress": "3650 Summit Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-46",
+    "venueId": "embassy-suites-by-hilton-west-",
+    "name": "A Vision for the Future",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us as Brian and Anna Maria Clement co-directors of Hippocrates Wellness and Author, Health Advocate Sylvie Beljanski share their vision",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/a-vision-for-the-future-tickets-1980199095801",
+    "source": "eventbrite",
+    "externalVenue": "Embassy Suites by Hilton West Palm Beach Central",
+    "externalAddress": "1601 Belvedere Road, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-47",
+    "venueId": "embassy-suites-by-hilton-west-",
+    "name": "Radical Remission\u00ae & Nutrition Workshop: Overcoming the Odds",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "A live Radical Remission\u00ae & plant-based nutrition workshop blending science, lived healing experience, and tools for empowered healing.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/radical-remission-nutrition-workshop-overcoming-the-odds-registration-1981705129388",
+    "source": "eventbrite",
+    "externalVenue": "Embassy Suites by Hilton West Palm Beach Central",
+    "externalAddress": "1601 Belvedere Road, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-48",
+    "venueId": "330-clematis-st",
+    "name": "Breakdance Basics: Open Beginner Class",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Kickstart your breakdance journey with fun moves and beats in this chill beginner\u2019s class!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/breakdance-basics-open-beginner-class-tickets-1982738849272",
+    "source": "eventbrite",
+    "externalVenue": "330 Clematis St",
+    "externalAddress": "330 Clematis Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-49",
+    "venueId": "1645-palm-beach-lakes-blvd",
+    "name": "Infant Red Cross BLS CPR and AED Class in West Palm Beach, FL.",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "CPR West Palm Beach teaches American Red Cross BLS CPR classes in West Palm Beach, FL.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/infant-red-cross-bls-cpr-and-aed-class-in-west-palm-beach-fl-tickets-1778578679709",
+    "source": "eventbrite",
+    "externalVenue": "1645 Palm Beach Lakes Blvd",
+    "externalAddress": "1645 Palm Beach Lakes Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-50",
+    "venueId": "1645-palm-beach-lakes-blvd",
+    "name": "Red Cross BLS CPR and AED Class in West Palm Beach, FL.",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "CPR West Palm Beach teaches American Red Cross BLS CPR classes in West Palm Beach, FL.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/red-cross-bls-cpr-and-aed-class-in-west-palm-beach-fl-tickets-1778530335109",
+    "source": "eventbrite",
+    "externalVenue": "1645 Palm Beach Lakes Blvd",
+    "externalAddress": "1645 Palm Beach Lakes Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-51",
+    "venueId": "1300-s-olive-ave",
+    "name": "Atlas of the Heart - Viewing and Discussion Group",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Atlas of the Heart: Viewing & Discussion Group\nA guided space for emotional language, connection, and community",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/atlas-of-the-heart-viewing-and-discussion-group-tickets-1980679596993",
+    "source": "eventbrite",
+    "externalVenue": "1300 S Olive Ave",
+    "externalAddress": "1300 South Olive Avenue, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-52",
+    "venueId": "2054-vista-pkwy",
+    "name": "In-Person Salesforce Administrator Exam Prep Course in Palm Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Salesforce Administrator Guaranteed to Run In-Person and Online Classes Every Week.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/in-person-salesforce-administrator-exam-prep-course-in-palm-beach-tickets-1749180378599",
+    "source": "eventbrite",
+    "externalVenue": "2054 Vista Pkwy",
+    "externalAddress": "2054 Vista Parkway, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-53",
+    "venueId": "fern-street-theatre",
+    "name": "Blithe Spirit",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Seeking to gather material for his next book, Charles Condomine, a novelist, hosts a dinner-party-turned-s\u00e9ance.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-26",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/blithe-spirit-tickets-1979878921150",
+    "source": "eventbrite",
+    "externalVenue": "Fern Street Theatre",
+    "externalAddress": "500 Fern Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-54",
+    "venueId": "eataly-west-palm-beach",
+    "name": "Uncorked: Supertuscan",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Sit at our table and learn from one of our resident Beverage Experts about Italian wines, producers, and regions.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-26",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/uncorked-supertuscan-tickets-1981461849732",
+    "source": "eventbrite",
+    "externalVenue": "Eataly West Palm Beach",
+    "externalAddress": "580 Hibiscus Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-55",
+    "venueId": "the-belgrove-resort-&-spa,-wes",
+    "name": "The Art of Pairing Thursdays: Agaves and Cocoa with Don Julio",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Don Julio tequila and artisan chocolate pairing featuring guided tastings, welcome cocktail, keepsakes, and dining perks.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-26",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/the-art-of-pairing-thursdays-agaves-and-cocoa-with-don-julio-tickets-1982920071312",
+    "source": "eventbrite",
+    "externalVenue": "The Belgrove Resort & Spa, West Palm Beach, Autograph Collection",
+    "externalAddress": "2020 Banyan Resort Way, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-56",
+    "venueId": "the-peach",
+    "name": "SoulStreamz Open Mic",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us for The SoulStreamz Open Mic! It will be an intimate night of poetry, music, & good vibes. Meet me @ The Peach",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-26",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/soulstreamz-open-mic-tickets-1980101347433",
+    "source": "eventbrite",
+    "externalVenue": "The Peach",
+    "externalAddress": "3950 Georgia Avenue, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-57",
+    "venueId": "2054-vista-pkwy",
+    "name": "Upcoming ITIL 4 Foundation Course in West Palm Beach, FL \u2013 Limited Slots",
+    "category": "dj",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "ITIL Foundation provides a foundational understanding of the ITIL framework for IT service management, offering guidance and best practices.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-26",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/upcoming-itil-4-foundation-course-in-west-palm-beach-fl-limited-slots-tickets-1976303911199",
+    "source": "eventbrite",
+    "externalVenue": "2054 Vista Pkwy",
+    "externalAddress": "2054 Vista Parkway, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-58",
+    "venueId": "2054-vista-pkwy",
+    "name": "Get Certified in ITIL 4 \u2013 West Palm Beach, FL Edition",
+    "category": "dj",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "ITIL Foundation provides a foundational understanding of the ITIL framework for IT service management, offering guidance and best practices.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-26",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/get-certified-in-itil-4-west-palm-beach-fl-edition-tickets-1974956497047",
+    "source": "eventbrite",
+    "externalVenue": "2054 Vista Pkwy",
+    "externalAddress": "2054 Vista Parkway, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-59",
+    "venueId": "fern-street-theatre",
+    "name": "Blithe Spirit",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Seeking to gather material for his next book, Charles Condomine, a novelist, hosts a dinner-party-turned-s\u00e9ance.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-27",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/blithe-spirit-tickets-1980480284845",
+    "source": "eventbrite",
+    "externalVenue": "Fern Street Theatre",
+    "externalAddress": "500 Fern Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-60",
+    "venueId": "respectable-street",
+    "name": "RESPECT THE POWER: THE ULTIMATE TRIBUTE NIGHT",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "A full-scale night of heavy rock and metal energy \u2014 live at Respectable Street Caf\u00e9 in West Palm Beach, Florida!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-27",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/respect-the-power-the-ultimate-tribute-night-tickets-1977922459320",
+    "source": "eventbrite",
+    "externalVenue": "Respectable Street",
+    "externalAddress": "518 Clematis Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-61",
+    "venueId": "eataly-west-palm-beach",
+    "name": "Sip & Savor: Alpine Wine & Cheese",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Sit at our table and learn from one of our resident Beverage Experts and Cheese Mongers about Italian wines and cheeses.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-27",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/sip-savor-alpine-wine-cheese-tickets-1981655342474",
+    "source": "eventbrite",
+    "externalVenue": "Eataly West Palm Beach",
+    "externalAddress": "580 Hibiscus Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-62",
+    "venueId": "muscle-mommy-fitness",
+    "name": "Glow in the dark HIIT class",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Glow. Sweat. Repeat. \u2728\nFull-body HIIT in the dark with neon vibes, loud music & nonstop energy. Let\u2019s light up the night!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-27",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/glow-in-the-dark-hiit-class-tickets-1982997415651",
+    "source": "eventbrite",
+    "externalVenue": "Muscle Mommy Fitness",
+    "externalAddress": "4645 Gun Club Road, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-63",
+    "venueId": "2585-s-military-trl",
+    "name": "Illusions The Drag Queen Show West Palm Beach - Drag Queen Show Palm Beach",
+    "category": "comedy",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Illusions\u00a0the Drag\u00a0Queen Show\u00a0West Palm Beach, the perfect\u00a0combination of spectacular burlesque style drag and comedy performances",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-27",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/illusions-the-drag-queen-show-west-palm-beach-drag-queen-show-palm-beach-tickets-1287581644359",
+    "source": "eventbrite",
+    "externalVenue": "2585 S Military Trl",
+    "externalAddress": "2585 South Military Trail, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-64",
+    "venueId": "spazio-lounge-upstairs-at-lyno",
+    "name": "TATU & BLANCO + DIEGO BARRERA",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "house music speakeasy located upstairs at lynora's on clematis street every friday and saturday night",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-27",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/tatu-blanco-diego-barrera-tickets-1982478404274",
+    "source": "eventbrite",
+    "externalVenue": "Spazio Lounge Upstairs At Lynora\u2019s",
+    "externalAddress": "207 Clematis Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-65",
+    "venueId": "restaurant-of-the-week",
+    "name": "Big Ballers: Dinner with Entrepreneurs | West Palm Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us for a cozy dinner with local entrepreneurs to network, share experiences, and make new connections!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-27",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/big-ballers-dinner-with-entrepreneurs-west-palm-beach-tickets-1965665012968",
+    "source": "eventbrite",
+    "externalVenue": "Restaurant of the Week",
+    "externalAddress": "Okeechobee Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-66",
+    "venueId": "south-florida-fairgrounds",
+    "name": "2026 FuelFest West Palm Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "FuelFest is the ultimate immersive car show experience; a fusion of the automotive world, live music performances, racing and art!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/2026-fuelfest-west-palm-beach-tickets-1978306815941",
+    "source": "eventbrite",
+    "externalVenue": "South Florida Fairgrounds",
+    "externalAddress": "9067 Southern Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-67",
+    "venueId": "respectable-street",
+    "name": "Matte Blvck \"Holy Wars Tour\" + So Much Blood + L.U.S.T - West Palm Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Heroes Live Entertainment presents Matte Blvck + So Much Blood on Saturday, February 28, 2026 @ Respectable Street in West Palm Beach.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/matte-blvck-holy-wars-tour-so-much-blood-lust-west-palm-beach-tickets-1344798280859",
+    "source": "eventbrite",
+    "externalVenue": "Respectable Street",
+    "externalAddress": "518 Clematis St, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-68",
+    "venueId": "fern-street-theatre",
+    "name": "Blithe Spirit",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Seeking to gather material for his next book, Charles Condomine, a novelist, hosts a dinner-party-turned-s\u00e9ance.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/blithe-spirit-tickets-1980480819444",
+    "source": "eventbrite",
+    "externalVenue": "Fern Street Theatre",
+    "externalAddress": "500 Fern Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-69",
+    "venueId": "south-florida-fairgrounds",
+    "name": "2026 FuelFest West Palm Beach Vendors",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Custom sponsorship and multi-event opportunities available! Contact michael@fuelfest.com for more details.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/2026-fuelfest-west-palm-beach-vendors-tickets-1739663242589",
+    "source": "eventbrite",
+    "externalVenue": "South Florida Fairgrounds",
+    "externalAddress": "9067 Southern Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-70",
+    "venueId": "480-hibiscus-st",
+    "name": "2026 Nick AF Palm Beach Meetup",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "This is a meetup for subscribers of the YouTube channel, Analyzing Finance with Nick.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/2026-nick-af-palm-beach-meetup-registration-1970939689668",
+    "source": "eventbrite",
+    "externalVenue": "480 Hibiscus St",
+    "externalAddress": "480 Hibiscus Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-71",
+    "venueId": "treehouse-rooftop",
+    "name": "Brazilian Carnival on the Rooftop",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Vamos curtir o Carnaval Brasileiro no topo, com muita m\u00fasica, dan\u00e7a e divers\u00e3o sob as estrelas!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/brazilian-carnival-on-the-rooftop-tickets-1982921526665",
+    "source": "eventbrite",
+    "externalVenue": "Treehouse Rooftop",
+    "externalAddress": "380 Trinity Place, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-72",
+    "venueId": "eataly-west-palm-beach",
+    "name": "Hands-On: Tiramis\u00f9",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "It\u2019s time to get your hands messy! In our hands-on format, our Scuola Chef will guide you through how to prepare Tiramis\u00f9",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/hands-on-tiramisu-tickets-1981960932502",
+    "source": "eventbrite",
+    "externalVenue": "Eataly West Palm Beach",
+    "externalAddress": "580 Hibiscus Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-73",
+    "venueId": "eataly-west-palm-beach",
+    "name": "Hands-On: Pasta Traditions from the South",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "It\u2019s time to get your hands messy! In this class, our Scuola Chef will guide you through how to prepare Pasta Traditions from the South.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/hands-on-pasta-traditions-from-the-south-tickets-1981960182258",
+    "source": "eventbrite",
+    "externalVenue": "Eataly West Palm Beach",
+    "externalAddress": "580 Hibiscus Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-74",
+    "venueId": "okeeheelee-golf-course",
+    "name": "WEST PALM Rebellion Golf Clinic with Monte Scheinblum",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Spend 2 or 3 full days with GOLF DIGEST Best Teachers in CA & World Long Drive champion Monte Scheinblum.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/west-palm-rebellion-golf-clinic-with-monte-scheinblum-tickets-1979054786140",
+    "source": "eventbrite",
+    "externalVenue": "Okeeheelee Golf Course",
+    "externalAddress": "7715 Forest Hill Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-75",
+    "venueId": "1142-old-okeechobee-rd",
+    "name": "Photography and Social Media Creator Workshop",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "At this workshop, we will inspire and equip you with photography and social media skills to start living your dream life!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/photography-and-social-media-creator-workshop-tickets-1981277924607",
+    "source": "eventbrite",
+    "externalVenue": "1142 Old Okeechobee Rd",
+    "externalAddress": "1142 Old Okeechobee Road, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-76",
+    "venueId": "okeeheelee-nature-center",
+    "name": "Crea la Vida que S\u00ed Quieres",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Un taller para ganar claridad, revisar d\u00f3nde est\u00e1s hoy\ny empezar a vibrar alineadas con lo que realmente deseas.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/crea-la-vida-que-si-quieres-tickets-1981906191771",
+    "source": "eventbrite",
+    "externalVenue": "Okeeheelee Nature Center",
+    "externalAddress": "7715 Forest Hill Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-77",
+    "venueId": "ivy-nightclub",
+    "name": "Hollywood invades Palm Beach! The Largest Nightclub with 2000+ Capacity!",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "HOLLYWOOD INVADES PALM BEACH",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/hollywood-invades-palm-beach-the-largest-nightclub-with-2000-capacity-tickets-937768750577",
+    "source": "eventbrite",
+    "externalVenue": "Ivy Nightclub",
+    "externalAddress": "106 North Military Trail, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-78",
+    "venueId": "live-in-the-paddock-restaurant",
+    "name": "LUCIANO *The Messenger* LIVE IN CONCERT",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Luciano is one of Jamaica's most prolific artist. He will bring you hits after hits! Please come out early for an amazing evening.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/luciano-the-messenger-live-in-concert-tickets-1980281989739",
+    "source": "eventbrite",
+    "externalVenue": "Live in The Paddock Restaurant",
+    "externalAddress": "1111 Congress Avenue, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-79",
+    "venueId": "eataly-west-palm-beach",
+    "name": "Hands-On: Cannoli",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "It\u2019s time to get your hands messy! In our hands-on format, our Scuola Chef will guide you through how to prepare Cannoli",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/hands-on-cannoli-tickets-1982519449040",
+    "source": "eventbrite",
+    "externalVenue": "Eataly West Palm Beach",
+    "externalAddress": "580 Hibiscus Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-80",
+    "venueId": "eataly-west-palm-beach",
+    "name": "Hands-On: Ravioli Cacio e Pepe",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "It\u2019s time to get your hands messy! In this class, our Scuola Chef will guide you through how to prepare Ravioli Cacio e Pepe.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/hands-on-ravioli-cacio-e-pepe-tickets-1982518820159",
+    "source": "eventbrite",
+    "externalVenue": "Eataly West Palm Beach",
+    "externalAddress": "580 Hibiscus Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-81",
+    "venueId": "tea-tell-truth-llc",
+    "name": "Discover the Art of Matcha",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Learn the History & Essence of Matcha, Master the Art of Brewing Ceremonial Matcha, Explore Matcha Mixology",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/discover-the-art-of-matcha-tickets-1980573609983",
+    "source": "eventbrite",
+    "externalVenue": "Tea Tell Truth LLC",
+    "externalAddress": "1016 Clare Avenue, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-82",
+    "venueId": "the-peach",
+    "name": "COMEDY NIGHT AT THE PEACH WITH JORDAN GARNETT AND CO.",
+    "category": "comedy",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Comedy Relapse Presents Comedy Night @ The Peach With Jordan Garnett and Co. Jordan is a national touring comic originally from Delray Beach",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/comedy-night-at-the-peach-with-jordan-garnett-and-co-tickets-1982236111570",
+    "source": "eventbrite",
+    "externalVenue": "The Peach",
+    "externalAddress": "3950 Georgia Avenue, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-83",
+    "venueId": "the-belgrove-resort-&-spa,-wes",
+    "name": "Candle Making Class @ the Belgrove Resort and Spa",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us at Belgrove Resort to make your own awesome candles in a fun, hands-on class!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/candle-making-class-the-belgrove-resort-and-spa-tickets-1974930057967",
+    "source": "eventbrite",
+    "externalVenue": "The Belgrove Resort & Spa, West Palm Beach, Autograph Collection",
+    "externalAddress": "2020 Banyan Resort Way, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-84",
+    "venueId": "2257-vista-pkwy-suite-26",
+    "name": "Sunday Reset: Monthly Goal Setting & Candle Intention",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Guided monthly goal setting with reflection and candle making to help you reset, refocus, and start the month with intention.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/sunday-reset-monthly-goal-setting-candle-intention-tickets-1981324996400",
+    "source": "eventbrite",
+    "externalVenue": "2257 Vista Pkwy suite 26",
+    "externalAddress": "2257 Vista Parkway, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-85",
+    "venueId": "respectable-street",
+    "name": "Immortal Technique: The Redacted Tour ft. Poison Pen, DJ Static, Akir - WPB",
+    "category": "dj",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Heroes Live Entertainment presents Immortal Technique + Poison Pen + more on Tuesday, March 3, 2026 @ Respectable Street in West Palm Beach.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-03",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/immortal-technique-the-redacted-tour-ft-poison-pen-dj-static-akir-wpb-tickets-1977716965683",
+    "source": "eventbrite",
+    "externalVenue": "Respectable Street",
+    "externalAddress": "518 Clematis St, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-86",
+    "venueId": "5201-georgia-ave",
+    "name": "Speed Dating at Mr.B's",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Ages 35-50!!!\n\nJoin us for a fun evening of speed dating with mini cocktails,  sizzling bites, and juicy questions!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-03",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/speed-dating-at-mrbs-tickets-1982987493975",
+    "source": "eventbrite",
+    "externalVenue": "5201 Georgia Ave",
+    "externalAddress": "5201 Georgia Avenue, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-87",
+    "venueId": "hilton-west-palm-beach",
+    "name": "Full Moon Yoga with Brit Lukas",
+    "category": "yoga",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join Brit Lukas from Mystic Moon Healing on the lawn for this restorative yin yoga practice under the full moon at Hilton West Palm Beach.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-03",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "day"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/full-moon-yoga-with-brit-lukas-tickets-1976776441550",
+    "source": "eventbrite",
+    "externalVenue": "Hilton West Palm Beach",
+    "externalAddress": "600 Okeechobee Blvd, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-88",
+    "venueId": "exhibit-hall-a,-559-n-military",
+    "name": "CORE, Ornamental and Turf, and Natural Areas In-person Class",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Restricted Use Pesticide class covering CORE, Ornamental and Turf, and Natural Areas",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-03",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/core-ornamental-and-turf-and-natural-areas-in-person-class-tickets-1983030407330",
+    "source": "eventbrite",
+    "externalVenue": "Exhibit Hall A, 559 N Military Trl",
+    "externalAddress": "559 North Military Trail, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-89",
+    "venueId": "restaurant-of-the-week",
+    "name": "Big Ballers: Dinner with Entrepreneurs | West Palm Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us for a cozy dinner with local entrepreneurs to network, share experiences, and make new connections!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-03",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/big-ballers-dinner-with-entrepreneurs-west-palm-beach-tickets-1965665013971",
+    "source": "eventbrite",
+    "externalVenue": "Restaurant of the Week",
+    "externalAddress": "Okeechobee Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-90",
+    "venueId": "respectable-street",
+    "name": "Immortal Technique + Poison Pen + DJ Static + Broot McCoy - West Palm Beach",
+    "category": "dj",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Heroes Live Entertainment presents Immortal Technique + Poison Pen + more on Tuesday, March 3, 2026 @ Respectable Street in West Palm Beach.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-03",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/immortal-technique-poison-pen-dj-static-broot-mccoy-west-palm-beach-tickets-1980104297256",
+    "source": "eventbrite",
+    "externalVenue": "Respectable Street",
+    "externalAddress": "518 Clematis Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-91",
+    "venueId": "palm-beach-county-cooperative-",
+    "name": "Ficus Whitefly and Phantasma Scale - Updates and BMPs for Control",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Educational event on the biology and management of ficus whitefly with an emphasis on the application of pesticides.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/ficus-whitefly-and-phantasma-scale-updates-and-bmps-for-control-tickets-1982790629147",
+    "source": "eventbrite",
+    "externalVenue": "Palm Beach County Cooperative Extension, Clayton E. Hutcheson Complex",
+    "externalAddress": "559 North Military Trail, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-92",
+    "venueId": "malka",
+    "name": "JFS Cookbook Club at Malka West Palm Beach with Niki Russ Federman",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "You're invited to Malka West Palm  Beach for a Cookbook Club featuring author Niki Russ Federman!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/jfs-cookbook-club-at-malka-west-palm-beach-with-niki-russ-federman-tickets-1981873276320",
+    "source": "eventbrite",
+    "externalVenue": "Malka",
+    "externalAddress": "209 6th Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-93",
+    "venueId": "elisabettas-ristorante",
+    "name": "Women Business Owners & Entrepreneurs Lunch | West Palm Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Networking lunch for women business owners, founders, and entrepreneurs in West Palm Beach!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/women-business-owners-entrepreneurs-lunch-west-palm-beach-tickets-1982879781805",
+    "source": "eventbrite",
+    "externalVenue": "Elisabetta's Ristorante",
+    "externalAddress": "185 Banyan Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-94",
+    "venueId": "respectable-street",
+    "name": "Wednesday Night Comedy Show at Respectables",
+    "category": "comedy",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us Wednesday night at Respectables for a stacked lineup of live stand-up",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/wednesday-night-comedy-show-at-respectables-tickets-1983468370289",
+    "source": "eventbrite",
+    "externalVenue": "Respectable Street",
+    "externalAddress": "518 Clematis Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-95",
+    "venueId": "1645-palm-beach-lakes-blvd",
+    "name": "Infant Red Cross BLS CPR and AED Class in West Palm Beach, FL.",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "CPR West Palm Beach teaches American Red Cross BLS CPR classes in West Palm Beach, FL.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/infant-red-cross-bls-cpr-and-aed-class-in-west-palm-beach-fl-tickets-1778578689739",
+    "source": "eventbrite",
+    "externalVenue": "1645 Palm Beach Lakes Blvd",
+    "externalAddress": "1645 Palm Beach Lakes Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-96",
+    "venueId": "tea-tell-truth-llc|-rsvp-recom",
+    "name": "Tea Ceremony and Sound Journey with Jia",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Experience an evening of bliss as Jia's gently guides you through a soothing sound journey and tea ceremony.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/tea-ceremony-and-sound-journey-with-jia-tickets-1980574264942",
+    "source": "eventbrite",
+    "externalVenue": "Tea Tell Truth LLC| RSVP Recommended",
+    "externalAddress": "1016 Clare Avenue, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-97",
+    "venueId": "1645-palm-beach-lakes-blvd",
+    "name": "Red Cross BLS CPR and AED Class in West Palm Beach, FL.",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "CPR West Palm Beach teaches American Red Cross BLS CPR classes in West Palm Beach, FL.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/red-cross-bls-cpr-and-aed-class-in-west-palm-beach-fl-tickets-1778530345139",
+    "source": "eventbrite",
+    "externalVenue": "1645 Palm Beach Lakes Blvd",
+    "externalAddress": "1645 Palm Beach Lakes Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-98",
+    "venueId": "1300-s-olive-ave",
+    "name": "Atlas of the Heart - Viewing and Discussion Group",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Atlas of the Heart: Viewing & Discussion Group\nA guided space for emotional language, connection, and community",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/atlas-of-the-heart-viewing-and-discussion-group-tickets-1980679597996",
+    "source": "eventbrite",
+    "externalVenue": "1300 S Olive Ave",
+    "externalAddress": "1300 South Olive Avenue, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-99",
+    "venueId": "eataly-west-palm-beach",
+    "name": "Hands-On: Pasta Traditions from the South",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "It\u2019s time to get your hands messy! In this class, our Scuola Chef will guide you through how to prepare Pasta Traditions from the South.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-05",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/hands-on-pasta-traditions-from-the-south-tickets-1982520712820",
+    "source": "eventbrite",
+    "externalVenue": "Eataly West Palm Beach",
+    "externalAddress": "580 Hibiscus Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-100",
+    "venueId": "4065-haverhill-rd",
+    "name": "30 Days of Martial Arts Classes and a Free Uniform - $49",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "New members special with savings of over $200. Students take 2 classes per week.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-05",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/30-days-of-martial-arts-classes-and-a-free-uniform-49-tickets-1980218366440",
+    "source": "eventbrite",
+    "externalVenue": "4065 Haverhill Rd",
+    "externalAddress": "4065 Haverhill Road, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-101",
+    "venueId": "pbkc-@-the-palm-beach-kennel-c",
+    "name": "Joe DeVito from Gutfeld! live at The Paddock @ PBKC",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "FRIDAY, MARCH 6, 2026",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-06",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/joe-devito-from-gutfeld-live-at-the-paddock-pbkc-tickets-1571748665569",
+    "source": "eventbrite",
+    "externalVenue": "PBKC @ The Palm Beach Kennel Club",
+    "externalAddress": "1111 N Congress Ave, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-102",
+    "venueId": "south-florida-fairgrounds",
+    "name": "West Palm Beach Antique Festival March 6-8",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Florida's Largest Monthly Antique & Vintage Show- Antiques, Vintage, Art & Design.  Everything from Pyrex to Rolex.  Over 300 booths!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-06",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/west-palm-beach-antique-festival-march-6-8-tickets-1983542643442",
+    "source": "eventbrite",
+    "externalVenue": "SOUTH FLORIDA FAIRGROUNDS",
+    "externalAddress": "Southern Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-103",
+    "venueId": "eataly-west-palm-beach",
+    "name": "Hands-On: Gnocchi al Pomodoro",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "It\u2019s time to get your hands messy! In our hands-on format, our Scuola Chef will guide you through how to prepare Gnocchi al Pomodoro.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-06",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/hands-on-gnocchi-al-pomodoro-tickets-1982521772991",
+    "source": "eventbrite",
+    "externalVenue": "Eataly West Palm Beach",
+    "externalAddress": "580 Hibiscus Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-104",
+    "venueId": "vip-hookah-lounge",
+    "name": "5 LAN \u274c BEN THE CEO BDAY BASH",
+    "category": "dj",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "BENTHE CEO BDAY BASH \u274c5 LAN \u274c ROODYMAN \u274cDAWENS ECKO           DJ TEDDY MIX \u274cDJ LEX \u274cDJ BROWN\u274c DJ DACO \u274cHOSTED BY JC DOUZE & TI CHALET",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-06",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/5-lan-ben-the-ceo-bday-bash-tickets-1983460993224",
+    "source": "eventbrite",
+    "externalVenue": "VIP Hookah Lounge",
+    "externalAddress": "616 North Military Trail, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-105",
+    "venueId": "2585-s-military-trl",
+    "name": "Illusions The Drag Queen Show West Palm Beach - Drag Queen Show Palm Beach",
+    "category": "comedy",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Illusions\u00a0the Drag\u00a0Queen Show\u00a0West Palm Beach, the perfect\u00a0combination of spectacular burlesque style drag and comedy performances",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-06",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/illusions-the-drag-queen-show-west-palm-beach-drag-queen-show-palm-beach-tickets-1287581664419",
+    "source": "eventbrite",
+    "externalVenue": "2585 S Military Trl",
+    "externalAddress": "2585 South Military Trail, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-106",
+    "venueId": "6901-okeechobee-blvd-b1",
+    "name": "Networking Sip & Paint",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us at Berry Fresh for a night of networking, socializing, and creative expression.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-06",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/networking-sip-paint-tickets-1982476361163",
+    "source": "eventbrite",
+    "externalVenue": "6901 Okeechobee Blvd b1",
+    "externalAddress": "6901 Okeechobee Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-107",
+    "venueId": "restaurant-of-the-week",
+    "name": "Big Ballers: Dinner with Entrepreneurs | West Palm Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us for a cozy dinner with local entrepreneurs to network, share experiences, and make new connections!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-06",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/big-ballers-dinner-with-entrepreneurs-west-palm-beach-tickets-1965665014974",
+    "source": "eventbrite",
+    "externalVenue": "Restaurant of the Week",
+    "externalAddress": "Okeechobee Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-108",
+    "venueId": "for-venue-details-reach-us-at-",
+    "name": "Organizational Skills 1-Day Workshop | West Palm Beach, FL",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Get ready to level up your organization game with our hands-on workshop - say goodbye to chaos and hello to productivity!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-06",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/organizational-skills-1-day-workshop-west-palm-beach-fl-tickets-1796290014789",
+    "source": "eventbrite",
+    "externalVenue": "For venue details reach us at info@learnerring.com",
+    "externalAddress": "PH: +1 505 369 2908, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-109",
+    "venueId": "for-venue-details-reach-us-at-",
+    "name": "Account Management 1-Day Workshop | West Palm Beach, FL",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us for a high-energy workshop on mastering account management strategies and boosting client relationships!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-06",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/account-management-1-day-workshop-west-palm-beach-fl-tickets-1933948605339",
+    "source": "eventbrite",
+    "externalVenue": "For venue details reach us at info@learnerring.com",
+    "externalAddress": "PH: +1505 369 2908, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-110",
+    "venueId": "2257-vista-pkwy-suite-26",
+    "name": "Friday Release: Classic Rock Social",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "A relaxed Friday paint night set to Classic Rock\u2014guided, social, and easygoing. Unwind, sip, and create to familiar favorites.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-06",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/friday-release-classic-rock-social-tickets-1981388270655",
+    "source": "eventbrite",
+    "externalVenue": "2257 Vista Pkwy suite 26",
+    "externalAddress": "2257 Vista Parkway, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-111",
+    "venueId": "the-peach",
+    "name": "Official Grand Opening of No More Starving Artists Foundation Location",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join the nonprofit for the celebration of their official grand opening of their artists-in-residence and office.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/official-grand-opening-of-no-more-starving-artists-foundation-location-tickets-1982303600431",
+    "source": "eventbrite",
+    "externalVenue": "The Peach",
+    "externalAddress": "3950 Georgia Avenue, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-112",
+    "venueId": "eataly-west-palm-beach",
+    "name": "Hands-On: Mozzarella",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "It\u2019s time to dive right in, hands-first! In our hands-on format, our mozzarella expert will guide you through how to prepare mozzarella.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/hands-on-mozzarella-tickets-1982522601469",
+    "source": "eventbrite",
+    "externalVenue": "Eataly West Palm Beach",
+    "externalAddress": "580 Hibiscus Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-113",
+    "venueId": "million-dollar-style-(katana-h",
+    "name": "Longevity is the New Luxury Masterclass with Andrea Lincoln",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "A longevity masterclass for women done settling for fatigue, ready for a new body, real energy, and a powerful next chapter.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/longevity-is-the-new-luxury-masterclass-with-andrea-lincoln-tickets-1979806395223",
+    "source": "eventbrite",
+    "externalVenue": "Million Dollar Style (Katana House)",
+    "externalAddress": "3311 South Dixie Highway, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-114",
+    "venueId": "ivy-nightclub",
+    "name": "Hollywood invades Palm Beach! The Largest Nightclub with 2000+ Capacity!",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "HOLLYWOOD INVADES PALM BEACH",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/hollywood-invades-palm-beach-the-largest-nightclub-with-2000-capacity-tickets-937768760607",
+    "source": "eventbrite",
+    "externalVenue": "Ivy Nightclub",
+    "externalAddress": "106 North Military Trail, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-115",
+    "venueId": "2585-s-military-trl",
+    "name": "Illusions The Drag Queen Show West Palm Beach - Drag Queen Show Palm Beach",
+    "category": "comedy",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Illusions\u00a0the Drag\u00a0Queen Show\u00a0West Palm Beach, the perfect\u00a0combination of spectacular burlesque style drag and comedy performances",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/illusions-the-drag-queen-show-west-palm-beach-drag-queen-show-palm-beach-tickets-1287581674449",
+    "source": "eventbrite",
+    "externalVenue": "2585 S Military Trl",
+    "externalAddress": "2585 South Military Trail, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-116",
+    "venueId": "1645-palm-beach-lakes-blvd",
+    "name": "Infant Red Cross BLS CPR and AED Class in West Palm Beach, FL.",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "CPR West Palm Beach teaches American Red Cross BLS CPR classes in West Palm Beach, FL.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/infant-red-cross-bls-cpr-and-aed-class-in-west-palm-beach-fl-tickets-1778585480049",
+    "source": "eventbrite",
+    "externalVenue": "1645 Palm Beach Lakes Blvd",
+    "externalAddress": "1645 Palm Beach Lakes Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-117",
+    "venueId": "2257-vista-pkwy-suite-26",
+    "name": "Designing Containers How to Reduce Stress Without Escaping your Job",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "A 2-hour behavioral design workshop for professionals who want less stress by building structure, not escaping their job.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/designing-containers-how-to-reduce-stress-without-escaping-your-job-tickets-1981936342954",
+    "source": "eventbrite",
+    "externalVenue": "2257 Vista Pkwy suite 26",
+    "externalAddress": "2257 Vista Parkway, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-118",
+    "venueId": "1645-palm-beach-lakes-blvd",
+    "name": "Red Cross BLS CPR and AED Class in West Palm Beach, FL.",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "CPR West Palm Beach teaches American Red Cross BLS CPR classes in West Palm Beach, FL.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/red-cross-bls-cpr-and-aed-class-in-west-palm-beach-fl-tickets-1778524206779",
+    "source": "eventbrite",
+    "externalVenue": "1645 Palm Beach Lakes Blvd",
+    "externalAddress": "1645 Palm Beach Lakes Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-119",
+    "venueId": "restaurant-of-the-week",
+    "name": "Big Ballers: Dinner with Entrepreneurs | West Palm Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us for a cozy dinner with local entrepreneurs to network, share experiences, and make new connections!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/big-ballers-dinner-with-entrepreneurs-west-palm-beach-tickets-1965665117280",
+    "source": "eventbrite",
+    "externalVenue": "Restaurant of the Week",
+    "externalAddress": "Okeechobee Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-120",
+    "venueId": "the-club-at-ibis",
+    "name": "INTERNATIONAL WOMEN'S DAY",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Celebrate International Women\u2019s Day with a powerful panel on minority women entrepreneurs and the impact of women gaining opportunity.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-08",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/international-womens-day-tickets-1983184718880",
+    "source": "eventbrite",
+    "externalVenue": "The Club at Ibis",
+    "externalAddress": "8225 Ibis Boulevard, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-121",
+    "venueId": "eataly-west-palm-beach",
+    "name": "Hands-On: Tiramis\u00f9",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "It\u2019s time to get your hands messy! In our hands-on format, our Scuola Chef will guide you through how to prepare Tiramis\u00f9",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-08",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/hands-on-tiramisu-tickets-1982627821184",
+    "source": "eventbrite",
+    "externalVenue": "Eataly West Palm Beach",
+    "externalAddress": "580 Hibiscus Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-122",
+    "venueId": "the-belgrove-resort-&-spa,-wes",
+    "name": "Wellness Sundays at The Belgrove Resort & Spa",
+    "category": "yoga",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Indulge in a mindful experience with immersive sound baths and revitalizing yoga designed to restore balance and well being.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-08",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "day"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/wellness-sundays-at-the-belgrove-resort-spa-tickets-1538490950849",
+    "source": "eventbrite",
+    "externalVenue": "The Belgrove Resort & Spa, West Palm Beach, Autograph Collection",
+    "externalAddress": "2020 Banyan Resort Way, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-123",
+    "venueId": "bindu-yoga-and-wellness",
+    "name": "Emergence Breath -",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Discover the incredible healing power of your own breath. Give the body everything it needs to maintain optimum health and vitality.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-08",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/emergence-breath--tickets-1982622981709",
+    "source": "eventbrite",
+    "externalVenue": "Bindu Yoga and Wellness",
+    "externalAddress": "1530 Elizabeth Avenue, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-124",
+    "venueId": "2257-vista-pkwy-suite-26",
+    "name": "Sunday Reset: Let the Water Lead",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "A calm, guided watercolor session focused on release, movement, and rest. No outcomes\u2014just color, water, and a slower pace.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-08",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/sunday-reset-let-the-water-lead-tickets-1981667784689",
+    "source": "eventbrite",
+    "externalVenue": "2257 Vista Pkwy suite 26",
+    "externalAddress": "2257 Vista Parkway, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-125",
+    "venueId": "the-belgrove-resort-&-spa,-wes",
+    "name": "Candle Making Class @ the Belgrove Resort and Spa",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us at Belgrove Resort to make your own awesome candles in a fun, hands-on class!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-08",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/candle-making-class-the-belgrove-resort-and-spa-tickets-1974930058970",
+    "source": "eventbrite",
+    "externalVenue": "The Belgrove Resort & Spa, West Palm Beach, Autograph Collection",
+    "externalAddress": "2020 Banyan Resort Way, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-126",
+    "venueId": "okeeheelee-park-&-forest-hill-",
+    "name": "OUTDOOR MINDFULNESS EVERY SUNDAY 8AM in West Palm Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Mindful movements to release stress and reconnect with nature.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-08",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/outdoor-mindfulness-every-sunday-8am-in-west-palm-beach-tickets-1278777711559",
+    "source": "eventbrite",
+    "externalVenue": "Okeeheelee Park & Forest Hill Boulevard",
+    "externalAddress": "Forest hill blvd and Okeeheelee park, West palm beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-127",
+    "venueId": "ivy-nightclub",
+    "name": "Hollywood invades Palm Beach! The Largest Nightclub  with 2000+ Capacity!",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "HOLLYWOOD INVADES PALM BEACH",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/hollywood-invades-palm-beach-the-largest-nightclub-with-2000-capacity-tickets-1227315446539",
+    "source": "eventbrite",
+    "externalVenue": "Ivy Nightclub",
+    "externalAddress": "106 North Military Trail, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-128",
+    "venueId": "eataly-west-palm-beach",
+    "name": "Hands-On: Mozzarella",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "It\u2019s time to dive right in, hands-first! In our hands-on format, our mozzarella expert will guide you through how to prepare mozzarella.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-09",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/hands-on-mozzarella-tickets-1982627903430",
+    "source": "eventbrite",
+    "externalVenue": "Eataly West Palm Beach",
+    "externalAddress": "580 Hibiscus Street, West Palm Beach, FL"
+  },
+  {
+    "id": "west-palm-beach-evt-129",
+    "venueId": "2054-vista-pkwy",
+    "name": "CISSP Certification | ISC\u00b2 Exam Preparation Program in West Palm Beach, FL",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Take part in our expert-led CISSP course and confidently prepare for the CISSP certification, the gold standard in cybersecurity.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-09",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/cissp-certification-isc2-exam-preparation-program-in-west-palm-beach-fl-tickets-1980766455790",
+    "source": "eventbrite",
+    "externalVenue": "2054 Vista Pkwy",
+    "externalAddress": "2054 Vista Parkway, West Palm Beach, FL"
   }
 ]

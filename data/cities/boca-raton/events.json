@@ -4,1040 +4,1779 @@
     "venueId": "the-dubliner-boca",
     "name": "Live Music Friday",
     "category": "live-music",
-    "vibe": ["cozy", "group-friendly"],
+    "vibe": [
+      "cozy",
+      "group-friendly"
+    ],
     "description": "Live bands on the Mizner Park patio. Irish rock, covers, and good craic.",
-    "recurring": { "day": "friday", "time": "21:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "21:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-002",
     "venueId": "the-dubliner-boca",
     "name": "Live Music Saturday",
     "category": "live-music",
-    "vibe": ["cozy", "group-friendly"],
+    "vibe": [
+      "cozy",
+      "group-friendly"
+    ],
     "description": "Saturday night live music at the best Irish pub in Mizner Park.",
-    "recurring": { "day": "saturday", "time": "21:00", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "21:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-003",
     "venueId": "the-dubliner-boca",
     "name": "Tuesday Trivia",
     "category": "trivia",
-    "vibe": ["competitive", "group-friendly"],
+    "vibe": [
+      "competitive",
+      "group-friendly"
+    ],
     "description": "Pub trivia with prizes. Grab a pint and test your knowledge.",
-    "recurring": { "day": "tuesday", "time": "19:30", "duration": 120 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "19:30",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-004",
     "venueId": "the-dubliner-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "group-friendly"],
+    "vibe": [
+      "chill",
+      "group-friendly"
+    ],
     "description": "Drink specials and appetizer deals on the patio. Mon-Fri.",
-    "recurring": { "day": "monday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-005",
     "venueId": "the-dubliner-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "group-friendly"],
+    "vibe": [
+      "chill",
+      "group-friendly"
+    ],
     "description": "Drink specials and appetizer deals on the patio. Mon-Fri.",
-    "recurring": { "day": "tuesday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-006",
     "venueId": "the-dubliner-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "group-friendly"],
+    "vibe": [
+      "chill",
+      "group-friendly"
+    ],
     "description": "Drink specials and appetizer deals on the patio. Mon-Fri.",
-    "recurring": { "day": "wednesday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-007",
     "venueId": "the-dubliner-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "group-friendly"],
+    "vibe": [
+      "chill",
+      "group-friendly"
+    ],
     "description": "Drink specials and appetizer deals on the patio. Mon-Fri.",
-    "recurring": { "day": "thursday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "thursday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-008",
     "venueId": "the-dubliner-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "group-friendly"],
+    "vibe": [
+      "chill",
+      "group-friendly"
+    ],
     "description": "Drink specials and appetizer deals on the patio. Mon-Fri.",
-    "recurring": { "day": "friday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-010",
     "venueId": "blue-martini-boca",
     "name": "Live Music & DJ Night",
     "category": "live-music",
-    "vibe": ["upscale", "dance", "energetic"],
+    "vibe": [
+      "upscale",
+      "dance",
+      "energetic"
+    ],
     "description": "Live band followed by DJ sets. Dress up and dance.",
-    "recurring": { "day": "friday", "time": "21:00", "duration": 300 },
+    "recurring": {
+      "day": "friday",
+      "time": "21:00",
+      "duration": 300
+    },
     "oneTime": null,
     "cover": "Varies",
     "ageRestriction": "21+",
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-011",
     "venueId": "blue-martini-boca",
     "name": "Saturday Night Live & DJ",
     "category": "dj",
-    "vibe": ["upscale", "dance", "late-night"],
+    "vibe": [
+      "upscale",
+      "dance",
+      "late-night"
+    ],
     "description": "The biggest night at Blue Martini. VIP tables, live music, DJs til close.",
-    "recurring": { "day": "saturday", "time": "21:00", "duration": 300 },
+    "recurring": {
+      "day": "saturday",
+      "time": "21:00",
+      "duration": 300
+    },
     "oneTime": null,
     "cover": "Varies",
     "ageRestriction": "21+",
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-012",
     "venueId": "blue-martini-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale", "chill"],
+    "vibe": [
+      "upscale",
+      "chill"
+    ],
     "description": "Half-off specialty martinis and appetizers. The best happy hour in Boca.",
-    "recurring": { "day": "monday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-013",
     "venueId": "blue-martini-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale", "chill"],
+    "vibe": [
+      "upscale",
+      "chill"
+    ],
     "description": "Half-off specialty martinis and appetizers.",
-    "recurring": { "day": "tuesday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-014",
     "venueId": "blue-martini-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale", "chill"],
+    "vibe": [
+      "upscale",
+      "chill"
+    ],
     "description": "Half-off specialty martinis and appetizers.",
-    "recurring": { "day": "wednesday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-015",
     "venueId": "blue-martini-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale", "chill"],
+    "vibe": [
+      "upscale",
+      "chill"
+    ],
     "description": "Half-off specialty martinis and appetizers.",
-    "recurring": { "day": "thursday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "thursday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-016",
     "venueId": "blue-martini-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale", "chill"],
+    "vibe": [
+      "upscale",
+      "chill"
+    ],
     "description": "Half-off specialty martinis and appetizers.",
-    "recurring": { "day": "friday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-017",
     "venueId": "blue-martini-boca",
     "name": "Wednesday Live Music",
     "category": "live-music",
-    "vibe": ["upscale", "chill"],
+    "vibe": [
+      "upscale",
+      "chill"
+    ],
     "description": "Midweek live band on the patio.",
-    "recurring": { "day": "wednesday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-020",
     "venueId": "roccos-tacos-boca",
     "name": "Happy Hour Fiesta",
     "category": "happy-hour",
-    "vibe": ["energetic", "group-friendly"],
+    "vibe": [
+      "energetic",
+      "group-friendly"
+    ],
     "description": "$6 margaritas, $5 tacos, and tableside guac. Mon-Fri 4-7pm.",
-    "recurring": { "day": "monday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-021",
     "venueId": "roccos-tacos-boca",
     "name": "Happy Hour Fiesta",
     "category": "happy-hour",
-    "vibe": ["energetic", "group-friendly"],
+    "vibe": [
+      "energetic",
+      "group-friendly"
+    ],
     "description": "$6 margaritas, $5 tacos, and tableside guac. Mon-Fri 4-7pm.",
-    "recurring": { "day": "tuesday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-022",
     "venueId": "roccos-tacos-boca",
     "name": "Happy Hour Fiesta",
     "category": "happy-hour",
-    "vibe": ["energetic", "group-friendly"],
+    "vibe": [
+      "energetic",
+      "group-friendly"
+    ],
     "description": "$6 margaritas, $5 tacos, and tableside guac. Mon-Fri 4-7pm.",
-    "recurring": { "day": "wednesday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-023",
     "venueId": "roccos-tacos-boca",
     "name": "Happy Hour Fiesta",
     "category": "happy-hour",
-    "vibe": ["energetic", "group-friendly"],
+    "vibe": [
+      "energetic",
+      "group-friendly"
+    ],
     "description": "$6 margaritas, $5 tacos, and tableside guac. Mon-Fri 4-7pm.",
-    "recurring": { "day": "thursday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "thursday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-024",
     "venueId": "roccos-tacos-boca",
     "name": "Happy Hour Fiesta",
     "category": "happy-hour",
-    "vibe": ["energetic", "group-friendly"],
+    "vibe": [
+      "energetic",
+      "group-friendly"
+    ],
     "description": "$6 margaritas, $5 tacos, and tableside guac. Mon-Fri 4-7pm.",
-    "recurring": { "day": "friday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-025",
     "venueId": "roccos-tacos-boca",
     "name": "Live Music Saturday",
     "category": "live-music",
-    "vibe": ["energetic", "loud"],
+    "vibe": [
+      "energetic",
+      "loud"
+    ],
     "description": "Live bands on the patio while the tequila flows.",
-    "recurring": { "day": "saturday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-030",
     "venueId": "the-locale-boca",
     "name": "Wednesday Trivia",
     "category": "trivia",
-    "vibe": ["competitive", "group-friendly"],
+    "vibe": [
+      "competitive",
+      "group-friendly"
+    ],
     "description": "Team trivia with craft cocktails and prizes.",
-    "recurring": { "day": "wednesday", "time": "19:30", "duration": 120 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "19:30",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-031",
     "venueId": "the-locale-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "neighborhood"],
+    "vibe": [
+      "chill",
+      "neighborhood"
+    ],
     "description": "Drink and food specials Mon-Fri 4-7pm.",
-    "recurring": { "day": "monday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-032",
     "venueId": "the-locale-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "neighborhood"],
+    "vibe": [
+      "chill",
+      "neighborhood"
+    ],
     "description": "Drink and food specials Mon-Fri 4-7pm.",
-    "recurring": { "day": "tuesday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-033",
     "venueId": "the-locale-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "neighborhood"],
+    "vibe": [
+      "chill",
+      "neighborhood"
+    ],
     "description": "Drink and food specials Mon-Fri 4-7pm.",
-    "recurring": { "day": "wednesday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-034",
     "venueId": "the-locale-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "neighborhood"],
+    "vibe": [
+      "chill",
+      "neighborhood"
+    ],
     "description": "Drink and food specials Mon-Fri 4-7pm.",
-    "recurring": { "day": "thursday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "thursday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-035",
     "venueId": "the-locale-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "neighborhood"],
+    "vibe": [
+      "chill",
+      "neighborhood"
+    ],
     "description": "Drink and food specials Mon-Fri 4-7pm.",
-    "recurring": { "day": "friday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-040",
     "venueId": "the-biergarten-boca",
     "name": "Wednesday Trivia",
     "category": "trivia",
-    "vibe": ["competitive", "group-friendly"],
+    "vibe": [
+      "competitive",
+      "group-friendly"
+    ],
     "description": "Trivia night in the beer garden with craft brews and pretzels.",
-    "recurring": { "day": "wednesday", "time": "19:00", "duration": 120 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "19:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-041",
     "venueId": "the-biergarten-boca",
     "name": "Live Music Friday",
     "category": "live-music",
-    "vibe": ["outdoor", "group-friendly"],
+    "vibe": [
+      "outdoor",
+      "group-friendly"
+    ],
     "description": "Live bands in the beer garden. Grab a stein and settle in.",
-    "recurring": { "day": "friday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-042",
     "venueId": "the-biergarten-boca",
     "name": "Live Music Saturday",
     "category": "live-music",
-    "vibe": ["outdoor", "group-friendly"],
+    "vibe": [
+      "outdoor",
+      "group-friendly"
+    ],
     "description": "Saturday night live music under the lights.",
-    "recurring": { "day": "saturday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-043",
     "venueId": "the-biergarten-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "outdoor"],
+    "vibe": [
+      "chill",
+      "outdoor"
+    ],
     "description": "$5 select drafts and half-off pretzels. Mon-Fri 4-7pm.",
-    "recurring": { "day": "monday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-044",
     "venueId": "the-biergarten-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "outdoor"],
+    "vibe": [
+      "chill",
+      "outdoor"
+    ],
     "description": "$5 select drafts and half-off pretzels. Mon-Fri 4-7pm.",
-    "recurring": { "day": "tuesday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-045",
     "venueId": "the-biergarten-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "outdoor"],
+    "vibe": [
+      "chill",
+      "outdoor"
+    ],
     "description": "$5 select drafts and half-off pretzels. Mon-Fri 4-7pm.",
-    "recurring": { "day": "wednesday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-046",
     "venueId": "the-biergarten-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "outdoor"],
+    "vibe": [
+      "chill",
+      "outdoor"
+    ],
     "description": "$5 select drafts and half-off pretzels. Mon-Fri 4-7pm.",
-    "recurring": { "day": "thursday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "thursday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-047",
     "venueId": "the-biergarten-boca",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "outdoor"],
+    "vibe": [
+      "chill",
+      "outdoor"
+    ],
     "description": "$5 select drafts and half-off pretzels. Mon-Fri 4-7pm.",
-    "recurring": { "day": "friday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-050",
     "venueId": "dead-owl-brewing",
     "name": "Thursday Trivia",
     "category": "trivia",
-    "vibe": ["chill", "competitive"],
+    "vibe": [
+      "chill",
+      "competitive"
+    ],
     "description": "Trivia in the taproom with craft beers on tap.",
-    "recurring": { "day": "thursday", "time": "19:00", "duration": 120 },
+    "recurring": {
+      "day": "thursday",
+      "time": "19:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-060",
     "venueId": "boca-beer-house",
     "name": "Tuesday Trivia",
     "category": "trivia",
-    "vibe": ["chill", "competitive"],
+    "vibe": [
+      "chill",
+      "competitive"
+    ],
     "description": "Beer trivia at the Beer House. Win prizes, drink craft.",
-    "recurring": { "day": "tuesday", "time": "19:00", "duration": 120 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "19:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-061",
     "venueId": "boca-beer-house",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "local"],
+    "vibe": [
+      "chill",
+      "local"
+    ],
     "description": "$2 off all drafts Tue-Fri 4-7pm.",
-    "recurring": { "day": "tuesday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-062",
     "venueId": "boca-beer-house",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "local"],
+    "vibe": [
+      "chill",
+      "local"
+    ],
     "description": "$2 off all drafts Tue-Fri 4-7pm.",
-    "recurring": { "day": "wednesday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-063",
     "venueId": "boca-beer-house",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "local"],
+    "vibe": [
+      "chill",
+      "local"
+    ],
     "description": "$2 off all drafts Tue-Fri 4-7pm.",
-    "recurring": { "day": "thursday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "thursday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-064",
     "venueId": "boca-beer-house",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "local"],
+    "vibe": [
+      "chill",
+      "local"
+    ],
     "description": "$2 off all drafts Tue-Fri 4-7pm.",
-    "recurring": { "day": "friday", "time": "16:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "16:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-070",
     "venueId": "bogart-bar",
     "name": "DJ Night Friday",
     "category": "dj",
-    "vibe": ["upscale", "trendy"],
+    "vibe": [
+      "upscale",
+      "trendy"
+    ],
     "description": "DJ sets in the speakeasy. Craft cocktails and moody vibes.",
-    "recurring": { "day": "friday", "time": "22:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "22:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": "21+",
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-071",
     "venueId": "bogart-bar",
     "name": "DJ Night Saturday",
     "category": "dj",
-    "vibe": ["upscale", "trendy", "late-night"],
+    "vibe": [
+      "upscale",
+      "trendy",
+      "late-night"
+    ],
     "description": "Saturday night at Bogart's. Dress sharp, drink well.",
-    "recurring": { "day": "saturday", "time": "22:00", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "22:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": "21+",
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-080",
     "venueId": "the-field-irish-pub",
     "name": "Tuesday Trivia",
     "category": "trivia",
-    "vibe": ["competitive", "group-friendly", "cozy"],
+    "vibe": [
+      "competitive",
+      "group-friendly",
+      "cozy"
+    ],
     "description": "Pub trivia with prizes and pints.",
-    "recurring": { "day": "tuesday", "time": "19:30", "duration": 120 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "19:30",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-081",
     "venueId": "the-field-irish-pub",
     "name": "Live Music Friday",
     "category": "live-music",
-    "vibe": ["cozy", "group-friendly"],
+    "vibe": [
+      "cozy",
+      "group-friendly"
+    ],
     "description": "Live bands at The Field. Irish music, rock, and covers.",
-    "recurring": { "day": "friday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-082",
     "venueId": "the-field-irish-pub",
     "name": "Live Music Saturday",
     "category": "live-music",
-    "vibe": ["cozy", "group-friendly"],
+    "vibe": [
+      "cozy",
+      "group-friendly"
+    ],
     "description": "Saturday night live at The Field.",
-    "recurring": { "day": "saturday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-083",
     "venueId": "the-field-irish-pub",
     "name": "NFL Sunday",
     "category": "watch-party",
-    "vibe": ["rowdy", "sports", "group-friendly"],
+    "vibe": [
+      "rowdy",
+      "sports",
+      "group-friendly"
+    ],
     "description": "All NFL games on multiple screens. Drink specials during games.",
-    "recurring": { "day": "sunday", "time": "13:00", "duration": 480 },
+    "recurring": {
+      "day": "sunday",
+      "time": "13:00",
+      "duration": 480
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day", "night"]
+    "timeOfDay": [
+      "day",
+      "night"
+    ]
   },
   {
     "id": "boca-evt-084",
     "venueId": "the-field-irish-pub",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "cozy"],
+    "vibe": [
+      "chill",
+      "cozy"
+    ],
     "description": "Drink specials Mon-Fri 3-6pm.",
-    "recurring": { "day": "monday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-085",
     "venueId": "the-field-irish-pub",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "cozy"],
+    "vibe": [
+      "chill",
+      "cozy"
+    ],
     "description": "Drink specials Mon-Fri 3-6pm.",
-    "recurring": { "day": "tuesday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-086",
     "venueId": "the-field-irish-pub",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "cozy"],
+    "vibe": [
+      "chill",
+      "cozy"
+    ],
     "description": "Drink specials Mon-Fri 3-6pm.",
-    "recurring": { "day": "wednesday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-087",
     "venueId": "the-field-irish-pub",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "cozy"],
+    "vibe": [
+      "chill",
+      "cozy"
+    ],
     "description": "Drink specials Mon-Fri 3-6pm.",
-    "recurring": { "day": "thursday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "thursday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-088",
     "venueId": "the-field-irish-pub",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "cozy"],
+    "vibe": [
+      "chill",
+      "cozy"
+    ],
     "description": "Drink specials Mon-Fri 3-6pm.",
-    "recurring": { "day": "friday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-090",
     "venueId": "barrel-of-monks",
     "name": "Thursday Trivia",
     "category": "trivia",
-    "vibe": ["chill", "competitive"],
+    "vibe": [
+      "chill",
+      "competitive"
+    ],
     "description": "Trivia night with Belgian ales. A thinking person's brewery.",
-    "recurring": { "day": "thursday", "time": "19:00", "duration": 120 },
+    "recurring": {
+      "day": "thursday",
+      "time": "19:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-100",
     "venueId": "mizner-park-grille",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale-casual", "scenic"],
+    "vibe": [
+      "upscale-casual",
+      "scenic"
+    ],
     "description": "Discounted drinks and small plates on the Mizner Park promenade.",
-    "recurring": { "day": "monday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-101",
     "venueId": "mizner-park-grille",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale-casual", "scenic"],
+    "vibe": [
+      "upscale-casual",
+      "scenic"
+    ],
     "description": "Discounted drinks and small plates on the Mizner Park promenade.",
-    "recurring": { "day": "tuesday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-102",
     "venueId": "mizner-park-grille",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale-casual", "scenic"],
+    "vibe": [
+      "upscale-casual",
+      "scenic"
+    ],
     "description": "Discounted drinks and small plates on the Mizner Park promenade.",
-    "recurring": { "day": "wednesday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-103",
     "venueId": "mizner-park-grille",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale-casual", "scenic"],
+    "vibe": [
+      "upscale-casual",
+      "scenic"
+    ],
     "description": "Discounted drinks and small plates on the Mizner Park promenade.",
-    "recurring": { "day": "thursday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "thursday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-104",
     "venueId": "mizner-park-grille",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["upscale-casual", "scenic"],
+    "vibe": [
+      "upscale-casual",
+      "scenic"
+    ],
     "description": "Discounted drinks and small plates on the Mizner Park promenade.",
-    "recurring": { "day": "friday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-200",
     "venueId": "boca-green-market",
     "name": "Boca Raton GreenMarket",
     "category": "markets",
-    "vibe": ["social", "family-friendly", "dog-friendly"],
+    "vibe": [
+      "social",
+      "family-friendly",
+      "dog-friendly"
+    ],
     "description": "Saturday morning market at Royal Palm Place. Fresh produce, artisan goods, smoothies, and a chill vibe. Easier parking than Delray's market.",
-    "recurring": { "day": "saturday", "time": "08:00", "duration": 300 },
+    "recurring": {
+      "day": "saturday",
+      "time": "08:00",
+      "duration": 300
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-201",
     "venueId": "mizner-park",
     "name": "Yoga on the Green at Mizner",
     "category": "yoga",
-    "vibe": ["chill", "social", "solo-friendly"],
+    "vibe": [
+      "chill",
+      "social",
+      "solo-friendly"
+    ],
     "description": "Free community yoga on the Mizner Park green space. Bring your own mat, all levels. Great way to start Sunday.",
-    "recurring": { "day": "sunday", "time": "09:00", "duration": 60 },
+    "recurring": {
+      "day": "sunday",
+      "time": "09:00",
+      "duration": 60
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-202",
     "venueId": "mizner-park",
     "name": "Boca Run Club",
     "category": "fitness",
-    "vibe": ["active", "social"],
+    "vibe": [
+      "active",
+      "social"
+    ],
     "description": "Wednesday evening run starting from Mizner Park. 3 or 5 mile options. All paces, the group sticks together. Usually grab drinks after.",
-    "recurring": { "day": "wednesday", "time": "18:00", "duration": 75 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "18:00",
+      "duration": 75
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-203",
     "venueId": "red-reef-park",
     "name": "Guided Snorkel Tour",
     "category": "water-sports",
-    "vibe": ["adventurous", "scenic", "family-friendly"],
+    "vibe": [
+      "adventurous",
+      "scenic",
+      "family-friendly"
+    ],
     "description": "Guided snorkeling at Red Reef's artificial reef. They provide gear and teach you what you're looking at. Great for first-timers.",
-    "recurring": { "day": "saturday", "time": "10:00", "duration": 120 },
+    "recurring": {
+      "day": "saturday",
+      "time": "10:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "$35",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-204",
     "venueId": "gumbo-limbo",
     "name": "Sea Turtle Walk",
     "category": "hiking",
-    "vibe": ["scenic", "adventurous", "family-friendly"],
+    "vibe": [
+      "scenic",
+      "adventurous",
+      "family-friendly"
+    ],
     "description": "Guided nighttime sea turtle walk during nesting season. You might see a mama loggerhead lay her eggs. Reservations required and they sell out fast.",
-    "recurring": { "day": "monday", "time": "21:00", "duration": 120 },
+    "recurring": {
+      "day": "monday",
+      "time": "21:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "$10",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-205",
     "venueId": "sugar-sand-park",
     "name": "Storytime at Sugar Sand",
     "category": "art-culture",
-    "vibe": ["family-friendly", "chill"],
+    "vibe": [
+      "family-friendly",
+      "chill"
+    ],
     "description": "Weekly storytime for kids at the community center. Songs, stories, and crafts. Ages 2-5 but younger siblings are welcome.",
-    "recurring": { "day": "wednesday", "time": "10:00", "duration": 60 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "10:00",
+      "duration": 60
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-206",
     "venueId": "deerfield-fishing-pier",
     "name": "Monthly Fishing Tournament",
     "category": "fishing",
-    "vibe": ["social", "adventurous"],
+    "vibe": [
+      "social",
+      "adventurous"
+    ],
     "description": "Casual monthly tournament off the pier. Small entry fee, prizes for biggest catch. Regulars are friendly and will share tips.",
-    "recurring": { "day": "saturday", "time": "06:00", "duration": 360 },
+    "recurring": {
+      "day": "saturday",
+      "time": "06:00",
+      "duration": 360
+    },
     "oneTime": null,
     "cover": "$15",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-207",
     "venueId": "mizner-park",
     "name": "Art After Dark at Mizner",
     "category": "art-culture",
-    "vibe": ["social", "romantic", "scenic"],
+    "vibe": [
+      "social",
+      "romantic",
+      "scenic"
+    ],
     "description": "Monthly evening event at the Boca Museum and Mizner Park area. Live music, food vendors, and the museum stays open late. Free to walk around.",
-    "recurring": { "day": "friday", "time": "17:00", "duration": 240 },
+    "recurring": {
+      "day": "friday",
+      "time": "17:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day", "night"]
+    "timeOfDay": [
+      "day",
+      "night"
+    ]
   },
   {
     "id": "boca-evt-208",
     "venueId": "boca-sup-kayak",
     "name": "Sunrise Paddleboard Session",
     "category": "water-sports",
-    "vibe": ["scenic", "chill", "adventurous"],
+    "vibe": [
+      "scenic",
+      "chill",
+      "adventurous"
+    ],
     "description": "Early morning SUP on glass-flat Intracoastal water. The sunrise from the water is unreal. Boards included in the tour price.",
-    "recurring": { "day": "tuesday", "time": "06:30", "duration": 90 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "06:30",
+      "duration": 90
+    },
     "oneTime": null,
     "cover": "$40",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-209",
     "venueId": "boca-sup-kayak",
     "name": "Sunset Kayak Tour",
     "category": "water-sports",
-    "vibe": ["scenic", "romantic", "adventurous"],
+    "vibe": [
+      "scenic",
+      "romantic",
+      "adventurous"
+    ],
     "description": "Guided sunset kayak tour through the Intracoastal mangroves. You'll see herons, fish jumping, and an incredible sunset. Bring a waterproof phone case.",
-    "recurring": { "day": "thursday", "time": "17:30", "duration": 90 },
+    "recurring": {
+      "day": "thursday",
+      "time": "17:30",
+      "duration": 90
+    },
     "oneTime": null,
     "cover": "$45",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-210",
     "venueId": "patch-reef-park",
     "name": "Pickleball Open Play",
     "category": "fitness",
-    "vibe": ["active", "social"],
+    "vibe": [
+      "active",
+      "social"
+    ],
     "description": "Open pickleball courts with organized play. All levels, just show up with a paddle or borrow one. Gets competitive but everyone's having fun.",
-    "recurring": { "day": "monday", "time": "08:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "08:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-211",
     "venueId": "patch-reef-park",
     "name": "Wednesday Pickleball",
     "category": "fitness",
-    "vibe": ["active", "social"],
+    "vibe": [
+      "active",
+      "social"
+    ],
     "description": "Midweek pickleball session. Same setup as Monday. The regulars are there rain or shine.",
-    "recurring": { "day": "wednesday", "time": "08:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "08:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-212",
     "venueId": "spanish-river-park",
     "name": "Guided Nature Trail Walk",
     "category": "hiking",
-    "vibe": ["scenic", "chill", "family-friendly"],
+    "vibe": [
+      "scenic",
+      "chill",
+      "family-friendly"
+    ],
     "description": "Ranger-led walk through the nature trails at Spanish River. Learn about native plants, birds, and the coastal ecosystem. Free with park admission.",
-    "recurring": { "day": "saturday", "time": "09:00", "duration": 90 },
+    "recurring": {
+      "day": "saturday",
+      "time": "09:00",
+      "duration": 90
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-213",
     "venueId": "yoga-journey-boca",
     "name": "Community Yoga Class",
     "category": "yoga",
-    "vibe": ["chill", "social", "solo-friendly"],
+    "vibe": [
+      "chill",
+      "social",
+      "solo-friendly"
+    ],
     "description": "Donation-based community yoga class. Open to all levels, great intro if you've never tried the studio. The vibe is welcoming, not intimidating.",
-    "recurring": { "day": "sunday", "time": "10:30", "duration": 60 },
+    "recurring": {
+      "day": "sunday",
+      "time": "10:30",
+      "duration": 60
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-214",
     "venueId": "boca-museum-art",
     "name": "Late Night Thursday at the Museum",
     "category": "art-culture",
-    "vibe": ["solo-friendly", "romantic", "chill"],
+    "vibe": [
+      "solo-friendly",
+      "romantic",
+      "chill"
+    ],
     "description": "Extended hours with talks, tours, and sometimes live music. Way less crowded than weekend visits and a great midweek cultural fix.",
-    "recurring": { "day": "thursday", "time": "18:00", "duration": 120 },
+    "recurring": {
+      "day": "thursday",
+      "time": "18:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "$12",
     "ageRestriction": null,
-    "timeOfDay": ["day", "night"]
+    "timeOfDay": [
+      "day",
+      "night"
+    ]
   },
   {
     "id": "boca-evt-215",
     "venueId": "gumbo-limbo",
     "name": "Butterfly Garden Tour",
     "category": "hiking",
-    "vibe": ["family-friendly", "scenic", "chill"],
+    "vibe": [
+      "family-friendly",
+      "scenic",
+      "chill"
+    ],
     "description": "Short guided tour through the butterfly garden. Volunteers know every species and the kids love catching them landing on their arms.",
-    "recurring": { "day": "sunday", "time": "11:00", "duration": 60 },
+    "recurring": {
+      "day": "sunday",
+      "time": "11:00",
+      "duration": 60
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-216",
     "venueId": "spanish-river-park",
     "name": "Morning Boot Camp",
     "category": "fitness",
-    "vibe": ["active"],
+    "vibe": [
+      "active"
+    ],
     "description": "Outdoor boot camp in the park. Bodyweight exercises, running, and core work. The trainer doesn't mess around but you'll feel great after.",
-    "recurring": { "day": "monday", "time": "06:30", "duration": 60 },
+    "recurring": {
+      "day": "monday",
+      "time": "06:30",
+      "duration": 60
+    },
     "oneTime": null,
     "cover": "$15",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-217",
     "venueId": "spanish-river-park",
     "name": "Wednesday Boot Camp",
     "category": "fitness",
-    "vibe": ["active"],
+    "vibe": [
+      "active"
+    ],
     "description": "Same boot camp crew, middle of the week. Perfect for breaking up the work week with some sweat.",
-    "recurring": { "day": "wednesday", "time": "06:30", "duration": 60 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "06:30",
+      "duration": 60
+    },
     "oneTime": null,
     "cover": "$15",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "boca-evt-300",
     "venueId": "barrel-of-monks",
     "name": "Brotherhood Appreciation Night",
     "category": "happy-hour",
-    "vibe": ["chill", "local", "group-friendly"],
+    "vibe": [
+      "chill",
+      "local",
+      "group-friendly"
+    ],
     "description": "BOGO draft beers all night for Brotherhood members. A thank-you night for the regulars who make Barrel of Monks what it is.",
     "recurring": null,
-    "oneTime": { "date": "2026-03-02", "time": "17:00", "duration": 300 },
+    "oneTime": {
+      "date": "2026-03-02",
+      "time": "17:00",
+      "duration": 300
+    },
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "boca-evt-301",
     "venueId": "barrel-of-monks",
     "name": "Blood Orange Bliss Release",
     "category": "food-specials",
-    "vibe": ["chill", "local"],
-    "description": "New seasonal release: Blood Orange Bliss, a traditional gose brewed with blood orange — tart, citrusy, light-bodied. Available on draft only.",
+    "vibe": [
+      "chill",
+      "local"
+    ],
+    "description": "New seasonal release: Blood Orange Bliss, a traditional gose brewed with blood orange \u2014 tart, citrusy, light-bodied. Available on draft only.",
     "recurring": null,
-    "oneTime": { "date": "2026-03-07", "time": "15:00", "duration": 360 },
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "15:00",
+      "duration": 360
+    },
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day", "night"]
+    "timeOfDay": [
+      "day",
+      "night"
+    ]
   },
   {
     "id": "boca-evt-302",
     "venueId": "barrel-of-monks",
     "name": "Comedy Attic at Barrel of Monks",
     "category": "comedy",
-    "vibe": ["social", "group-friendly"],
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
     "description": "Live comedy night at the brewery. Doors at 7:45 PM, show at 8:00 PM. Grab a pint and settle in.",
     "recurring": null,
-    "oneTime": { "date": "2026-03-07", "time": "19:45", "duration": 120 },
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "19:45",
+      "duration": 120
+    },
     "cover": "$20",
     "ageRestriction": null,
-    "timeOfDay": ["night"],
+    "timeOfDay": [
+      "night"
+    ],
     "ticketUrl": "https://barrelofmonks.com"
   },
   {
@@ -1045,13 +1784,23 @@
     "venueId": "barrel-of-monks",
     "name": "Riff Roulette",
     "category": "live-music",
-    "vibe": ["social", "group-friendly", "rowdy"],
-    "description": "A live music roulette night — you never know what you're going to get. Doors at 7:00 PM, show at 7:30 PM. Brotherhood members get in for $5.",
+    "vibe": [
+      "social",
+      "group-friendly",
+      "rowdy"
+    ],
+    "description": "A live music roulette night \u2014 you never know what you're going to get. Doors at 7:00 PM, show at 7:30 PM. Brotherhood members get in for $5.",
     "recurring": null,
-    "oneTime": { "date": "2026-03-12", "time": "19:00", "duration": 150 },
+    "oneTime": {
+      "date": "2026-03-12",
+      "time": "19:00",
+      "duration": 150
+    },
     "cover": "$10",
     "ageRestriction": null,
-    "timeOfDay": ["night"],
+    "timeOfDay": [
+      "night"
+    ],
     "ticketUrl": "https://barrelofmonks.com"
   },
   {
@@ -1059,13 +1808,23 @@
     "venueId": "barrel-of-monks",
     "name": "11th Anniversary Party + Neon Skyline Release",
     "category": "live-music",
-    "vibe": ["social", "group-friendly", "rowdy"],
+    "vibe": [
+      "social",
+      "group-friendly",
+      "rowdy"
+    ],
     "description": "Barrel of Monks turns 11. All-you-can-drink from 4-8 PM ($45 ticket) includes unlimited draft pours, a bottle of the anniversary beer 'This One Goes To 11,' and access to exclusive drafts. Live music by Datura from 5-9 PM. Neon Skyline, a West Coast IPA brewed with Tank Brew Co. (6.5% ABV), also drops tonight.",
     "recurring": null,
-    "oneTime": { "date": "2026-03-14", "time": "16:00", "duration": 300 },
+    "oneTime": {
+      "date": "2026-03-14",
+      "time": "16:00",
+      "duration": 300
+    },
     "cover": "$45",
     "ageRestriction": null,
-    "timeOfDay": ["night"],
+    "timeOfDay": [
+      "night"
+    ],
     "ticketUrl": "https://barrelofmonks.com"
   },
   {
@@ -1073,26 +1832,47 @@
     "venueId": "barrel-of-monks",
     "name": "St. Patrick's Day Celebration",
     "category": "food-specials",
-    "vibe": ["rowdy", "social", "group-friendly"],
+    "vibe": [
+      "rowdy",
+      "social",
+      "group-friendly"
+    ],
     "description": "BOGO draft beers all day plus a Reuben Spring Roll special from Cheffrey Eats food truck. Wear green.",
     "recurring": null,
-    "oneTime": { "date": "2026-03-17", "time": "12:00", "duration": 600 },
+    "oneTime": {
+      "date": "2026-03-17",
+      "time": "12:00",
+      "duration": 600
+    },
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day", "night"]
+    "timeOfDay": [
+      "day",
+      "night"
+    ]
   },
   {
     "id": "boca-evt-306",
     "venueId": "barrel-of-monks",
     "name": "Paint & Sip with Classpop!",
     "category": "art-culture",
-    "vibe": ["social", "romantic", "group-friendly"],
+    "vibe": [
+      "social",
+      "romantic",
+      "group-friendly"
+    ],
     "description": "Guided painting class inside the brewery. All supplies included. Sip a Belgian ale while you create. Tickets: $44.",
     "recurring": null,
-    "oneTime": { "date": "2026-03-20", "time": "19:00", "duration": 120 },
+    "oneTime": {
+      "date": "2026-03-20",
+      "time": "19:00",
+      "duration": 120
+    },
     "cover": "$44",
     "ageRestriction": null,
-    "timeOfDay": ["night"],
+    "timeOfDay": [
+      "night"
+    ],
     "ticketUrl": "https://www.classpop.com"
   },
   {
@@ -1100,13 +1880,1530 @@
     "venueId": "barrel-of-monks",
     "name": "ACS Bingo Night",
     "category": "trivia",
-    "vibe": ["social", "group-friendly"],
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
     "description": "Bingo night in partnership with ACS. Doors at 5:45 PM, game starts at 6:00 PM. Tickets: $10.",
     "recurring": null,
-    "oneTime": { "date": "2026-03-26", "time": "17:45", "duration": 120 },
+    "oneTime": {
+      "date": "2026-03-26",
+      "time": "17:45",
+      "duration": 120
+    },
     "cover": "$10",
     "ageRestriction": null,
-    "timeOfDay": ["night"],
+    "timeOfDay": [
+      "night"
+    ],
     "ticketUrl": "https://barrelofmonks.com"
+  },
+  {
+    "id": "boca-raton-evt-308",
+    "venueId": "adolph-&-rose-levis-jewish-com",
+    "name": "Levis JCC Mitzvah Mingle  Tuesday, February 24",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Tuesday, February 24 - 6:00-8:00 pm - Adolph & Rose Levis Jewish Community Center",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-24",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/levis-jcc-mitzvah-mingle-tuesday-february-24-tickets-1978630822052",
+    "source": "eventbrite",
+    "externalVenue": "Adolph & Rose Levis Jewish Community Center",
+    "externalAddress": "21050 95th Avenue South, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-309",
+    "venueId": "third-place-coffee-lounge",
+    "name": "TUESDAY | FEBRUARY 24TH 2026 | HOLISTIC CHAMBER OF COMMERCE GATHERING",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us on Tuesday, February 24, 2026, 6PM, at The Third Place Coffee Lounge for our first Holistic Chamber gathering of the year!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-24",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/tuesday-february-24th-2026-holistic-chamber-of-commerce-gathering-tickets-1982050397093",
+    "source": "eventbrite",
+    "externalVenue": "Third Place Coffee Lounge",
+    "externalAddress": "325 Northeast Spanish River Boulevard, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-310",
+    "venueId": "boca-black-box",
+    "name": "The Tony Bennett Songbook",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Acclaimed singer Jonathan Karrant pays tribute to one of America\u2019s most iconic and beloved performers, Tony Bennett.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-24",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/the-tony-bennett-songbook-tickets-1964592324528",
+    "source": "eventbrite",
+    "externalVenue": "Boca Black Box",
+    "externalAddress": "8221 Glades Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-311",
+    "venueId": "1200-n-federal-hwy-suite-300",
+    "name": "Networking Night with The Social Arcade",
+    "category": "trivia",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "\ufe0f Network. Play. Win. Trivia, Jenga, and genuine connections await at The Social Arcade!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/networking-night-with-the-social-arcade-tickets-1978206394578",
+    "source": "eventbrite",
+    "externalVenue": "1200 N Federal Hwy suite 300",
+    "externalAddress": "1200 North Federal Highway, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-312",
+    "venueId": "boca-black-box",
+    "name": "Soultown to Motown Ft. The Sensational Soul Cruisers",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "The Sensational Soul Cruisers are an 11-man horn group fronted by four soulful vocalists who pay homage and tribute to classic performers",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/soultown-to-motown-ft-the-sensational-soul-cruisers-tickets-1338449942809",
+    "source": "eventbrite",
+    "externalVenue": "Boca Black Box",
+    "externalAddress": "8221 Glades Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-313",
+    "venueId": "150-e-palmetto-park-rd",
+    "name": "Red Cross BLS CPR and AED Class in Boca Raton",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "CPR Boca Raton teaches American Red Cross  BLS CPR classes in Boca Raton, FL.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/red-cross-bls-cpr-and-aed-class-in-boca-raton-tickets-1979240723283",
+    "source": "eventbrite",
+    "externalVenue": "150 E Palmetto Park Rd",
+    "externalAddress": "150 East Palmetto Park Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-314",
+    "venueId": "150-e-palmetto-park-rd",
+    "name": "Infant Red Cross BLS CPR and AED Class in Boca Raton",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "CPR Boca Raton teaches American Red Cross  Infant BLS CPR classes in Boca Raton, FL.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/infant-red-cross-bls-cpr-and-aed-class-in-boca-raton-tickets-1979242339116",
+    "source": "eventbrite",
+    "externalVenue": "150 E Palmetto Park Rd",
+    "externalAddress": "150 East Palmetto Park Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-315",
+    "venueId": "crazy-uncle-mikes",
+    "name": "Rockoustic",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Rockoustic is live at Crazy Uncle Mike's!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/rockoustic-tickets-1983477181644",
+    "source": "eventbrite",
+    "externalVenue": "Crazy Uncle Mikes",
+    "externalAddress": "6450 N Federal Hwy, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-316",
+    "venueId": "crazy-uncle-mikes",
+    "name": "The Smoogies",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "The Smoogies are live at Crazy Uncle Mike's!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-26",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/the-smoogies-tickets-1978935924622",
+    "source": "eventbrite",
+    "externalVenue": "Crazy Uncle Mikes",
+    "externalAddress": "6450 N Federal Hwy, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-317",
+    "venueId": "boca-black-box",
+    "name": "A Brother's Revival: The Music of The Allman Brothers's",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "A Brother's Revival performs all of the fan favorites, including Ramblin Man, Melissa",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-26",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/a-brothers-revival-the-music-of-the-allman-brotherss-tickets-1393402046029",
+    "source": "eventbrite",
+    "externalVenue": "Boca Black Box",
+    "externalAddress": "8221 Glades Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-318",
+    "venueId": "150-e-palmetto-park-rd-suite-8",
+    "name": "Infant BLS CPR and AED Class in  Boca Raton",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "CPR Certification Tampa teaches American Heart Association Infant BLS CPR classes in Boca Raton, FL.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-26",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/infant-bls-cpr-and-aed-class-in-boca-raton-tickets-899567399307",
+    "source": "eventbrite",
+    "externalVenue": "150 E Palmetto Park Rd suite 800",
+    "externalAddress": "150 East Palmetto Park Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-319",
+    "venueId": "the-blue-dog",
+    "name": "I Want My 80's Back:  The Cover Girls & DJ Johnny Quest Performing Live",
+    "category": "fitness",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Get ready to transport back to The  80's with The Cover Girls & DJ Johnny Quest Performing Live.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-27",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/i-want-my-80s-back-the-cover-girls-dj-johnny-quest-performing-live-tickets-1980903139615",
+    "source": "eventbrite",
+    "externalVenue": "The Blue Dog",
+    "externalAddress": "6000 Glades Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-320",
+    "venueId": "the-studio-at-mizner-park,-wes",
+    "name": "Magic In Mizner Park - February",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Mind-bending magician & mentalist Randy Goodman",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-27",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/magic-in-mizner-park-february-tickets-1981816353061",
+    "source": "eventbrite",
+    "externalVenue": "The Studio at Mizner Park, West Plaza Real, Boca Raton, FL, USA",
+    "externalAddress": "201 West Plaza Real, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-321",
+    "venueId": "sadman-comedy-cafe,-209-southe",
+    "name": "Surprise Special Headliner at Sadman Comedy Cafe, Boca Raton, Friday",
+    "category": "comedy",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Big surprise at the Sadman Comedy Cafe for a Friday of great times and laughter.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-27",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/surprise-special-headliner-at-sadman-comedy-cafe-boca-raton-friday-tickets-1982402615588",
+    "source": "eventbrite",
+    "externalVenue": "Sadman Comedy Cafe, 209 Southeast 1st Avenue, Boca Raton, FL, USA",
+    "externalAddress": "Sadman Comedy Cafe, 209 Southeast 1st Avenue, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-322",
+    "venueId": "craft-for-art",
+    "name": "Create Your Own Turkish Mosaic Lamp \u2013 West Palm Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Design and craft your own Turkish mosaic lamp in West Palm Beach. All materials included. Beginner friendly.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-27",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/create-your-own-turkish-mosaic-lamp-west-palm-beach-tickets-1139779022739",
+    "source": "eventbrite",
+    "externalVenue": "Craft for Art",
+    "externalAddress": "141 Northwest 20th Street, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-323",
+    "venueId": "craft-for-art",
+    "name": "Create Your Own Turkish Mosaic Lamp \u2013 Delray Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Create your own Turkish mosaic lamp in Delray Beach. A creative, relaxing workshop perfect for all skill levels.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-27",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/create-your-own-turkish-mosaic-lamp-delray-beach-tickets-1139763496299",
+    "source": "eventbrite",
+    "externalVenue": "Craft for Art",
+    "externalAddress": "141 Northwest 20th Street, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-324",
+    "venueId": "crazy-uncle-mikes",
+    "name": "Groovey Pantesco with Fox Hill Road",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Fox Hill Road  is live at Crazy Uncle Mike's!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/groovey-pantesco-with-fox-hill-road-tickets-1975881485713",
+    "source": "eventbrite",
+    "externalVenue": "Crazy Uncle Mikes",
+    "externalAddress": "6450 N Federal Hwy, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-325",
+    "venueId": "greens-and-grains-boca-raton",
+    "name": "The Hot & Healthy Club x Greens & Grains",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join The Hot & Healthy Club x Greens & Grains for a fresh, fun meetup filled with tasty, nutritious vibes!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/the-hot-healthy-club-x-greens-grains-tickets-1982291798130",
+    "source": "eventbrite",
+    "externalVenue": "Greens and Grains Boca Raton",
+    "externalAddress": "179 Southeast Mizner Boulevard, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-326",
+    "venueId": "10,000-names-studio",
+    "name": "Family Constellations & Soundbath Experience for Breaking Cycles",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "A sacred in-person journey for women to connect with the roots of their patterns both seen and unseen.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/family-constellations-soundbath-experience-for-breaking-cycles-tickets-1982364482531",
+    "source": "eventbrite",
+    "externalVenue": "10,000 Names Studio",
+    "externalAddress": "5801 North Federal Highway, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-327",
+    "venueId": "sadman-comedy-cafe,-209-southe",
+    "name": "Michael Panzeca at Sadman Comedy Cafe, Boca Raton, Saturday",
+    "category": "comedy",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us at Sadman Comedy Cafe this Saturday for a hilarious night with the one and only Michael Panzeca!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/michael-panzeca-at-sadman-comedy-cafe-boca-raton-saturday-tickets-1983589571806",
+    "source": "eventbrite",
+    "externalVenue": "Sadman Comedy Cafe, 209 Southeast 1st Avenue, Boca Raton, FL, USA",
+    "externalAddress": "Sadman Comedy Cafe, 209 Southeast 1st Avenue, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-328",
+    "venueId": "530-nw-77th-st",
+    "name": "International Food Fest: A World of Flavors",
+    "category": "food-specials",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Prepare your palate for an unforgettable journey around the world \u2014 right here in Boca Raton.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/international-food-fest-a-world-of-flavors-tickets-1980721000833",
+    "source": "eventbrite",
+    "externalVenue": "530 NW 77th St",
+    "externalAddress": "530 Northwest 77th Street, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-329",
+    "venueId": "crazy-uncle-mikes",
+    "name": "Anthony Gomes",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Anthony Gomes is live at Crazy Uncle Mike's!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/anthony-gomes-tickets-1789843372709",
+    "source": "eventbrite",
+    "externalVenue": "Crazy Uncle Mikes",
+    "externalAddress": "6450 N Federal Hwy, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-330",
+    "venueId": "boca-black-box-center-for-the-",
+    "name": "5th Annual CYON Award Show",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "It is with great excitement that we present the 5th Annual CYON Award Show, taking place on March 1, 2026, at the Boca Black Box Theater.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/5th-annual-cyon-award-show-tickets-1936653144689",
+    "source": "eventbrite",
+    "externalVenue": "Boca Black Box Center for the Arts up",
+    "externalAddress": "8221 Glades Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-331",
+    "venueId": "biergarten",
+    "name": "USBG Multi-Florida Chapter United States Cocktail Competition Qualifier",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Where Craft Meets Performance, Community Fuels Competition, and Florida\u2019s Best Bartenders Take the Stage.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/usbg-multi-florida-chapter-united-states-cocktail-competition-qualifier-tickets-1981540456848",
+    "source": "eventbrite",
+    "externalVenue": "Biergarten",
+    "externalAddress": "309 Via De Palmas, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-332",
+    "venueId": "craft-for-art",
+    "name": "Create Your Own Turkish Mosaic Lamp \u2013 West Palm Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Design and craft your own Turkish mosaic lamp in West Palm Beach. All materials included. Beginner friendly.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/create-your-own-turkish-mosaic-lamp-west-palm-beach-tickets-1139780316609",
+    "source": "eventbrite",
+    "externalVenue": "Craft for Art",
+    "externalAddress": "141 Northwest 20th Street, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-333",
+    "venueId": "craft-for-art",
+    "name": "Create Your Own Turkish Mosaic Lamp \u2013 Delray Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Create your own Turkish mosaic lamp in Delray Beach. A creative, relaxing workshop perfect for all skill levels.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/create-your-own-turkish-mosaic-lamp-delray-beach-tickets-1139764338819",
+    "source": "eventbrite",
+    "externalVenue": "Craft for Art",
+    "externalAddress": "141 Northwest 20th Street, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-334",
+    "venueId": "craft-for-art",
+    "name": "Craft Your Own Turkish Mosaic Lamp \u2013 Unique Creative Workshop in Boca Raton",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join a unique creative workshop in Boca Raton and craft your own glowing Turkish mosaic lamp. No experience needed. All materials included.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/craft-your-own-turkish-mosaic-lamp-unique-creative-workshop-in-boca-raton-tickets-1008542155737",
+    "source": "eventbrite",
+    "externalVenue": "Craft for Art",
+    "externalAddress": "141 Northwest 20th Street, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-335",
+    "venueId": "boca-raton-innovation-campus",
+    "name": "Red Meat Lover's Club Presents The Secretary of Steak's Big Meaty Birthday",
+    "category": "food-specials",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "We gather all of the Red Meat Lover's Clubs favorite food establishments and charities. We Unite for a \"meating\" fifty years in the making.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-02",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/red-meat-lovers-club-presents-the-secretary-of-steaks-big-meaty-birthday-tickets-1371100842529",
+    "source": "eventbrite",
+    "externalVenue": "Boca Raton Innovation Campus",
+    "externalAddress": "4950 COMMUNICATIONS BLVD, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-336",
+    "venueId": "creative-souls-dance-studio",
+    "name": "Burlesque Dance Class w/ Creative Souls Dance",
+    "category": "dj",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Beginner-friendly, sassy, strip-teasy, and fun! 18+, Ladies Only",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-02",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/burlesque-dance-class-w-creative-souls-dance-tickets-1677704422089",
+    "source": "eventbrite",
+    "externalVenue": "Creative Souls Dance Studio",
+    "externalAddress": "21073 Powerline Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-337",
+    "venueId": "boca-black-box",
+    "name": "Cheryl Fisher Sings The Peggy Lee Songbook",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "In this compelling soundscape of Peggy Lee\u2019s life, internationally acclaimed jazz singer Cheryl Fisher reimagines Miss Peggy\u2019s songs",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-02",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/cheryl-fisher-sings-the-peggy-lee-songbook-tickets-1962463844186",
+    "source": "eventbrite",
+    "externalVenue": "Boca Black Box",
+    "externalAddress": "8221 Glades Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-338",
+    "venueId": "the-fashion-arts-sewing-studio",
+    "name": "Sewing classes to build skills 4 class session!",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "learn essential sewing skills, get comfortable with a machine, and walk away with something you made yourself \u2014 Beginners welcomed.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-02",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "day"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/sewing-classes-to-build-skills-4-class-session-tickets-1977616226369",
+    "source": "eventbrite",
+    "externalVenue": "The Fashion Arts Sewing Studio",
+    "externalAddress": "7025 Beracasa Way suite 206, Boca Rat\u00f3n, FL"
+  },
+  {
+    "id": "boca-raton-evt-339",
+    "venueId": "1325-nw-16th-st",
+    "name": "Vedic Fire Ceremony & Satsang",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Ancient fire ritual with mantras and offerings to transform negativity, uplift the heart, and invite blessings, grace, and rebirth.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-02",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/vedic-fire-ceremony-satsang-tickets-1983382472366",
+    "source": "eventbrite",
+    "externalVenue": "1325 NW 16th St",
+    "externalAddress": "1325 Northwest 16th Street, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-340",
+    "venueId": "boca-black-box",
+    "name": "Abbacadabra - The Ultimate ABBA Tribute @ Boca Black Box",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "The most authentic ABBA tribute around! With the new resurgence of the \u201870s, portrayed in part by the hugely popular live musical production",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-03",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/abbacadabra-the-ultimate-abba-tribute-boca-black-box-tickets-1481125579479",
+    "source": "eventbrite",
+    "externalVenue": "Boca Black Box",
+    "externalAddress": "8221 Glades Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-341",
+    "venueId": "the-fashion-arts-sewing-studio",
+    "name": "Sewing classes to build skills 4 class session!",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "learn essential sewing skills, get comfortable with a machine, and walk away with something you made yourself \u2014 Beginners welcomed.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-03",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "day"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/sewing-classes-to-build-skills-4-class-session-tickets-1977616227372",
+    "source": "eventbrite",
+    "externalVenue": "The Fashion Arts Sewing Studio",
+    "externalAddress": "7025 Beracasa Way suite 206, Boca Rat\u00f3n, FL"
+  },
+  {
+    "id": "boca-raton-evt-342",
+    "venueId": "crazy-uncle-mikes",
+    "name": "The Flyers",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "The Flyers are back and live at Crazy Uncle Mike's!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/the-flyers-tickets-1982397214433",
+    "source": "eventbrite",
+    "externalVenue": "Crazy Uncle Mikes",
+    "externalAddress": "6450 N Federal Hwy, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-343",
+    "venueId": "the-schmidt-boca-raton-history",
+    "name": "Voices of Boca: Women Making an Impact",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "An inspiring panel with Boca Magazine spotlighting three women leaders shaping Boca Raton.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/voices-of-boca-women-making-an-impact-tickets-1983327261228",
+    "source": "eventbrite",
+    "externalVenue": "The Schmidt Boca Raton History Museum",
+    "externalAddress": "71 North Federal Highway, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-344",
+    "venueId": "150-e-palmetto-park-rd",
+    "name": "Red Cross BLS CPR and AED Class in Boca Raton",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "CPR Boca Raton teaches American Red Cross  BLS CPR classes in Boca Raton, FL.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/red-cross-bls-cpr-and-aed-class-in-boca-raton-tickets-1979240724286",
+    "source": "eventbrite",
+    "externalVenue": "150 E Palmetto Park Rd",
+    "externalAddress": "150 East Palmetto Park Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-345",
+    "venueId": "150-e-palmetto-park-rd",
+    "name": "Infant Red Cross BLS CPR and AED Class in Boca Raton",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "CPR Boca Raton teaches American Red Cross  Infant BLS CPR classes in Boca Raton, FL.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/infant-red-cross-bls-cpr-and-aed-class-in-boca-raton-tickets-1979242340119",
+    "source": "eventbrite",
+    "externalVenue": "150 E Palmetto Park Rd",
+    "externalAddress": "150 East Palmetto Park Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-346",
+    "venueId": "sadman-comedy-cafe,-209-southe",
+    "name": "Comedy Workshop Panzeca Approach For New And Existing Comedians, Wednesdays",
+    "category": "comedy",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join our Comedy Workshop For New And Existing Comedians where you can hone your skills, work on your material, and meet like-minded fun",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/comedy-workshop-panzeca-approach-for-new-and-existing-comedians-wednesdays-tickets-1983552189996",
+    "source": "eventbrite",
+    "externalVenue": "Sadman Comedy Cafe, 209 Southeast 1st Avenue, Boca Raton, FL, USA",
+    "externalAddress": "Sadman Comedy Cafe, 209 Southeast 1st Avenue, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-347",
+    "venueId": "crazy-uncle-mikes",
+    "name": "Taj Farrant",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Taj Farrant is live at Crazy Uncle Mike's on",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-05",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/taj-farrant-tickets-1962489287287",
+    "source": "eventbrite",
+    "externalVenue": "Crazy Uncle Mikes",
+    "externalAddress": "6450 N Federal Hwy, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-348",
+    "venueId": "150-e-palmetto-park-rd-suite-8",
+    "name": "Infant BLS CPR and AED Class in  Boca Raton",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "CPR Certification Tampa teaches American Heart Association Infant BLS CPR classes in Boca Raton, FL.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-05",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/infant-bls-cpr-and-aed-class-in-boca-raton-tickets-899567409337",
+    "source": "eventbrite",
+    "externalVenue": "150 E Palmetto Park Rd suite 800",
+    "externalAddress": "150 East Palmetto Park Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-349",
+    "venueId": "crazy-uncle-mikes",
+    "name": "Alex Shillo & Badlands",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Alex Shilo & Badlands\u00a0 are live at Crazy Uncle Mike's!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-06",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/alex-shillo-badlands-tickets-1982831150347",
+    "source": "eventbrite",
+    "externalVenue": "Crazy Uncle Mikes",
+    "externalAddress": "6450 N Federal Hwy, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-350",
+    "venueId": "craft-for-art",
+    "name": "Create Your Own Turkish Mosaic Lamp \u2013 West Palm Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Design and craft your own Turkish mosaic lamp in West Palm Beach. All materials included. Beginner friendly.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-06",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/create-your-own-turkish-mosaic-lamp-west-palm-beach-tickets-1139779052829",
+    "source": "eventbrite",
+    "externalVenue": "Craft for Art",
+    "externalAddress": "141 Northwest 20th Street, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-351",
+    "venueId": "craft-for-art",
+    "name": "Create Your Own Turkish Mosaic Lamp \u2013 Delray Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Create your own Turkish mosaic lamp in Delray Beach. A creative, relaxing workshop perfect for all skill levels.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-06",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/create-your-own-turkish-mosaic-lamp-delray-beach-tickets-1139763526389",
+    "source": "eventbrite",
+    "externalVenue": "Craft for Art",
+    "externalAddress": "141 Northwest 20th Street, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-352",
+    "venueId": "congregation-bnai-israel",
+    "name": "Rosenthal Speaker Series Presents Jason Alexander",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "The moderated conversation with Alexander will give audiences a behind-the-scenes look at his life, career, and social activism.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/rosenthal-speaker-series-presents-jason-alexander-tickets-1976495183299",
+    "source": "eventbrite",
+    "externalVenue": "Congregation B'nai Israel",
+    "externalAddress": "2200 Yamato Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-353",
+    "venueId": "south-county-regional-park,-bo",
+    "name": "3rd Annual: South Florida Food Fest and Craft Fair 2026",
+    "category": "food-specials",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "South Florida's Most Diverse 2DAY FOOD FESTIVAL & CRAFT FAIR featuring EVENT SPECIAL A LA CARTE TASTING MENUS priced at only $1-$5 per item!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/3rd-annual-south-florida-food-fest-and-craft-fair-2026-tickets-1964317512558",
+    "source": "eventbrite",
+    "externalVenue": "South County Regional Park, Boca Raton FL",
+    "externalAddress": "20405 Amphitheater Circle,=, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-354",
+    "venueId": "mortons-the-steakhouse",
+    "name": "A Taste of Two Legends - Morton's Boca Raton",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Elevated Pairings from Two Iconic Coasts. This five-course dinner features exceptional wines from California and Chile.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/a-taste-of-two-legends-mortons-boca-raton-tickets-1980418665540",
+    "source": "eventbrite",
+    "externalVenue": "Morton's The Steakhouse",
+    "externalAddress": "5050 Town Center Circle, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-355",
+    "venueId": "boca-raton-museum-of-art",
+    "name": "Kindness Matters Day of Service",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us for the Kindness Matters Day of Service on Saturday, March 7, 2026 \u2014 a day dedicated to connection, compassion, and hands-on service",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/kindness-matters-day-of-service-tickets-1982034298943",
+    "source": "eventbrite",
+    "externalVenue": "Boca Raton Museum of Art",
+    "externalAddress": "501 Plaza Real, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-356",
+    "venueId": "crazy-uncle-mikes",
+    "name": "Unlimited Devotion: Celebrating The Grateful Dead",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Unlimited Devotion is live at Crazy Uncle Mike's!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/unlimited-devotion-celebrating-the-grateful-dead-tickets-1981895404506",
+    "source": "eventbrite",
+    "externalVenue": "Crazy Uncle Mikes",
+    "externalAddress": "6450 N Federal Hwy, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-357",
+    "venueId": "150-e-palmetto-park-rd-suite-8",
+    "name": "Infant BLS CPR and AED Class in  Boca Raton",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "CPR Certification Tampa teaches American Heart Association Infant BLS CPR classes in Boca Raton, FL.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/infant-bls-cpr-and-aed-class-in-boca-raton-tickets-899568552757",
+    "source": "eventbrite",
+    "externalVenue": "150 E Palmetto Park Rd suite 800",
+    "externalAddress": "150 East Palmetto Park Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-358",
+    "venueId": "crazy-uncle-mikes",
+    "name": "The Livesays",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "The Livesays are live at Crazy Uncle Mike's!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-08",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/the-livesays-tickets-1982387009911",
+    "source": "eventbrite",
+    "externalVenue": "Crazy Uncle Mikes",
+    "externalAddress": "6450 N Federal Hwy, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-359",
+    "venueId": "boca-black-box",
+    "name": "The Classic Drifters",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "It\u2019s a nostalgic evening saluting one of the world's most beloved musical groups, The Drifters.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-08",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/the-classic-drifters-tickets-1322632271729",
+    "source": "eventbrite",
+    "externalVenue": "Boca Black Box",
+    "externalAddress": "8221 Glades Road, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-360",
+    "venueId": "craft-for-art",
+    "name": "Create Your Own Turkish Mosaic Lamp \u2013 West Palm Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Design and craft your own Turkish mosaic lamp in West Palm Beach. All materials included. Beginner friendly.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-08",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/create-your-own-turkish-mosaic-lamp-west-palm-beach-tickets-1139780326639",
+    "source": "eventbrite",
+    "externalVenue": "Craft for Art",
+    "externalAddress": "141 Northwest 20th Street, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-361",
+    "venueId": "craft-for-art",
+    "name": "Create Your Own Turkish Mosaic Lamp \u2013 Delray Beach",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Create your own Turkish mosaic lamp in Delray Beach. A creative, relaxing workshop perfect for all skill levels.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-08",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/create-your-own-turkish-mosaic-lamp-delray-beach-tickets-1139764348849",
+    "source": "eventbrite",
+    "externalVenue": "Craft for Art",
+    "externalAddress": "141 Northwest 20th Street, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-362",
+    "venueId": "craft-for-art",
+    "name": "Craft Your Own Turkish Mosaic Lamp \u2013 Unique Creative Workshop in Boca Raton",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join a unique creative workshop in Boca Raton and craft your own glowing Turkish mosaic lamp. No experience needed. All materials included.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-08",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/craft-your-own-turkish-mosaic-lamp-unique-creative-workshop-in-boca-raton-tickets-1008542165767",
+    "source": "eventbrite",
+    "externalVenue": "Craft for Art",
+    "externalAddress": "141 Northwest 20th Street, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-363",
+    "venueId": "biergarten",
+    "name": "Palm Beach Boca Raton Speed Dating for Singles Age 50s/60s \u2665 Florida",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Meet up to 12 potential matches. Join the thousands of people that have found LOVE at our events. Will you be our next success story?",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-09",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/palm-beach-boca-raton-speed-dating-for-singles-age-50s60s-florida-tickets-1331328823349",
+    "source": "eventbrite",
+    "externalVenue": "Biergarten",
+    "externalAddress": "309 Via De Palmas, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-364",
+    "venueId": "biergarten",
+    "name": "Palm Beach Boca Raton Speed Dating for Singles Age 36-52 \u2665 Florida",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Meet up to 12 potential matches. Join the thousands of people that have found LOVE at our events. Will you be our next success story?",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-09",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/palm-beach-boca-raton-speed-dating-for-singles-age-36-52-florida-tickets-1331338502299",
+    "source": "eventbrite",
+    "externalVenue": "Biergarten",
+    "externalAddress": "309 Via De Palmas, Boca Raton, FL"
+  },
+  {
+    "id": "boca-raton-evt-365",
+    "venueId": "creative-souls-dance-studio",
+    "name": "Burlesque Dance Class w/ Creative Souls Dance",
+    "category": "dj",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Beginner-friendly, sassy, strip-teasy, and fun! 18+, Ladies Only",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-09",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/burlesque-dance-class-w-creative-souls-dance-tickets-1677704432119",
+    "source": "eventbrite",
+    "externalVenue": "Creative Souls Dance Studio",
+    "externalAddress": "21073 Powerline Road, Boca Raton, FL"
   }
 ]

@@ -4,389 +4,881 @@
     "venueId": "two-georges-waterfront",
     "name": "Live Music on the Water",
     "category": "live-music",
-    "vibe": ["waterfront", "group-friendly"],
+    "vibe": [
+      "waterfront",
+      "group-friendly"
+    ],
     "description": "Live bands on the waterfront patio. Grab a seat early because it fills up fast.",
-    "recurring": { "day": "friday", "time": "19:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "19:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-002",
     "venueId": "two-georges-waterfront",
     "name": "Saturday Live Music",
     "category": "live-music",
-    "vibe": ["waterfront", "group-friendly"],
+    "vibe": [
+      "waterfront",
+      "group-friendly"
+    ],
     "description": "Saturday night bands on the Intracoastal. The sunset from here is unbeatable.",
-    "recurring": { "day": "saturday", "time": "19:00", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "19:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-003",
     "venueId": "two-georges-waterfront",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "waterfront"],
+    "vibe": [
+      "chill",
+      "waterfront"
+    ],
     "description": "Drink specials at the tiki bar with Intracoastal views. Mon-Fri.",
-    "recurring": { "day": "monday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-004",
     "venueId": "two-georges-waterfront",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "waterfront"],
+    "vibe": [
+      "chill",
+      "waterfront"
+    ],
     "description": "Drink specials at the tiki bar with Intracoastal views. Mon-Fri.",
-    "recurring": { "day": "tuesday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-005",
     "venueId": "two-georges-waterfront",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "waterfront"],
+    "vibe": [
+      "chill",
+      "waterfront"
+    ],
     "description": "Drink specials at the tiki bar with Intracoastal views. Mon-Fri.",
-    "recurring": { "day": "wednesday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-006",
     "venueId": "banana-boat",
     "name": "Sunday Brunch",
     "category": "brunch",
-    "vibe": ["social", "waterfront", "group-friendly"],
+    "vibe": [
+      "social",
+      "waterfront",
+      "group-friendly"
+    ],
     "description": "Bottomless mimosas and a full brunch menu on the water. Bring sunglasses.",
-    "recurring": { "day": "sunday", "time": "10:00", "duration": 240 },
+    "recurring": {
+      "day": "sunday",
+      "time": "10:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "bb-evt-007",
     "venueId": "banana-boat",
     "name": "Live Music Friday",
     "category": "live-music",
-    "vibe": ["waterfront", "group-friendly", "fun"],
+    "vibe": [
+      "waterfront",
+      "group-friendly",
+      "fun"
+    ],
     "description": "Live bands on the waterfront. The Banana Boat on a Friday night is peak Boynton.",
-    "recurring": { "day": "friday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-008",
     "venueId": "banana-boat",
     "name": "Live Music Saturday",
     "category": "live-music",
-    "vibe": ["waterfront", "group-friendly", "fun"],
+    "vibe": [
+      "waterfront",
+      "group-friendly",
+      "fun"
+    ],
     "description": "Saturday night bands and the patio is packed. Get there early.",
-    "recurring": { "day": "saturday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-009",
     "venueId": "banana-boat",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "waterfront"],
+    "vibe": [
+      "chill",
+      "waterfront"
+    ],
     "description": "Drink and appetizer specials at the bar. The fish dip is a must.",
-    "recurring": { "day": "monday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-010",
     "venueId": "banana-boat",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "waterfront"],
+    "vibe": [
+      "chill",
+      "waterfront"
+    ],
     "description": "Drink and appetizer specials at the bar. The fish dip is a must.",
-    "recurring": { "day": "tuesday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-011",
     "venueId": "prime-catch",
     "name": "Happy Hour at the Raw Bar",
     "category": "happy-hour",
-    "vibe": ["upscale-casual", "waterfront"],
+    "vibe": [
+      "upscale-casual",
+      "waterfront"
+    ],
     "description": "Half-price raw bar items and discounted cocktails. One of the best happy hour deals in Boynton.",
-    "recurring": { "day": "monday", "time": "16:00", "duration": 120 },
+    "recurring": {
+      "day": "monday",
+      "time": "16:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-012",
     "venueId": "prime-catch",
     "name": "Happy Hour at the Raw Bar",
     "category": "happy-hour",
-    "vibe": ["upscale-casual", "waterfront"],
+    "vibe": [
+      "upscale-casual",
+      "waterfront"
+    ],
     "description": "Half-price raw bar items and discounted cocktails.",
-    "recurring": { "day": "tuesday", "time": "16:00", "duration": 120 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "16:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-013",
     "venueId": "prime-catch",
     "name": "Happy Hour at the Raw Bar",
     "category": "happy-hour",
-    "vibe": ["upscale-casual", "waterfront"],
+    "vibe": [
+      "upscale-casual",
+      "waterfront"
+    ],
     "description": "Half-price raw bar items and discounted cocktails.",
-    "recurring": { "day": "wednesday", "time": "16:00", "duration": 120 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "16:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-014",
     "venueId": "hurricane-alley",
     "name": "Trivia Tuesday",
     "category": "trivia",
-    "vibe": ["competitive", "group-friendly", "casual"],
+    "vibe": [
+      "competitive",
+      "group-friendly",
+      "casual"
+    ],
     "description": "Team trivia with a raw bar. Cheap beers and bragging rights.",
-    "recurring": { "day": "tuesday", "time": "19:00", "duration": 120 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "19:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-015",
     "venueId": "hurricane-alley",
     "name": "Karaoke Wednesday",
     "category": "karaoke",
-    "vibe": ["fun", "casual", "loud"],
+    "vibe": [
+      "fun",
+      "casual",
+      "loud"
+    ],
     "description": "Grab the mic and a bucket of beers. Wednesday night karaoke gets wild.",
-    "recurring": { "day": "wednesday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-016",
     "venueId": "hurricane-alley",
     "name": "Live Music Friday",
     "category": "live-music",
-    "vibe": ["rowdy", "group-friendly"],
+    "vibe": [
+      "rowdy",
+      "group-friendly"
+    ],
     "description": "Live bands every Friday night. The place gets loud and that's the point.",
-    "recurring": { "day": "friday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-017",
     "venueId": "hurricane-alley",
     "name": "NFL Sunday",
     "category": "watch-party",
-    "vibe": ["sports", "rowdy", "group-friendly"],
+    "vibe": [
+      "sports",
+      "rowdy",
+      "group-friendly"
+    ],
     "description": "All the games on all the screens. Wing specials and beer buckets.",
-    "recurring": { "day": "sunday", "time": "13:00", "duration": 480 },
+    "recurring": {
+      "day": "sunday",
+      "time": "13:00",
+      "duration": 480
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day", "night"]
+    "timeOfDay": [
+      "day",
+      "night"
+    ]
   },
   {
     "id": "bb-evt-018",
     "venueId": "butcher-and-the-bar",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["trendy", "date-night"],
+    "vibe": [
+      "trendy",
+      "date-night"
+    ],
     "description": "Craft cocktail specials and charcuterie deals at the bar. Tue-Fri.",
-    "recurring": { "day": "tuesday", "time": "16:00", "duration": 120 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "16:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-019",
     "venueId": "butcher-and-the-bar",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["trendy", "date-night"],
+    "vibe": [
+      "trendy",
+      "date-night"
+    ],
     "description": "Craft cocktail specials and charcuterie deals at the bar.",
-    "recurring": { "day": "wednesday", "time": "16:00", "duration": 120 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "16:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-020",
     "venueId": "butcher-and-the-bar",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["trendy", "date-night"],
+    "vibe": [
+      "trendy",
+      "date-night"
+    ],
     "description": "Craft cocktail specials and charcuterie deals at the bar.",
-    "recurring": { "day": "thursday", "time": "16:00", "duration": 120 },
+    "recurring": {
+      "day": "thursday",
+      "time": "16:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-021",
     "venueId": "benvenuto",
     "name": "Sunday Brunch",
     "category": "brunch",
-    "vibe": ["upscale", "romantic", "social"],
+    "vibe": [
+      "upscale",
+      "romantic",
+      "social"
+    ],
     "description": "Brunch in the garden with live piano. The eggs Benedict are next level and the mimosa bar is bottomless.",
-    "recurring": { "day": "sunday", "time": "10:30", "duration": 210 },
+    "recurring": {
+      "day": "sunday",
+      "time": "10:30",
+      "duration": 210
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "bb-evt-022",
     "venueId": "boynton-green-market",
     "name": "Boynton Beach Green Market",
     "category": "markets",
-    "vibe": ["social", "family-friendly", "dog-friendly"],
+    "vibe": [
+      "social",
+      "family-friendly",
+      "dog-friendly"
+    ],
     "description": "Saturday morning market with local produce, baked goods, and live music. A great way to start the weekend.",
-    "recurring": { "day": "saturday", "time": "09:00", "duration": 300 },
+    "recurring": {
+      "day": "saturday",
+      "time": "09:00",
+      "duration": 300
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "bb-evt-023",
     "venueId": "oceanfront-park",
     "name": "Beach Volleyball Pickup",
     "category": "beach-sports",
-    "vibe": ["active", "social"],
+    "vibe": [
+      "active",
+      "social"
+    ],
     "description": "Pickup volleyball games at the Oceanfront Park courts. Show up and jump on a team.",
-    "recurring": { "day": "saturday", "time": "09:00", "duration": 240 },
+    "recurring": {
+      "day": "saturday",
+      "time": "09:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "bb-evt-024",
     "venueId": "oceanfront-park",
     "name": "Sunday Morning Yoga on the Beach",
     "category": "yoga",
-    "vibe": ["chill", "scenic", "solo-friendly"],
+    "vibe": [
+      "chill",
+      "scenic",
+      "solo-friendly"
+    ],
     "description": "Free community yoga on the grass overlooking the ocean. Bring your own mat.",
-    "recurring": { "day": "sunday", "time": "08:00", "duration": 60 },
+    "recurring": {
+      "day": "sunday",
+      "time": "08:00",
+      "duration": 60
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "bb-evt-025",
     "venueId": "intracoastal-paddle-boynton",
     "name": "Morning Paddleboard Tour",
     "category": "water-sports",
-    "vibe": ["scenic", "adventurous", "chill"],
+    "vibe": [
+      "scenic",
+      "adventurous",
+      "chill"
+    ],
     "description": "Guided SUP through the mangroves on the Intracoastal. Morning glass water and usually spot manatees.",
-    "recurring": { "day": "saturday", "time": "08:00", "duration": 90 },
+    "recurring": {
+      "day": "saturday",
+      "time": "08:00",
+      "duration": 90
+    },
     "oneTime": null,
     "cover": "$40",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "bb-evt-026",
     "venueId": "intracoastal-paddle-boynton",
     "name": "Sunset Kayak Tour",
     "category": "water-sports",
-    "vibe": ["scenic", "romantic", "adventurous"],
+    "vibe": [
+      "scenic",
+      "romantic",
+      "adventurous"
+    ],
     "description": "Guided kayak tour at golden hour through the mangrove tunnels. Book ahead, these sell out.",
-    "recurring": { "day": "friday", "time": "17:00", "duration": 90 },
+    "recurring": {
+      "day": "friday",
+      "time": "17:00",
+      "duration": 90
+    },
     "oneTime": null,
     "cover": "$40",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "bb-evt-027",
     "venueId": "loxahatchee-wildlife-refuge",
     "name": "Guided Nature Walk",
     "category": "hiking",
-    "vibe": ["scenic", "chill", "solo-friendly"],
+    "vibe": [
+      "scenic",
+      "chill",
+      "solo-friendly"
+    ],
     "description": "Ranger-led walk along the boardwalk and levee trail. Learn about the Everglades ecosystem and spot wildlife up close.",
-    "recurring": { "day": "saturday", "time": "09:00", "duration": 120 },
+    "recurring": {
+      "day": "saturday",
+      "time": "09:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "$5",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "bb-evt-028",
     "venueId": "boynton-inlet-park",
     "name": "Sunrise Fishing",
     "category": "water-sports",
-    "vibe": ["chill", "scenic", "solo-friendly"],
+    "vibe": [
+      "chill",
+      "scenic",
+      "solo-friendly"
+    ],
     "description": "The jetty at the inlet is prime fishing territory at sunrise. Snook, tarpon, and jacks if you know what you're doing.",
-    "recurring": { "day": "saturday", "time": "06:00", "duration": 240 },
+    "recurring": {
+      "day": "saturday",
+      "time": "06:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "bb-evt-029",
     "venueId": "hurricane-alley",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["casual", "group-friendly"],
+    "vibe": [
+      "casual",
+      "group-friendly"
+    ],
     "description": "Cheap drafts and raw bar specials every day 3-6pm.",
-    "recurring": { "day": "monday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "bb-evt-030",
     "venueId": "hurricane-alley",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["casual", "group-friendly"],
+    "vibe": [
+      "casual",
+      "group-friendly"
+    ],
     "description": "Cheap drafts and raw bar specials every day 3-6pm.",
-    "recurring": { "day": "thursday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "thursday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
+  },
+  {
+    "id": "boynton-beach-evt-31",
+    "venueId": "6600-high-ridge-rd",
+    "name": "Live Music: Snap Hook Cover band",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us for happy hour - Get ready to rock out live with Snap Hook, playing music from the 90's and 2000's @snaphookband.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/live-music-snap-hook-cover-band-tickets-1982296298591",
+    "source": "eventbrite",
+    "externalVenue": "6600 High Ridge Rd",
+    "externalAddress": "6600 High Ridge Road, Boynton Beach, FL"
+  },
+  {
+    "id": "boynton-beach-evt-32",
+    "venueId": "nobo-brewing-company",
+    "name": "Jellyfish or octopus Paint Night",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Learn to paint a 12\" jelly or octopus wood cut out. Both taught w/ instructions. Colors can be changed!  All materials provided.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/jellyfish-or-octopus-paint-night-tickets-1981867669550",
+    "source": "eventbrite",
+    "externalVenue": "NOBO Brewing Company",
+    "externalAddress": "2901 Northwest Commerce Park Drive, Boynton Beach, FL"
+  },
+  {
+    "id": "boynton-beach-evt-33",
+    "venueId": "abc-fine-wine-&-spirits",
+    "name": "ABC Boynton Beach West Premium Wine Tasting Experience",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us for our next in-store wine tasting on February 26th from 5:30 to 7:30 p.m. EST at the Boynton Beach West ABC location.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-26",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/abc-boynton-beach-west-premium-wine-tasting-experience-tickets-1980350783503",
+    "source": "eventbrite",
+    "externalVenue": "ABC Fine Wine & Spirits",
+    "externalAddress": "8601 Boynton Beach Boulevard, Boynton Beach, FL"
+  },
+  {
+    "id": "boynton-beach-evt-34",
+    "venueId": "7501-high-ridge-rd",
+    "name": "CCWE Presents: Break the Chain \u2014 Worship Experience & Book Release",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us for a Powerful Night of Worship Celebrating the Launch of CCWE Ministry and the Book Release of Break the Chain of Fear & Failure!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/ccwe-presents-break-the-chain-worship-experience-book-release-tickets-1979117280061",
+    "source": "eventbrite",
+    "externalVenue": "7501 High Ridge Rd",
+    "externalAddress": "7501 High Ridge Road, Boynton Beach, FL"
+  },
+  {
+    "id": "boynton-beach-evt-35",
+    "venueId": "wxel-south-florida-pbs",
+    "name": "Film Florida Titanic Immersive Voyage Networking Event",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "An Immersive Voyage is a once-in-a-lifetime expedition to experience Titanic, the most luxurious ship to ever set sail.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/film-florida-titanic-immersive-voyage-networking-event-tickets-1982391417093",
+    "source": "eventbrite",
+    "externalVenue": "WXEL South Florida PBS",
+    "externalAddress": "3401 South Congress Avenue, Boynton Beach, FL"
+  },
+  {
+    "id": "boynton-beach-evt-36",
+    "venueId": "carolyn-sims-center",
+    "name": "THRIVE: A Wellness Expo",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "A  family-friendly wellness experience bringing resources, community, and practical tools to help you thrive.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/thrive-a-wellness-expo-tickets-1980924423275",
+    "source": "eventbrite",
+    "externalVenue": "Carolyn Sims Center",
+    "externalAddress": "225 Northwest 12th Avenue, Boynton Beach, FL"
+  },
+  {
+    "id": "boynton-beach-evt-37",
+    "venueId": "colt-farms,-llc",
+    "name": "Moo's and Cold Brew",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us for a morning of delicious coffee and tasty treats at Moo's and Cold Brew - the perfect way to start your day!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-08",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "day"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/moos-and-cold-brew-tickets-1981382547537",
+    "source": "eventbrite",
+    "externalVenue": "Colt Farms, LLC",
+    "externalAddress": "11420 88th Street South, Boynton Beach, FL"
+  },
+  {
+    "id": "boynton-beach-evt-38",
+    "venueId": "10780-97th-pl-s",
+    "name": "Elite Tactical \u2014 Level 1 Tactical Shooting Course",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Level 1: 4hr outdoor pistol course\u2014maneuvering, close shooting & quick draws. Wear long pants, closed-toe shoes; bring 100 rounds 9mm brass.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-08",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/elite-tactical-level-1-tactical-shooting-course-tickets-1757613773109",
+    "source": "eventbrite",
+    "externalVenue": "10780 97th Pl S",
+    "externalAddress": "10780 97th Place South, Boynton Beach, FL"
   }
 ]

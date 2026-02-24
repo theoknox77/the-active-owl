@@ -4,389 +4,1009 @@
     "venueId": "bennys-on-the-beach",
     "name": "Live Music Friday",
     "category": "live-music",
-    "vibe": ["beachfront", "group-friendly"],
+    "vibe": [
+      "beachfront",
+      "group-friendly"
+    ],
     "description": "Live bands on the pier patio with the ocean right there. No cover, just good vibes.",
-    "recurring": { "day": "friday", "time": "19:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "19:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-002",
     "venueId": "bennys-on-the-beach",
     "name": "Saturday Live Music",
     "category": "live-music",
-    "vibe": ["beachfront", "group-friendly"],
+    "vibe": [
+      "beachfront",
+      "group-friendly"
+    ],
     "description": "Saturday night bands at the beach. Grab a table outside before they're gone.",
-    "recurring": { "day": "saturday", "time": "19:00", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "19:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-003",
     "venueId": "bennys-on-the-beach",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "beachfront"],
+    "vibe": [
+      "chill",
+      "beachfront"
+    ],
     "description": "Drink specials with an ocean view. Hard to beat this on a weekday afternoon.",
-    "recurring": { "day": "monday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-004",
     "venueId": "bennys-on-the-beach",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "beachfront"],
+    "vibe": [
+      "chill",
+      "beachfront"
+    ],
     "description": "Drink specials with an ocean view.",
-    "recurring": { "day": "tuesday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-005",
     "venueId": "bennys-on-the-beach",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "beachfront"],
+    "vibe": [
+      "chill",
+      "beachfront"
+    ],
     "description": "Drink specials with an ocean view.",
-    "recurring": { "day": "wednesday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-006",
     "venueId": "the-cottage-lw",
     "name": "Sunday Brunch",
     "category": "brunch",
-    "vibe": ["foodie", "social", "trendy"],
+    "vibe": [
+      "foodie",
+      "social",
+      "trendy"
+    ],
     "description": "Farm-to-table brunch with craft cocktails. The fried chicken and waffles are the move. Reservations recommended.",
-    "recurring": { "day": "sunday", "time": "10:30", "duration": 270 },
+    "recurring": {
+      "day": "sunday",
+      "time": "10:30",
+      "duration": 270
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "lw-evt-007",
     "venueId": "the-cottage-lw",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["trendy", "date-night"],
+    "vibe": [
+      "trendy",
+      "date-night"
+    ],
     "description": "Wine and cocktail specials with seasonal small plates. Tue-Fri at the bar.",
-    "recurring": { "day": "tuesday", "time": "17:00", "duration": 120 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "17:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-008",
     "venueId": "the-cottage-lw",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["trendy", "date-night"],
+    "vibe": [
+      "trendy",
+      "date-night"
+    ],
     "description": "Wine and cocktail specials with seasonal small plates.",
-    "recurring": { "day": "wednesday", "time": "17:00", "duration": 120 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "17:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-009",
     "venueId": "propaganda",
     "name": "DJ Night Friday",
     "category": "dj",
-    "vibe": ["dance", "artsy", "late-night"],
+    "vibe": [
+      "dance",
+      "artsy",
+      "late-night"
+    ],
     "description": "Rotating DJs spinning everything from house to funk to indie. The dance floor is the whole point.",
-    "recurring": { "day": "friday", "time": "22:00", "duration": 240 },
+    "recurring": {
+      "day": "friday",
+      "time": "22:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "$5",
     "ageRestriction": "21+",
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-010",
     "venueId": "propaganda",
     "name": "Saturday Night",
     "category": "dj",
-    "vibe": ["dance", "artsy", "late-night"],
+    "vibe": [
+      "dance",
+      "artsy",
+      "late-night"
+    ],
     "description": "Saturday night at Propaganda. Themed nights, guest DJs, and a crowd that actually dances.",
-    "recurring": { "day": "saturday", "time": "22:00", "duration": 240 },
+    "recurring": {
+      "day": "saturday",
+      "time": "22:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "$5",
     "ageRestriction": "21+",
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-011",
     "venueId": "propaganda",
     "name": "Throwback Thursday",
     "category": "dj",
-    "vibe": ["dance", "fun", "eclectic"],
+    "vibe": [
+      "dance",
+      "fun",
+      "eclectic"
+    ],
     "description": "90s and 2000s throwback night. Every song is a sing-along.",
-    "recurring": { "day": "thursday", "time": "21:00", "duration": 180 },
+    "recurring": {
+      "day": "thursday",
+      "time": "21:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": "21+",
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-012",
     "venueId": "bamboo-room",
     "name": "Live Music Friday",
     "category": "live-music",
-    "vibe": ["intimate", "eclectic"],
+    "vibe": [
+      "intimate",
+      "eclectic"
+    ],
     "description": "Touring and local acts in one of the best small rooms in South Florida. Check the calendar for who's playing.",
-    "recurring": { "day": "friday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Varies",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-013",
     "venueId": "bamboo-room",
     "name": "Live Music Saturday",
     "category": "live-music",
-    "vibe": ["intimate", "eclectic"],
+    "vibe": [
+      "intimate",
+      "eclectic"
+    ],
     "description": "Saturday night live music. Blues, rock, jazz, whatever the Bamboo Room books is always worth seeing.",
-    "recurring": { "day": "saturday", "time": "20:00", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "20:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Varies",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-014",
     "venueId": "bamboo-room",
     "name": "Open Mic Wednesday",
     "category": "open-mic",
-    "vibe": ["intimate", "artsy", "local"],
+    "vibe": [
+      "intimate",
+      "artsy",
+      "local"
+    ],
     "description": "Open mic night for musicians, poets, and performers. Sign up early because spots go fast.",
-    "recurring": { "day": "wednesday", "time": "19:30", "duration": 150 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "19:30",
+      "duration": 150
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-015",
     "venueId": "the-butcher-shop-lw",
     "name": "Trivia Tuesday",
     "category": "trivia",
-    "vibe": ["competitive", "group-friendly", "casual"],
+    "vibe": [
+      "competitive",
+      "group-friendly",
+      "casual"
+    ],
     "description": "Team trivia in the beer garden. Bring your crew, grab a burger, and try to win.",
-    "recurring": { "day": "tuesday", "time": "19:00", "duration": 120 },
+    "recurring": {
+      "day": "tuesday",
+      "time": "19:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-016",
     "venueId": "the-butcher-shop-lw",
     "name": "Live Music Saturday",
     "category": "live-music",
-    "vibe": ["casual", "outdoor", "group-friendly"],
+    "vibe": [
+      "casual",
+      "outdoor",
+      "group-friendly"
+    ],
     "description": "Live bands in the beer garden on Saturday nights. Dogs, beers, burgers, and music.",
-    "recurring": { "day": "saturday", "time": "19:00", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "19:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-017",
     "venueId": "the-butcher-shop-lw",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "casual"],
+    "vibe": [
+      "chill",
+      "casual"
+    ],
     "description": "Beer and burger specials Mon-Fri at the garden bar.",
-    "recurring": { "day": "monday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-018",
     "venueId": "the-butcher-shop-lw",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "casual"],
+    "vibe": [
+      "chill",
+      "casual"
+    ],
     "description": "Beer and burger specials Mon-Fri at the garden bar.",
-    "recurring": { "day": "wednesday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-019",
     "venueId": "the-butcher-shop-lw",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["chill", "casual"],
+    "vibe": [
+      "chill",
+      "casual"
+    ],
     "description": "Beer and burger specials Mon-Fri at the garden bar.",
-    "recurring": { "day": "friday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "friday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-020",
     "venueId": "lake-worth-farmers-market",
     "name": "Lake Worth Farmers Market",
     "category": "markets",
-    "vibe": ["social", "family-friendly", "artsy"],
+    "vibe": [
+      "social",
+      "family-friendly",
+      "artsy"
+    ],
     "description": "Saturday morning market on the Intracoastal. Produce, artisan goods, live music, and the best people-watching in town.",
-    "recurring": { "day": "saturday", "time": "09:00", "duration": 240 },
+    "recurring": {
+      "day": "saturday",
+      "time": "09:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "lw-evt-021",
     "venueId": "lake-worth-beach-municipal",
     "name": "Beach Volleyball Pickup",
     "category": "beach-sports",
-    "vibe": ["active", "social"],
+    "vibe": [
+      "active",
+      "social"
+    ],
     "description": "Pickup games near the pier on Saturday mornings. Just show up ready to play.",
-    "recurring": { "day": "saturday", "time": "09:00", "duration": 240 },
+    "recurring": {
+      "day": "saturday",
+      "time": "09:00",
+      "duration": 240
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "lw-evt-022",
     "venueId": "lake-worth-beach-municipal",
     "name": "Morning Surf Session",
     "category": "water-sports",
-    "vibe": ["active", "adventurous", "chill"],
+    "vibe": [
+      "active",
+      "adventurous",
+      "chill"
+    ],
     "description": "The pier break is consistent and beginner-friendly. Dawn patrol is the best time before the wind picks up.",
-    "recurring": { "day": "saturday", "time": "06:30", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "06:30",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "lw-evt-023",
     "venueId": "bryant-park-lw",
     "name": "Yoga in the Park",
     "category": "yoga",
-    "vibe": ["chill", "scenic", "solo-friendly"],
+    "vibe": [
+      "chill",
+      "scenic",
+      "solo-friendly"
+    ],
     "description": "Free community yoga on the waterfront lawn. Bring a mat, all levels welcome.",
-    "recurring": { "day": "sunday", "time": "09:00", "duration": 60 },
+    "recurring": {
+      "day": "sunday",
+      "time": "09:00",
+      "duration": 60
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "lw-evt-024",
     "venueId": "bryant-park-lw",
     "name": "Run Club",
     "category": "fitness",
-    "vibe": ["active", "social"],
+    "vibe": [
+      "active",
+      "social"
+    ],
     "description": "Weekly 5K starting from Bryant Park along the Intracoastal. All paces, good people. Coffee after.",
-    "recurring": { "day": "wednesday", "time": "06:30", "duration": 60 },
+    "recurring": {
+      "day": "wednesday",
+      "time": "06:30",
+      "duration": 60
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "lw-evt-025",
     "venueId": "snook-islands",
     "name": "Guided Nature Walk",
     "category": "hiking",
-    "vibe": ["scenic", "chill", "solo-friendly"],
+    "vibe": [
+      "scenic",
+      "chill",
+      "solo-friendly"
+    ],
     "description": "Volunteer-led walk through the mangrove boardwalk. Learn about the local ecosystem and spot birds and manatees.",
-    "recurring": { "day": "saturday", "time": "08:30", "duration": 90 },
+    "recurring": {
+      "day": "saturday",
+      "time": "08:30",
+      "duration": 90
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "lw-evt-026",
     "venueId": "benzaiten-center",
     "name": "Glassblowing Workshop",
     "category": "art-culture",
-    "vibe": ["creative", "social", "adventurous"],
+    "vibe": [
+      "creative",
+      "social",
+      "adventurous"
+    ],
     "description": "Hands-on intro to glassblowing. You make your own piece and take it home. Book ahead, classes are small.",
-    "recurring": { "day": "saturday", "time": "10:00", "duration": 120 },
+    "recurring": {
+      "day": "saturday",
+      "time": "10:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "$75",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
   },
   {
     "id": "lw-evt-027",
     "venueId": "cultural-council-pbcounty",
     "name": "First Friday Art Opening",
     "category": "art-culture",
-    "vibe": ["artsy", "social"],
+    "vibe": [
+      "artsy",
+      "social"
+    ],
     "description": "Monthly opening reception for new exhibits. Free wine, meet the artists, and browse the gallery.",
-    "recurring": { "day": "friday", "time": "18:00", "duration": 120 },
+    "recurring": {
+      "day": "friday",
+      "time": "18:00",
+      "duration": 120
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-028",
     "venueId": "boatyard",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["waterfront", "chill"],
+    "vibe": [
+      "waterfront",
+      "chill"
+    ],
     "description": "Drink and raw bar specials on the Intracoastal. Mon-Fri.",
-    "recurring": { "day": "monday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "monday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-029",
     "venueId": "boatyard",
     "name": "Happy Hour",
     "category": "happy-hour",
-    "vibe": ["waterfront", "chill"],
+    "vibe": [
+      "waterfront",
+      "chill"
+    ],
     "description": "Drink and raw bar specials on the Intracoastal.",
-    "recurring": { "day": "thursday", "time": "15:00", "duration": 180 },
+    "recurring": {
+      "day": "thursday",
+      "time": "15:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["night"]
+    "timeOfDay": [
+      "night"
+    ]
   },
   {
     "id": "lw-evt-030",
     "venueId": "bennys-on-the-beach",
     "name": "Sunrise Breakfast",
     "category": "brunch",
-    "vibe": ["chill", "scenic"],
+    "vibe": [
+      "chill",
+      "scenic"
+    ],
     "description": "Benny's opens at 7am. Grab coffee and breakfast on the pier and watch the sun come up. Best way to start the day.",
-    "recurring": { "day": "saturday", "time": "07:00", "duration": 180 },
+    "recurring": {
+      "day": "saturday",
+      "time": "07:00",
+      "duration": 180
+    },
     "oneTime": null,
     "cover": "Free",
     "ageRestriction": null,
-    "timeOfDay": ["day"]
+    "timeOfDay": [
+      "day"
+    ]
+  },
+  {
+    "id": "lake-worth-beach-evt-31",
+    "venueId": "1325-n-a-st",
+    "name": "Fine Art Classes",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "A hands-on fine art class exploring still life, technique, and mindful observation in a welcoming creative space.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-25",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/fine-art-classes-tickets-1979448630138",
+    "source": "eventbrite",
+    "externalVenue": "1325 N A St",
+    "externalAddress": "1325 North A Street, Lake Worth Beach, FL"
+  },
+  {
+    "id": "lake-worth-beach-evt-32",
+    "venueId": "bamboo-room",
+    "name": "GYPSY BLUE REVUE featuring Anne Harris & JP Soars in Concert",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "The Bamboo Room and Peach Music Group present the 1st installment of The DEEP BLUES Series at The Bamboo Room!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-26",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/gypsy-blue-revue-featuring-anne-harris-jp-soars-in-concert-tickets-1977773827759",
+    "source": "eventbrite",
+    "externalVenue": "Bamboo Room",
+    "externalAddress": "25 South J Street, Lake Worth Beach, FL"
+  },
+  {
+    "id": "lake-worth-beach-evt-33",
+    "venueId": "beach-club-lake-worth",
+    "name": "Narwhal Paint Night",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Learn to paint this fun narwhal with galaxy sky on canvas. All materials and instructions provided. All skill levels welcome!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-26",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/narwhal-paint-night-tickets-1981868003549",
+    "source": "eventbrite",
+    "externalVenue": "Beach Club Lake Worth",
+    "externalAddress": "1 7th Avenue North, Lake Worth Beach, FL"
+  },
+  {
+    "id": "lake-worth-beach-evt-34",
+    "venueId": "propaganda",
+    "name": "A Killers Confession",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "A Killers Confession Live at Propaganda Lake Worth",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-27",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/a-killers-confession-tickets-1975623201177",
+    "source": "eventbrite",
+    "externalVenue": "Propaganda",
+    "externalAddress": "6 South J Street, Lake Worth Beach, FL"
+  },
+  {
+    "id": "lake-worth-beach-evt-35",
+    "venueId": "the-american-polish-club",
+    "name": "The Latin Ensemble Band",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Join us this month at Salsa Con Clave Social,  Friday February 27th \nWith The Latin Ensemble Band keeping you dancing all night",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-27",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/the-latin-ensemble-band-tickets-1982514063933",
+    "source": "eventbrite",
+    "externalVenue": "The American Polish Club",
+    "externalAddress": "4725 Lake Worth Rd, Greenacres, FL"
+  },
+  {
+    "id": "lake-worth-beach-evt-36",
+    "venueId": "rhythms-dance-studio",
+    "name": "Feminine Flow",
+    "category": "dj",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "An R&B dance class to get our bodies moving and feeling sexy!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-02-28",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/feminine-flow-tickets-1982113916080",
+    "source": "eventbrite",
+    "externalVenue": "Rhythms Dance Studio",
+    "externalAddress": "2311 10th Avenue North, Lake Worth Beach, FL"
+  },
+  {
+    "id": "lake-worth-beach-evt-37",
+    "venueId": "rudys-pub-in-lake-worth-&-bamb",
+    "name": "Rudy\u2019 Bluegrass and BBQ Festival",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Celebrate great music and food at Rudy\u2019s Bluegrass Festival! There will be five bands playing out on the backyard patio starting at 3 PM !",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/rudy-bluegrass-and-bbq-festival-tickets-1981849582451",
+    "source": "eventbrite",
+    "externalVenue": "Rudy's Pub in Lake Worth & Bamboo Room",
+    "externalAddress": "21 South J Street, Lake Worth Beach, FL"
+  },
+  {
+    "id": "lake-worth-beach-evt-38",
+    "venueId": "south-bryant-park-(northend)",
+    "name": "Scream Club Palm Beaches: Breathe. Release. Connect.",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Get ready to scream, let go, and make new connections at Scream Club Palm Beaches - a unique experience to unwind and recharge!",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-01",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/scream-club-palm-beaches-breathe-release-connect-tickets-1977032397120",
+    "source": "eventbrite",
+    "externalVenue": "South Bryant Park (Northend)",
+    "externalAddress": "407 South Lakeside Drive, Lake Worth Beach, FL"
+  },
+  {
+    "id": "lake-worth-beach-evt-39",
+    "venueId": "palm-beach-state-college-lw",
+    "name": "Confined Space Operations & Technician FFO0217/FFO0211",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Confined Space Operations and Technician",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-02",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/confined-space-operations-technician-ffo0217ffo0211-tickets-1978139579733",
+    "source": "eventbrite",
+    "externalVenue": "Palm Beach State College LW",
+    "externalAddress": "4200 Congress Ave, Lake Worth, FL"
+  },
+  {
+    "id": "lake-worth-beach-evt-40",
+    "venueId": "common-ground-community-develo",
+    "name": "Business Networking",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "CG Business Connections is an opportunity to strengthen your business in the community of Palm Beach County.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-03",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/business-networking-tickets-1981935148381",
+    "source": "eventbrite",
+    "externalVenue": "Common Ground Community Development",
+    "externalAddress": "1201 South Federal Highway, Lake Worth, FL"
+  },
+  {
+    "id": "lake-worth-beach-evt-41",
+    "venueId": "1325-n-a-st",
+    "name": "Fine Art Classes",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "A hands-on fine art class exploring still life, technique, and mindful observation in a welcoming creative space.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-04",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/fine-art-classes-tickets-1979448631141",
+    "source": "eventbrite",
+    "externalVenue": "1325 N A St",
+    "externalAddress": "1325 North A Street, Lake Worth Beach, FL"
+  },
+  {
+    "id": "lake-worth-beach-evt-42",
+    "venueId": "eclective-boutique",
+    "name": "Wine Glass Painting Night",
+    "category": "art-culture",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "Learn to paint a set of stemmed or stemless glassware. BYOB! Fun, creative night out w/friends. All materials & instructions provided.",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-05",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/wine-glass-painting-night-tickets-1982409280523",
+    "source": "eventbrite",
+    "externalVenue": "Eclective Boutique",
+    "externalAddress": "705 South Lake Drive, Lake Worth Beach, FL"
+  },
+  {
+    "id": "lake-worth-beach-evt-43",
+    "venueId": "bamboo-room",
+    "name": "BEN PRESTAGE - WORLD'S GREATEST ONE MAN BAND IN CONCERT",
+    "category": "live-music",
+    "vibe": [
+      "social",
+      "group-friendly"
+    ],
+    "description": "The Bamboo Room and Peach Music Present the 2nd Installment of The DEEP BLUES Series featuring BEN PRESTAGE - WORLD'S GREATEST ONE MAN BAND",
+    "recurring": null,
+    "oneTime": {
+      "date": "2026-03-07",
+      "time": "20:00",
+      "duration": 120
+    },
+    "cover": "Varies",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ],
+    "ticketUrl": "https://www.eventbrite.com/e/ben-prestage-worlds-greatest-one-man-band-in-concert-tickets-1980191264377",
+    "source": "eventbrite",
+    "externalVenue": "Bamboo Room",
+    "externalAddress": "25 South J Street, Lake Worth Beach, FL"
   }
 ]
