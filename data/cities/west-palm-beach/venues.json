@@ -388,5 +388,27 @@
     "categories": ["art-culture"],
     "timeOfDay": ["day", "night"],
     "description": "The open-air shopping and dining district formerly known as CityPlace. Good restaurants, a movie theater, and a fountain plaza where they host events. It's the central hub of downtown West Palm and a solid place to start a night out."
+  },
+  {
+    "id": "ivy-nightclub-wpb",
+    "name": "Ivy Nightclub",
+    "address": "1601 Belvedere Rd, West Palm Beach, FL 33406",
+    "phone": null,
+    "website": null,
+    "instagram": "@oceandrivehospitality",
+    "hours": {
+      "mon": "Closed",
+      "tue": "Closed",
+      "wed": "Closed",
+      "thu": "Closed",
+      "fri": "Closed",
+      "sat": "10pm-5am",
+      "sun": "Closed"
+    },
+    "vibes": ["dance", "upscale", "latin", "late-night", "energetic"],
+    "amenities": ["full-bar", "vip-area", "dj-booth", "hookah", "bottle-service", "dance-floor"],
+    "categories": ["dj"],
+    "timeOfDay": ["night"],
+    "description": "West Palm's largest nightclub with 2000+ capacity. D Tour Saturdays brings international DJs spinning salsa, merengue, bachata, hip-hop, reggaeton, Top 40, and EDM. Full bar, bottle service, hookah, VIP sections, and go-go dancers. 18 to party, 21 to drink."
   }
 ]

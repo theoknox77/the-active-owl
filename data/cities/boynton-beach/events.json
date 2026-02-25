@@ -357,30 +357,6 @@
     ]
   },
   {
-    "id": "bb-evt-017",
-    "venueId": "hurricane-alley",
-    "name": "NFL Sunday",
-    "category": "watch-party",
-    "vibe": [
-      "sports",
-      "rowdy",
-      "group-friendly"
-    ],
-    "description": "All the games on all the screens. Wing specials and beer buckets.",
-    "recurring": {
-      "day": "sunday",
-      "time": "13:00",
-      "duration": 480
-    },
-    "oneTime": null,
-    "cover": "Free",
-    "ageRestriction": null,
-    "timeOfDay": [
-      "day",
-      "night"
-    ]
-  },
-  {
     "id": "bb-evt-018",
     "venueId": "butcher-and-the-bar",
     "name": "Happy Hour",

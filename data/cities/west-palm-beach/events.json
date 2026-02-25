@@ -112,30 +112,6 @@
     ]
   },
   {
-    "id": "wpb-evt-006",
-    "venueId": "er-bradleys-saloon",
-    "name": "NFL Sunday",
-    "category": "watch-party",
-    "vibe": [
-      "sports",
-      "rowdy",
-      "group-friendly"
-    ],
-    "description": "All the games, waterfront views, and drink specials. One of the best spots to watch football in West Palm.",
-    "recurring": {
-      "day": "sunday",
-      "time": "13:00",
-      "duration": 480
-    },
-    "oneTime": null,
-    "cover": "Free",
-    "ageRestriction": null,
-    "timeOfDay": [
-      "day",
-      "night"
-    ]
-  },
-  {
     "id": "wpb-evt-007",
     "venueId": "osheas-irish-pub",
     "name": "Trivia Tuesday",
@@ -3210,5 +3186,30 @@
     "source": "eventbrite",
     "externalVenue": "2054 Vista Pkwy",
     "externalAddress": "2054 Vista Parkway, West Palm Beach, FL"
+  },
+  {
+    "id": "wpb-evt-ivy-001",
+    "venueId": "ivy-nightclub-wpb",
+    "name": "D Tour Saturdays",
+    "category": "dj",
+    "vibe": [
+      "dance",
+      "latin",
+      "upscale",
+      "late-night",
+      "energetic"
+    ],
+    "description": "Hollywood Invades Palm Beach — West Palm's biggest Saturday night at Ivy Nightclub. International DJs spin salsa, merengue, bachata, hip-hop, reggaeton, and EDM for 2000+ partygoers. Bottle service, hookah, VIP sections, and go-go dancers. 18 to party, 21 to drink.",
+    "recurring": {
+      "day": "saturday",
+      "time": "22:00",
+      "duration": 420
+    },
+    "oneTime": null,
+    "cover": "Varies",
+    "ageRestriction": "18+",
+    "timeOfDay": [
+      "night"
+    ]
   }
 ]

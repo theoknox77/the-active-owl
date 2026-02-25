@@ -480,5 +480,27 @@
     "amenities": ["outdoor-seating", "coffee", "full-menu"],
     "timeOfDay": ["day"],
     "description": "Right on Atlantic Ave with a great breakfast and lunch menu. The avocado toast is actually good and the coffee is strong. Perfect people-watching spot on a Saturday morning."
+  },
+  {
+    "id": "radcliffes-speakeasy",
+    "name": "Radcliffe's Speakeasy",
+    "address": "411 E Atlantic Ave, Suite C, Delray Beach, FL 33483",
+    "phone": null,
+    "website": null,
+    "instagram": "@bcaizm",
+    "hours": {
+      "mon": "Closed",
+      "tue": "Closed",
+      "wed": "9pm-2am",
+      "thu": "Closed",
+      "fri": "Closed",
+      "sat": "Closed",
+      "sun": "Closed"
+    },
+    "vibes": ["dance", "retro", "intimate", "late-night"],
+    "amenities": ["full-bar", "dj-booth", "dance-floor"],
+    "categories": ["dj"],
+    "timeOfDay": ["night"],
+    "description": "A hidden speakeasy tucked behind The Wine & Spirits Kitchen on Atlantic Ave. Disco Wednesdays is the signature weekly night — DJ BCAIZM spinning pure disco era beats from 9pm to 2am. Free caviar pumps, signature cocktails, and a vibe straight out of 1977."
   }
 ]

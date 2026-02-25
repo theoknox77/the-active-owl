@@ -154,30 +154,6 @@
     ]
   },
   {
-    "id": "evt-008",
-    "venueId": "bostons-on-the-beach",
-    "name": "NFL Sunday",
-    "category": "watch-party",
-    "vibe": [
-      "rowdy",
-      "sports",
-      "group-friendly"
-    ],
-    "description": "All NFL games on multiple screens. Drink specials during games.",
-    "recurring": {
-      "day": "sunday",
-      "time": "13:00",
-      "duration": 480
-    },
-    "oneTime": null,
-    "cover": "Free",
-    "ageRestriction": null,
-    "timeOfDay": [
-      "day",
-      "night"
-    ]
-  },
-  {
     "id": "evt-010",
     "venueId": "tin-roof",
     "name": "Live Music Thursday",
@@ -2863,5 +2839,52 @@
     "source": "eventbrite",
     "externalVenue": "313 NE 3rd St",
     "externalAddress": "313 Northeast 3rd Street, Delray Beach, FL"
+  },
+  {
+    "id": "evt-019",
+    "venueId": "tin-roof",
+    "name": "Tuesday Karaoke Night",
+    "category": "karaoke",
+    "vibe": [
+      "fun",
+      "energetic",
+      "group-friendly"
+    ],
+    "description": "Karaoke Night Out every Tuesday at Tin Roof. Grab a drink, take the mic, and own the Atlantic Ave stage. Free entry with Eventbrite RSVP.",
+    "recurring": {
+      "day": "tuesday",
+      "time": "21:00",
+      "duration": 270
+    },
+    "oneTime": null,
+    "cover": "Free",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ]
+  },
+  {
+    "id": "evt-019b",
+    "venueId": "radcliffes-speakeasy",
+    "name": "Disco Wednesdays",
+    "category": "dj",
+    "vibe": [
+      "dance",
+      "retro",
+      "fun",
+      "group-friendly"
+    ],
+    "description": "NYC DJ BCAIZM spinning pure disco at Radcliffe's Speakeasy — hidden behind The Wine & Spirits Kitchen on Atlantic Ave. Free caviar pumps all night, signature cocktails, and a dance floor built for the 70s. 9pm to 2am.",
+    "recurring": {
+      "day": "wednesday",
+      "time": "21:00",
+      "duration": 300
+    },
+    "oneTime": null,
+    "cover": "Free",
+    "ageRestriction": null,
+    "timeOfDay": [
+      "night"
+    ]
   }
 ]
