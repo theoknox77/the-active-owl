@@ -84,6 +84,28 @@
     .why-card h3 { font-size: 15px; font-weight: 700; color: #1a1a1a; margin: 0 0 10px; }
     .why-card p { font-size: 14px; color: #666; line-height: 1.6; margin: 0; }
 
+    /* ── Pricing ── */
+    .pricing-section { background: #fff; border-top: 1px solid #ece8e0; }
+    .pricing-inner { max-width: 960px; margin: 0 auto; padding: 72px 24px; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 44px; }
+    .pricing-card { border: 1.5px solid #e0dbd0; border-radius: 16px; padding: 32px 28px; position: relative; background: #fff; display: flex; flex-direction: column; transition: box-shadow 0.2s, border-color 0.2s; }
+    .pricing-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.08); border-color: #c8c0b0; }
+    .pricing-card.featured { border-color: #f4813a; border-width: 2px; background: #fffbf6; }
+    .pricing-badge { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: #f4813a; color: #fff; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; padding: 4px 14px; border-radius: 20px; white-space: nowrap; }
+    .pricing-icon { font-size: 32px; margin-bottom: 12px; }
+    .pricing-name { font-size: 18px; font-weight: 800; color: #1a1a1a; margin-bottom: 4px; }
+    .pricing-tag { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #f4813a; font-weight: 700; margin-bottom: 16px; }
+    .pricing-price { font-size: 2rem; font-weight: 900; color: #1a1a1a; line-height: 1; margin-bottom: 4px; letter-spacing: -1px; }
+    .pricing-price span { font-size: 14px; font-weight: 500; color: #888; letter-spacing: 0; }
+    .pricing-divider { border: none; border-top: 1px solid #ede9e0; margin: 20px 0; }
+    .pricing-features { list-style: none; padding: 0; margin: 0 0 24px; flex: 1; }
+    .pricing-features li { font-size: 14px; color: #555; line-height: 1.5; padding: 6px 0; padding-left: 22px; position: relative; }
+    .pricing-features li::before { content: '✓'; position: absolute; left: 0; color: #2d7a4f; font-weight: 700; font-size: 13px; }
+    .pricing-cta { display: block; text-align: center; background: #1a4a2e; color: #fff; font-weight: 700; font-size: 14px; padding: 14px 20px; border-radius: 50px; text-decoration: none; transition: background 0.2s, transform 0.15s; }
+    .pricing-cta:hover { background: #2d7a4f; transform: translateY(-1px); }
+    .pricing-card.featured .pricing-cta { background: #f4813a; }
+    .pricing-card.featured .pricing-cta:hover { background: #e06b28; }
+
     /* ── Testimonial Placeholder ── */
     .testimonial-section { background: #fffbf6; border-top: 1px solid #ece8e0; border-bottom: 1px solid #ece8e0; }
     .testimonial-inner { max-width: 680px; margin: 0 auto; padding: 72px 24px; text-align: center; }
@@ -288,6 +310,109 @@
       <div style="font-size:48px;margin-bottom:20px;opacity:0.2;">&#8220;</div>
       <p class="testimonial-quote">"We saw real walk-ins the same week we were featured. The audience is exactly who we want — local, ready to spend, and they actually showed up."</p>
       <p class="testimonial-source"><strong>Venue Partner</strong> — South Florida</p>
+    </div>
+  </div>
+
+  <!-- Pricing -->
+  <div class="pricing-section">
+    <div class="pricing-inner">
+      <div class="section-label">Partnership Options</div>
+      <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin:0 0 12px;">Simple, transparent options.<br>Pick what fits.</h2>
+      <p style="font-size:17px;color:#555;line-height:1.75;max-width:560px;">Every option puts your business in front of high-intent South Florida locals. Start small, scale up when you see results.</p>
+
+      <div class="pricing-grid">
+
+        <!-- Featured Listing -->
+        <div class="pricing-card">
+          <div class="pricing-icon">⭐</div>
+          <div class="pricing-name">Featured Listing</div>
+          <div class="pricing-tag">Monthly</div>
+          <div class="pricing-price">$99<span>–$149/mo</span></div>
+          <hr class="pricing-divider">
+          <ul class="pricing-features">
+            <li>Featured badge on your venue card</li>
+            <li>Pinned to top of your city section</li>
+            <li>Bold listing that stands out from standard results</li>
+            <li>Always visible when users browse your city</li>
+            <li>Cancel anytime</li>
+          </ul>
+          <a href="mailto:timpalladino@me.com?subject=Featured Listing — The Active Owl" class="pricing-cta">Get Started →</a>
+        </div>
+
+        <!-- Newsletter Spotlight -->
+        <div class="pricing-card">
+          <div class="pricing-icon">📧</div>
+          <div class="pricing-name">Newsletter Spotlight</div>
+          <div class="pricing-tag">Per Issue or Monthly</div>
+          <div class="pricing-price">$75<span>/issue &nbsp;·&nbsp; $200/mo</span></div>
+          <hr class="pricing-divider">
+          <ul class="pricing-features">
+            <li>Dedicated feature block in the Friday newsletter</li>
+            <li>Above the regular event picks — first thing readers see</li>
+            <li>Custom write-up of your venue or event</li>
+            <li>Direct link driving readers to your site or page</li>
+            <li>Sent to our full subscriber list every week</li>
+          </ul>
+          <a href="mailto:timpalladino@me.com?subject=Newsletter Spotlight — The Active Owl" class="pricing-cta">Get Started →</a>
+        </div>
+
+        <!-- Event Boost -->
+        <div class="pricing-card">
+          <div class="pricing-icon">🚀</div>
+          <div class="pricing-name">Event Boost</div>
+          <div class="pricing-tag">Per Event</div>
+          <div class="pricing-price">$75<span>–$150/event</span></div>
+          <hr class="pricing-divider">
+          <ul class="pricing-features">
+            <li>Promoted event card featured site-wide</li>
+            <li>Highlighted in that week's newsletter</li>
+            <li>Short blog write-up for SEO</li>
+            <li>Great for one-time events, specials, or launches</li>
+            <li>No subscription required</li>
+          </ul>
+          <a href="mailto:timpalladino@me.com?subject=Event Boost — The Active Owl" class="pricing-cta">Get Started →</a>
+        </div>
+
+        <!-- City Sponsor -->
+        <div class="pricing-card">
+          <div class="pricing-icon">🏙️</div>
+          <div class="pricing-name">City Sponsor</div>
+          <div class="pricing-tag">Monthly — 1 Per City</div>
+          <div class="pricing-price">$299<span>–$399/mo</span></div>
+          <hr class="pricing-divider">
+          <ul class="pricing-features">
+            <li>"Brought to you by" placement at top of your city's page</li>
+            <li>Featured listing with priority placement</li>
+            <li>Weekly newsletter mention in your city's picks</li>
+            <li>Exclusive — only one sponsor per city</li>
+            <li>Maximum visibility for locals in your area</li>
+          </ul>
+          <a href="mailto:timpalladino@me.com?subject=City Sponsor — The Active Owl" class="pricing-cta">Get Started →</a>
+        </div>
+
+        <!-- Annual Partner -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Best Value</div>
+          <div class="pricing-icon">🤝</div>
+          <div class="pricing-name">Annual Partner</div>
+          <div class="pricing-tag">Yearly — Full Package</div>
+          <div class="pricing-price">$999<span>–$1,499/yr</span></div>
+          <hr class="pricing-divider">
+          <ul class="pricing-features">
+            <li>Featured listing — all year, year-round visibility</li>
+            <li>One newsletter spotlight per month (12 total)</li>
+            <li>One event boost per quarter (4 total)</li>
+            <li>City sponsor placement for a 2-week window</li>
+            <li>Logo on the Work With Us partners page</li>
+            <li>Priority support and custom write-ups</li>
+            <li>Locked rate — no price increases during term</li>
+          </ul>
+          <a href="mailto:timpalladino@me.com?subject=Annual Partner — The Active Owl" class="pricing-cta">Get Started →</a>
+        </div>
+
+      </div>
+
+      <p style="text-align:center;font-size:13px;color:#aaa;margin-top:32px;">Not sure which option fits? <a href="mailto:timpalladino@me.com?subject=Partnership Question — The Active Owl" style="color:#f4813a;font-weight:600;text-decoration:none;">Send us a note</a> and we'll figure it out together.</p>
     </div>
   </div>
 
