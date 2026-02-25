@@ -33,4 +33,23 @@ echo "[4/4] Merging..." | tee -a "$LOG"
 "$VENV" "$SCRIPT_DIR/merge.py" >> "$LOG" 2>&1
 echo "Merge done." | tee -a "$LOG"
 
+# 5. Auto-commit and push any updated event data to GitHub (triggers Vercel deploy)
+echo "[5/5] Checking for data changes..." | tee -a "$LOG"
+cd "$APP_DIR"
+CHANGED=$(git diff --name-only data/cities/ 2>/dev/null)
+if [ -n "$CHANGED" ]; then
+  echo "Changes detected:" | tee -a "$LOG"
+  echo "$CHANGED" | tee -a "$LOG"
+  git add data/cities/ >> "$LOG" 2>&1
+  git commit -m "Auto-update: event data refresh $(date '+%Y-%m-%d %H:%M')" >> "$LOG" 2>&1
+  git push >> "$LOG" 2>&1
+  if [ $? -eq 0 ]; then
+    echo "Pushed to GitHub — Vercel deploy triggered." | tee -a "$LOG"
+  else
+    echo "Push failed — check git credentials." | tee -a "$LOG"
+  fi
+else
+  echo "No data changes. Nothing to push." | tee -a "$LOG"
+fi
+
 echo "===== Complete: $(date) =====" >> "$LOG"
