@@ -905,38 +905,22 @@ async function renderVenueDetail(id) {
   const daysOrder = ['mon','tue','wed','thu','fri','sat','sun'];
   const daysFull = { mon:'Monday', tue:'Tuesday', wed:'Wednesday', thu:'Thursday', fri:'Friday', sat:'Saturday', sun:'Sunday' };
 
-  const schedule = {};
-  (data.events||[]).forEach(evt => { if (evt.recurring) { const d = evt.recurring.day; if (!schedule[d]) schedule[d]=[]; schedule[d].push(evt); } });
-
-  let weeklyEventsHTML = '';
-  const dayOrder = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday'];
-  const dayAbbrev = { monday:'MON', tuesday:'TUE', wednesday:'WED', thursday:'THU', friday:'FRI', saturday:'SAT', sunday:'SUN' };
-  for (const day of dayOrder) {
-    for (const evt of (schedule[day]||[])) {
-      weeklyEventsHTML += `<div class="weekly-event"><div class="we-day">${dayAbbrev[day]}</div><div class="we-dot" style="background:${getCatColor(evt.category)}"></div><div class="we-info"><div class="we-name">${evt.name}</div><div class="we-time">${formatTime(evt.recurring.time)}</div></div></div>`;
-    }
-  }
-
+  // ── Contact info ──────────────────────────────────────────────────────────
   const infoItems = [];
   if (data.phone) infoItems.push(`<span class="vd-info-item"><a href="tel:${data.phone}">&#9742; ${data.phone}</a></span>`);
   if (data.website) infoItems.push(`<span class="vd-info-item"><a href="${data.website}" target="_blank">&#127760; Website</a></span>`);
   if (data.instagram) infoItems.push(`<span class="vd-info-item"><a href="https://instagram.com/${data.instagram.replace('@','')}" target="_blank">&#128247; ${data.instagram}</a></span>`);
 
-  const rawToday = await fetchJSON(`${cityApiBase()}/events?date=today`);
-  const todayEvents = Array.isArray(rawToday) ? rawToday : [];
-  const venueToday = todayEvents.filter(e => e.venueId === data.id);
-
-  // Format hours inline
+  // ── Hours block ───────────────────────────────────────────────────────────
   let hoursHTML = '';
   if (data.hours) {
     const now = new Date();
     const todayDay = ['sun','mon','tue','wed','thu','fri','sat'][now.getDay()];
     const todayHours = data.hours[todayDay];
     const isOpen = todayHours && todayHours.toLowerCase() !== 'closed';
-    
     hoursHTML = `<div class="vd-hours-block">
       <div class="vd-hours-status ${isOpen ? 'open' : 'closed'}">${isOpen ? '● Open' : '● Closed'}</div>
-      ${isOpen ? `<span class="vd-hours-today">Today's hours: ${todayHours}</span>` : `<span class="vd-hours-today">Closed today</span>`}
+      ${isOpen ? `<span class="vd-hours-today">Today: ${todayHours}</span>` : `<span class="vd-hours-today">Closed today</span>`}
       <button class="vd-hours-toggle" onclick="document.getElementById('vd-hours-full').classList.toggle('show')">See all hours ▾</button>
       <div class="vd-hours-full" id="vd-hours-full">
         ${daysOrder.map(d => {
@@ -947,33 +931,79 @@ async function renderVenueDetail(id) {
     </div>`;
   }
 
-  // Build 10-day schedule
-  const allEvents = data.events || [];
-  let tenDayHTML = '';
-  if (allEvents.length > 0) {
-    const days10 = [];
-    for (let i = 0; i < 10; i++) {
-      const d = new Date();
-      d.setDate(d.getDate() + i);
-      const dayName = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'][d.getDay()];
-      const label = i === 0 ? 'Today' : i === 1 ? 'Tomorrow' : d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
-      const evts = allEvents.filter(e => e.recurring && e.recurring.day === dayName);
-      days10.push({ label, dayName, date: d, events: evts });
-    }
+  // ── Build date helpers ────────────────────────────────────────────────────
+  const now = new Date();
+  function toDateStr(d) { return d.toISOString().split('T')[0]; }
+  const dates = [];
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(now);
+    d.setDate(now.getDate() + i);
+    dates.push(d);
+  }
 
-    tenDayHTML = `<div class="section-title">Upcoming 10 Days</div><div class="ten-day-schedule">`;
-    for (const day of days10) {
-      if (day.events.length === 0) {
-        tenDayHTML += `<div class="ten-day-row empty"><div class="ten-day-label">${day.label}</div><div class="ten-day-none">No events</div></div>`;
+  // ── Fetch 7 days of events in parallel, filtered to this venue ────────────
+  const rawDays = await Promise.all(
+    dates.map(d => fetchJSON(`${cityApiBase()}/events?date=${toDateStr(d)}`))
+  );
+  const dayEvents = rawDays.map((raw, i) => {
+    const all = Array.isArray(raw) ? raw : [];
+    return all.filter(e => e.venueId === data.id).map(e => ({...e, venue: data}));
+  });
+
+  // ── Rolling 3-day view (full event cards) ─────────────────────────────────
+  function dayLabel(i) {
+    if (i === 0) return currentMode === 'day' ? 'Today' : 'Tonight';
+    if (i === 1) return 'Tomorrow';
+    return dates[i].toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+  }
+  function dayDateLabel(i) {
+    return dates[i].toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  }
+
+  function buildDaySection(i) {
+    const evts = dayEvents[i];
+    const label = dayLabel(i);
+    const dateStr = dayDateLabel(i);
+    const content = evts.length === 0
+      ? `<div class="day-empty"><span>📅</span><span>Nothing scheduled ${i === 0 ? (currentMode === 'day' ? 'today' : 'tonight') : 'this day'}</span></div>`
+      : evts.map(e => renderEventCard(e)).join('');
+    return `<div class="day-group">
+      <div class="day-header ${i === 0 ? 'is-today' : ''}">
+        ${label} <span class="day-header-date">${dateStr}</span>
+        ${i === 0 ? '<span class="today-badge">TODAY</span>' : ''}
+        <span class="day-header-count">${evts.length} event${evts.length !== 1 ? 's' : ''}</span>
+      </div>
+      ${content}
+    </div>`;
+  }
+
+  const threeDayHTML = buildDaySection(0) + buildDaySection(1) + buildDaySection(2);
+
+  // ── 7-day compact schedule (days 3–6) ────────────────────────────────────
+  let sevenDayHTML = '';
+  const hasLaterEvents = dayEvents.slice(3).some(d => d.length > 0);
+  if (hasLaterEvents) {
+    sevenDayHTML = `<div class="section-title" style="margin-top:32px;">Later This Week</div><div class="ten-day-schedule">`;
+    for (let i = 3; i < 7; i++) {
+      const label = dates[i].toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+      const evts = dayEvents[i];
+      if (evts.length === 0) {
+        sevenDayHTML += `<div class="ten-day-row empty"><div class="ten-day-label">${label}</div><div class="ten-day-none">Nothing scheduled</div></div>`;
       } else {
-        tenDayHTML += `<div class="ten-day-row"><div class="ten-day-label">${day.label}</div><div class="ten-day-events">`;
-        day.events.forEach(e => {
-          tenDayHTML += `<div class="ten-day-event"><span class="ten-day-dot" style="background:${getCatColor(e.category)}"></span><span class="ten-day-name">${e.name}</span><span class="ten-day-time">${formatTime(e.recurring.time)}</span>${e.cover === 'Free' ? '<span class="tag tag-free" style="font-size:10px;padding:2px 6px;">Free</span>' : ''}</div>`;
+        sevenDayHTML += `<div class="ten-day-row"><div class="ten-day-label">${label}</div><div class="ten-day-events">`;
+        evts.forEach(e => {
+          const time = e.recurring ? formatTime(e.recurring.time) : (e.oneTime ? formatTime(e.oneTime.time) : '');
+          sevenDayHTML += `<div class="ten-day-event">
+            <span class="ten-day-dot" style="background:${getCatColor(e.category)}"></span>
+            <span class="ten-day-name">${e.name}</span>
+            <span class="ten-day-time">${time}</span>
+            ${e.cover === 'Free' ? '<span class="tag tag-free" style="font-size:10px;padding:2px 6px;">Free</span>' : ''}
+          </div>`;
         });
-        tenDayHTML += `</div></div>`;
+        sevenDayHTML += `</div></div>`;
       }
     }
-    tenDayHTML += `</div>`;
+    sevenDayHTML += `</div>`;
   }
 
   return `<div class="venue-detail">
@@ -994,8 +1024,9 @@ async function renderVenueDetail(id) {
         <button class="vd-action-btn" onclick="shareItem('${data.name.replace(/'/g,"\\'")}','Come check out ${data.name.replace(/'/g,"\\'")} on The Active Owl!','${window.location.origin}/#/${currentCity}/venue/${data.id}',event)">&#8599; Invite</button>
       </div>
     </div>
-    ${venueToday.length > 0 ? `<div class="section-title">Happening Today</div>${venueToday.map(e => renderEventCard({...e, venue: data})).join('')}` : ''}
-    ${tenDayHTML}
+    <div class="section-title">What's On</div>
+    ${threeDayHTML}
+    ${sevenDayHTML}
   </div>`;
 }
 
