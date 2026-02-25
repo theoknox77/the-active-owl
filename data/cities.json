@@ -39,4 +39,13 @@
     "coordinates": { "lat": 26.7153, "lng": -80.0534 },
     "active": true
   }
+  ,
+  {
+    "id": "fort-lauderdale",
+    "name": "Fort Lauderdale",
+    "shortName": "Fort Lauderdale",
+    "tagline": "Your guide to what's happening in Fort Lauderdale",
+    "coordinates": { "lat": 26.1224, "lng": -80.1373 },
+    "active": true
+  }
 ]
