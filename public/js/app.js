@@ -800,7 +800,7 @@ async function renderToday() {
     const badge = document.getElementById('event-count-badge');
     if (!badge || !data || !data.count) { if (badge) badge.style.display = 'none'; return; }
     const target = data.count;
-    badge.innerHTML = `<span class="count-number" id="count-tally">0</span> <span class="count-label">events on our radar in the next 10 days across Palm Beach County</span>`;
+    badge.innerHTML = `<span class="count-number" id="count-tally">0</span> <span class="count-label">events happening across South Florida</span>`;
     badge.classList.add('loaded');
     const el = document.getElementById('count-tally');
     const duration = 1800;
@@ -833,7 +833,7 @@ async function renderToday() {
       </div>
     </div>` : ''}
     <div class="hero">
-      <div class="county-badge">&#127968; Palm Beach County</div>
+      <div class="county-badge">&#9728;&#65039; South Florida's Activity Guide</div>
       <h1>${heroText}</h1>
       ${countBadgeHTML}
     </div>
