@@ -132,6 +132,86 @@
       .stats-inner { grid-template-columns: repeat(2, 1fr); }
       .corridor::before { left: 20px; }
     }
+
+    /* ── Mockup styles ── */
+    .mockups-section { background: #f0ede8; }
+    .mockups-inner { max-width: 900px; margin: 0 auto; padding: 72px 24px; }
+    .mockup-block { margin-bottom: 64px; }
+    .mockup-block:last-child { margin-bottom: 0; }
+    .mockup-block-label { font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: #f4813a; font-weight: 700; margin-bottom: 6px; }
+    .mockup-block-title { font-size: 1.5rem; font-weight: 900; color: #1a1a1a; margin: 0 0 6px; }
+    .mockup-block-desc { font-size: 14px; color: #777; margin: 0 0 24px; line-height: 1.6; }
+    .device-frame { background: #fff; border-radius: 14px; box-shadow: 0 4px 28px rgba(0,0,0,0.11); overflow: hidden; border: 1px solid #e0dbd0; }
+    .device-bar { background: #f5f5f5; border-bottom: 1px solid #e8e8e8; padding: 10px 16px; display: flex; align-items: center; gap: 8px; }
+    .device-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .device-dot:nth-child(1) { background: #ff5f57; }
+    .device-dot:nth-child(2) { background: #ffbd2e; }
+    .device-dot:nth-child(3) { background: #28c840; }
+    .device-url { flex: 1; background: #ececec; border-radius: 6px; padding: 4px 12px; font-size: 12px; color: #888; text-align: center; margin: 0 8px; }
+    .mock-site-nav { background: #1a4a2e; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; }
+    .mock-site-nav .logo { color: #fff; font-weight: 800; font-size: 14px; }
+    .mock-site-nav .logo span { color: #f4813a; }
+    .mock-nav-links { display: flex; gap: 14px; }
+    .mock-nav-links a { color: rgba(255,255,255,0.55); font-size: 12px; text-decoration: none; }
+    .mock-nav-links a.active { color: #fff; font-weight: 600; }
+    .mock-cards-area { padding: 18px; background: #faf8f4; }
+    .mock-section-head { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #888; font-weight: 600; margin-bottom: 10px; }
+    .mock-venue-card { background: #fff; border-radius: 10px; border: 1px solid #e8e4dc; padding: 14px; margin-bottom: 10px; position: relative; }
+    .mock-venue-card .vc-name { font-size: 15px; font-weight: 700; margin-bottom: 3px; }
+    .mock-venue-card .vc-addr { font-size: 12px; color: #888; margin-bottom: 6px; }
+    .mock-venue-card .vc-desc { font-size: 13px; color: #555; line-height: 1.5; margin-bottom: 8px; }
+    .mock-venue-card .vc-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+    .mock-vc-tag { background: #f0ece4; border-radius: 20px; font-size: 11px; color: #666; padding: 3px 10px; }
+    .mock-vc-tag.dark { background: #1a4a2e; color: #fff; }
+    .mock-venue-card.is-featured { border: 2px solid #f4813a; background: #fffbf6; }
+    .mock-featured-badge { position: absolute; top: 10px; right: 10px; background: #f4813a; color: #fff; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 3px 9px; border-radius: 20px; }
+    .mock-pin-badge { position: absolute; top: 10px; left: 10px; background: #1a4a2e; color: #fff; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 20px; }
+    .mock-event-card { background: #fff; border-radius: 10px; border: 1px solid #e8e4dc; padding: 12px 14px; margin-bottom: 8px; display: flex; gap: 10px; position: relative; }
+    .mock-event-card.is-promoted { border: 2px solid #f4813a; background: #fffbf6; }
+    .mock-promoted-badge { position: absolute; top: 9px; right: 10px; background: #f4813a; color: #fff; font-size: 10px; font-weight: 700; text-transform: uppercase; padding: 2px 8px; border-radius: 20px; }
+    .mock-ec-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+    .mock-ec-name { font-size: 14px; font-weight: 700; margin-bottom: 2px; }
+    .mock-ec-venue { font-size: 11px; color: #888; margin-bottom: 3px; }
+    .mock-ec-desc { font-size: 12px; color: #555; line-height: 1.4; }
+    .mock-ec-meta { font-size: 11px; color: #aaa; margin-top: 4px; }
+    .mock-ticket-btn { display: inline-block; background: #2d7a4f; color: #fff; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 20px; text-decoration: none; margin-top: 4px; }
+    .mock-city-sponsor-bar { background: linear-gradient(90deg,#0f2d1a,#1a4a2e); padding: 9px 18px; display: flex; align-items: center; justify-content: space-between; }
+    .mock-csb-left { font-size: 10px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 1px; }
+    .mock-csb-right { display: flex; align-items: center; gap: 8px; }
+    .mock-csb-logo { background: #f4813a; color: #fff; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+    .mock-csb-name { font-size: 12px; color: rgba(255,255,255,0.8); font-weight: 600; }
+    .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+    .ba-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 5px 10px; border-radius: 6px; margin-bottom: 8px; display: inline-block; }
+    .ba-label.before { background: #e8e4dc; color: #888; }
+    .ba-label.after { background: #f4813a; color: #fff; }
+    .mock-email-body { background: #fff; border-radius: 10px; overflow: hidden; }
+    .mock-email-header { background: linear-gradient(135deg,#1a4a2e,#2d7a4f); padding: 20px; text-align: center; }
+    .mock-eh-logo { font-size: 16px; font-weight: 800; color: #fff; }
+    .mock-eh-sub { font-size: 11px; color: rgba(255,255,255,0.55); letter-spacing: 1px; margin-top: 4px; }
+    .mock-email-spotlight { background: #fffbf6; border: 2px solid #f4813a; margin: 14px; border-radius: 10px; padding: 14px; position: relative; }
+    .mock-es-badge { position: absolute; top: -10px; left: 14px; background: #f4813a; color: #fff; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 2px 9px; border-radius: 20px; }
+    .mock-es-venue { font-size: 15px; font-weight: 800; margin: 6px 0 4px; }
+    .mock-es-desc { font-size: 13px; color: #555; line-height: 1.5; }
+    .mock-es-cta { display: inline-block; background: #f4813a; color: #fff; font-size: 12px; font-weight: 700; padding: 7px 16px; border-radius: 20px; text-decoration: none; margin-top: 8px; }
+    .mock-email-picks { padding: 4px 14px 14px; }
+    .mock-ep-label { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #888; font-weight: 600; margin: 10px 0 6px; }
+    .mock-ep-row { display: flex; gap: 9px; padding: 8px 0; border-bottom: 1px solid #f0ece4; align-items: flex-start; }
+    .mock-ep-row:last-child { border-bottom: none; }
+    .mock-ep-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+    .mock-ep-city { font-size: 10px; color: #f4813a; font-weight: 700; text-transform: uppercase; }
+    .mock-ep-name { font-size: 13px; font-weight: 600; color: #1a1a1a; }
+    .mock-ep-meta { font-size: 11px; color: #888; }
+    .combo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .combo-card { background: #fff; border-radius: 10px; border: 1px solid #e8e4dc; overflow: hidden; }
+    .combo-card-header { background: #1a4a2e; color: #fff; padding: 10px 14px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+    .combo-card-body { padding: 12px; }
+    .combo-check { display: flex; gap: 7px; align-items: flex-start; margin-bottom: 7px; font-size: 13px; color: #444; line-height: 1.4; }
+    .combo-check::before { content: '✓'; color: #2d7a4f; font-weight: 700; flex-shrink: 0; }
+    .mockup-note { background: #fff; border-left: 3px solid #f4813a; border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 13px; color: #555; line-height: 1.6; margin-top: 16px; }
+    .mockup-note strong { color: #1a1a1a; }
+    @media (max-width: 600px) {
+      .before-after, .combo-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -422,10 +502,240 @@
 
       </div>
 
-      <p style="text-align:center;font-size:13px;color:#aaa;margin-top:32px;">
-        Want to see what each option looks like on the site? <a href="/partner-mockups.html" style="color:#f4813a;font-weight:600;text-decoration:none;">View visual mockups →</a>
-        &nbsp;·&nbsp; Not sure which fits? <a href="mailto:timpalladino@me.com?subject=Partnership Question — The Active Owl" style="color:#f4813a;font-weight:600;text-decoration:none;">Send us a note</a>
-      </p>
+      <p style="text-align:center;font-size:13px;color:#aaa;margin-top:32px;">Not sure which option fits? <a href="mailto:timpalladino@me.com?subject=Partnership Question — The Active Owl" style="color:#f4813a;font-weight:600;text-decoration:none;">Send us a note</a> and we'll figure it out together.</p>
+    </div>
+  </div>
+
+  <!-- Mockups Section -->
+  <div class="mockups-section">
+    <div class="mockups-inner">
+      <div style="text-align:center;margin-bottom:52px;">
+        <div style="font-size:11px;text-transform:uppercase;letter-spacing:3px;color:#f4813a;font-weight:700;margin-bottom:10px;">See It In Action</div>
+        <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;color:#1a1a1a;margin:0 0 12px;">What each option looks like on the site.</h2>
+        <p style="font-size:16px;color:#777;max-width:520px;margin:0 auto;">Real mockups. Exactly what your business looks like to South Florida users.</p>
+      </div>
+
+      <!-- 1. Featured Listing -->
+      <div class="mockup-block">
+        <div class="mockup-block-label">Option 1</div>
+        <div class="mockup-block-title">Featured Listing</div>
+        <div class="mockup-block-desc">Your venue card sits at the top of your city with an orange border, Featured badge, and Top Pick pin — above every standard listing.</div>
+        <div class="before-after">
+          <div>
+            <span class="ba-label before">Standard listing</span>
+            <div class="device-frame">
+              <div class="mock-venue-card" style="border-radius:0;border:none;margin:0;">
+                <div class="vc-name" style="font-size:15px;font-weight:700;margin-bottom:3px;">Barrel of Monks Brewing</div>
+                <div class="vc-addr" style="font-size:12px;color:#888;margin-bottom:6px;">1785 NW Boca Raton Blvd</div>
+                <div class="vc-desc" style="font-size:13px;color:#555;line-height:1.5;margin-bottom:8px;">Craft brewery with live music, trivia, and comedy nights.</div>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="mock-vc-tag">🍺 Brewery</span>
+                  <span class="mock-vc-tag">🎵 Live Music</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span class="ba-label after">Featured listing</span>
+            <div class="device-frame">
+              <div class="mock-venue-card is-featured" style="border-radius:0;border-left:none;border-right:none;border-top:none;margin:0;">
+                <div class="mock-featured-badge">⭐ Featured</div>
+                <div class="mock-pin-badge">📌 Top Pick</div>
+                <div class="vc-name" style="font-size:15px;font-weight:700;margin:22px 0 3px;">Barrel of Monks Brewing</div>
+                <div class="vc-addr" style="font-size:12px;color:#888;margin-bottom:6px;">1785 NW Boca Raton Blvd</div>
+                <div class="vc-desc" style="font-size:13px;color:#555;line-height:1.5;margin-bottom:8px;">Craft brewery with live music, trivia, and comedy nights.</div>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                  <span class="mock-vc-tag">🍺 Brewery</span>
+                  <span class="mock-vc-tag">🎵 Live Music</span>
+                  <span class="mock-vc-tag dark">⭐ Featured Partner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mockup-note"><strong>What they see:</strong> Every user who opens Boca Raton sees your card first, every time. Orange border, Featured badge, Top Pick pin — impossible to miss.</div>
+      </div>
+
+      <!-- 2. Newsletter Spotlight -->
+      <div class="mockup-block">
+        <div class="mockup-block-label">Option 2</div>
+        <div class="mockup-block-title">Newsletter Spotlight</div>
+        <div class="mockup-block-desc">Your venue gets the first block in the Friday newsletter — above all event picks — with a custom write-up and a direct call to action.</div>
+        <div class="device-frame">
+          <div class="device-bar">
+            <div class="device-dot"></div><div class="device-dot"></div><div class="device-dot"></div>
+            <div class="device-url">📧 "This Weekend in South Florida 🌴 Feb 28 – Mar 2"</div>
+          </div>
+          <div style="padding:16px;background:#faf8f4;">
+            <div class="mock-email-body">
+              <div class="mock-email-header">
+                <div class="mock-eh-logo">🦉 The Active Owl</div>
+                <div class="mock-eh-sub">South Florida's Weekly Guide · Feb 28 – Mar 2</div>
+              </div>
+              <div style="padding:12px 14px 0;font-size:13px;color:#555;line-height:1.6;font-style:italic;">"Life is short. Make this weekend count."</div>
+              <div class="mock-email-spotlight">
+                <div class="mock-es-badge">✦ Sponsored Spotlight</div>
+                <div class="mock-es-venue">Barrel of Monks Brewing</div>
+                <div style="font-size:10px;color:#f4813a;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Boca Raton · This Friday & Saturday</div>
+                <div class="mock-es-desc">Live music Friday at 8 PM, Saturday at 9 PM — plus Comedy Attic returns Saturday night. Cold pints, great crowd, best patio in the county.</div>
+                <a href="#" class="mock-es-cta">See What's On →</a>
+              </div>
+              <div class="mock-email-picks">
+                <div class="mock-ep-label">This Weekend's Top Picks</div>
+                <div class="mock-ep-row"><div class="mock-ep-dot" style="background:#f4813a;"></div><div><div class="mock-ep-city">Delray Beach</div><div class="mock-ep-name">Live Band Friday @ Boston's</div><div class="mock-ep-meta">Fri 9 PM · Free</div></div></div>
+                <div class="mock-ep-row"><div class="mock-ep-dot" style="background:#2d7a4f;"></div><div><div class="mock-ep-city">Fort Lauderdale</div><div class="mock-ep-name">Live Jazz @ O'Hara's</div><div class="mock-ep-meta">Fri & Sat 9 PM · Free</div></div></div>
+                <div class="mock-ep-row"><div class="mock-ep-dot" style="background:#5b8af4;"></div><div><div class="mock-ep-city">West Palm Beach</div><div class="mock-ep-name">Sunday Brunch on the Water</div><div class="mock-ep-meta">Sun 10 AM · Free</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mockup-note"><strong>What they see:</strong> Your venue is the first thing every subscriber reads on Friday morning. Before the picks, before anything else.</div>
+      </div>
+
+      <!-- 3. Event Boost -->
+      <div class="mockup-block">
+        <div class="mockup-block-label">Option 3</div>
+        <div class="mockup-block-title">Event Boost</div>
+        <div class="mockup-block-desc">One specific event gets a Promoted card at the top of the city feed, a newsletter callout, and a blog write-up for SEO.</div>
+        <div class="device-frame">
+          <div class="device-bar">
+            <div class="device-dot"></div><div class="device-dot"></div><div class="device-dot"></div>
+            <div class="device-url">theactiveowl.com/#/boca-raton</div>
+          </div>
+          <div class="mock-site-nav">
+            <div class="logo">🦉 THE ACTIVE <span>OWL</span></div>
+            <div class="mock-nav-links"><a class="active">Tonight</a><a>This Week</a><a>Venues</a></div>
+          </div>
+          <div class="mock-cards-area">
+            <div class="mock-section-head">Tonight in Boca Raton</div>
+            <div class="mock-event-card is-promoted">
+              <div class="mock-promoted-badge">🚀 Promoted</div>
+              <div class="mock-ec-dot" style="background:#f4813a;margin-top:5px;"></div>
+              <div>
+                <div class="mock-ec-name">Comedy Attic: 3 Headliners Night</div>
+                <div class="mock-ec-venue">📍 Barrel of Monks Brewing</div>
+                <div class="mock-ec-desc">Three standout comedians, full bar, limited seats. South Florida's funniest night out.</div>
+                <div class="mock-ec-meta">Sat March 8 · 8:00 PM · 21+</div>
+                <a href="#" class="mock-ticket-btn">🎟 Get Tickets →</a>
+              </div>
+            </div>
+            <div class="mock-event-card">
+              <div class="mock-ec-dot" style="background:#2d7a4f;margin-top:4px;"></div>
+              <div><div class="mock-ec-name">Live Music Friday</div><div class="mock-ec-venue">📍 The Dubliner · Boca</div><div class="mock-ec-meta">Fri · 9 PM · Free</div></div>
+            </div>
+            <div class="mock-event-card">
+              <div class="mock-ec-dot" style="background:#5b8af4;margin-top:4px;"></div>
+              <div><div class="mock-ec-name">Trivia Night</div><div class="mock-ec-venue">📍 Funky Buddha Brewery</div><div class="mock-ec-meta">Fri · 7:30 PM · Free</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="mockup-note"><strong>What they see:</strong> Your event card sits above everything else in the city feed with a Promoted badge and a direct ticket link. Plus a newsletter shoutout and SEO blog post.</div>
+      </div>
+
+      <!-- 4. City Sponsor -->
+      <div class="mockup-block">
+        <div class="mockup-block-label">Option 4</div>
+        <div class="mockup-block-title">City Sponsor</div>
+        <div class="mockup-block-desc">"Brought to you by" banner at the very top of your city's page — seen by every visitor — plus featured listing and weekly newsletter mention. One per city.</div>
+        <div class="device-frame">
+          <div class="device-bar">
+            <div class="device-dot"></div><div class="device-dot"></div><div class="device-dot"></div>
+            <div class="device-url">theactiveowl.com/#/boca-raton</div>
+          </div>
+          <div class="mock-site-nav">
+            <div class="logo">🦉 THE ACTIVE <span>OWL</span></div>
+            <div class="mock-nav-links"><a class="active">Tonight</a><a>This Week</a><a>Venues</a></div>
+          </div>
+          <div class="mock-city-sponsor-bar">
+            <div class="mock-csb-left">Boca Raton · Brought to you by</div>
+            <div class="mock-csb-right">
+              <div class="mock-csb-logo">🍺</div>
+              <div class="mock-csb-name">Barrel of Monks Brewing</div>
+            </div>
+          </div>
+          <div style="background:linear-gradient(135deg,#1a4a2e,#2d7a4f);padding:22px;text-align:center;">
+            <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,0.55);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">☀️ South Florida's Activity Guide</div>
+            <div style="font-size:20px;font-weight:800;color:#fff;">What's happening in Boca tonight?</div>
+            <div style="margin-top:10px;"><span style="background:rgba(244,129,58,0.25);border:1px solid rgba(244,129,58,0.4);border-radius:20px;padding:4px 14px;font-size:12px;color:rgba(255,255,255,0.7);">47 events this week</span></div>
+          </div>
+          <div class="mock-cards-area">
+            <div class="mock-section-head">Top Venues</div>
+            <div class="mock-venue-card is-featured">
+              <div class="mock-featured-badge">🏙️ City Partner</div>
+              <div class="vc-name" style="font-size:15px;font-weight:700;margin-bottom:3px;margin-top:4px;">Barrel of Monks Brewing</div>
+              <div class="vc-addr" style="font-size:12px;color:#888;margin-bottom:6px;">1785 NW Boca Raton Blvd</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                <span class="mock-vc-tag">🍺 Brewery</span><span class="mock-vc-tag">🎵 Live Music</span><span class="mock-vc-tag dark">🏙️ City Partner</span>
+              </div>
+            </div>
+            <div class="mock-venue-card">
+              <div class="vc-name" style="font-size:15px;font-weight:700;margin-bottom:3px;">The Dubliner</div>
+              <div class="vc-addr" style="font-size:12px;color:#888;">435 Plaza Real, Boca Raton</div>
+            </div>
+          </div>
+        </div>
+        <div class="mockup-note"><strong>What they see:</strong> Every single visitor to that city sees the "Brought to you by" banner before anything else. Maximum brand exposure. Only one partner gets this per city.</div>
+      </div>
+
+      <!-- 5. Annual Partner -->
+      <div class="mockup-block">
+        <div class="mockup-block-label">Option 5 · Best Value</div>
+        <div class="mockup-block-title">Annual Partner</div>
+        <div class="mockup-block-desc">All four options bundled into a year-long partnership — plus logo placement on this page. The complete presence on The Active Owl.</div>
+        <div class="combo-grid">
+          <div class="combo-card">
+            <div class="combo-card-header">⭐ Featured Listing — All Year</div>
+            <div class="combo-card-body">
+              <div class="combo-check">Orange-bordered card pinned to top every day for 12 months</div>
+              <div class="combo-check">Featured Partner badge on every city visit</div>
+              <div class="combo-check">Never buried below new listings</div>
+            </div>
+          </div>
+          <div class="combo-card">
+            <div class="combo-card-header">📧 Newsletter Spotlight — Monthly</div>
+            <div class="combo-card-body">
+              <div class="combo-check">12 dedicated newsletter features per year</div>
+              <div class="combo-check">Custom write-up each month</div>
+              <div class="combo-check">Direct link to your page or event</div>
+            </div>
+          </div>
+          <div class="combo-card">
+            <div class="combo-card-header">🚀 Event Boost — Quarterly</div>
+            <div class="combo-card-body">
+              <div class="combo-check">4 promoted event cards per year</div>
+              <div class="combo-check">Newsletter callout with each boost</div>
+              <div class="combo-check">SEO blog write-up per event</div>
+            </div>
+          </div>
+          <div class="combo-card">
+            <div class="combo-card-header">🏙️ City Sponsor Window</div>
+            <div class="combo-card-body">
+              <div class="combo-check">2-week "Brought to you by" banner</div>
+              <div class="combo-check">City Partner badge during window</div>
+              <div class="combo-check">Logo on the partners section — year-round</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:20px;">
+          <div style="background:#1a4a2e;border-radius:12px;overflow:hidden;">
+            <div style="padding:14px 20px;border-bottom:1px solid rgba(255,255,255,0.1);font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;text-align:center;">Our Partners</div>
+            <div style="padding:20px;display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:center;">
+              <div style="background:#fffbf6;border:2px solid #f4813a;border-radius:10px;padding:12px 18px;text-align:center;">
+                <div style="font-size:22px;margin-bottom:4px;">🍺</div>
+                <div style="font-size:12px;font-weight:700;color:#1a1a1a;">Barrel of Monks</div>
+                <div style="font-size:11px;color:#888;">Boca Raton</div>
+              </div>
+              <div style="background:rgba(255,255,255,0.06);border:1px dashed rgba(255,255,255,0.2);border-radius:10px;padding:12px 18px;text-align:center;">
+                <div style="font-size:22px;margin-bottom:4px;">➕</div>
+                <div style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.4);">Your Business</div>
+                <div style="font-size:11px;color:rgba(255,255,255,0.2);">Could be here</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mockup-note"><strong>What they get:</strong> The full stack for a full year. Every placement, every channel, every week. Locked rate — no increases during the term.</div>
+      </div>
+
     </div>
   </div>
 
